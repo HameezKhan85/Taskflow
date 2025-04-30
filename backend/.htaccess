@@ -1,0 +1,34 @@
+# Disable directory browsing
+Options -Indexes
+
+# ----------------------------------------------------------------------
+# Rewrite engine
+# ----------------------------------------------------------------------
+
+<IfModule mod_rewrite.c>
+    Options +FollowSymlinks
+    RewriteEngine On
+
+    # Redirect Trailing Slashes...
+  
+    # RewriteEngine On
+    # RewriteCond %{REQUEST_URI} !^/index.php$
+    # RewriteRule ^(.*)$ /index.php [L]
+    
+    # Route requests to index.php (for front controller)
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$  index.php/$1 [L]
+
+    # Ensure Authorization header is passed along
+    # RewriteCond %{HTTP:Authorization} . 
+    # RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+</IfModule>
+
+<IfModule !mod_rewrite.c>
+    # If mod_rewrite isn't installed, send 404s to index.php
+    ErrorDocument 404 index.php
+</IfModule>
+
+# Disable server signature for security
+ServerSignature Off
