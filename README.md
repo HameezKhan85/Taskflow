@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌐 Taskflow App Mindmap
 
-## Getting Started
+## 🏠 **1. Landing Page**
+   - ✨ Hero Section (CTA)
+   - 🔍 Features Overview
+   - 👥 Sign Up / Login Buttons
 
-First, run the development server:
+## 🔐 **2. Authentication**
+   - 📧 Sign Up
+     - ✉️ Email Verification
+     - 🖼️ Profile Setup
+   - 🔑 Login
+     - � Social Login (Google/GitHub)
+     - ⁉️ Forgot Password
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📊 **3. Dashboard**
+   - 🏞️ Board Overview
+   - ➕ Create New Board
+   - ⏰ Recent Activity Feed
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 **4. Board Management**
+   - 🆕 Create Board
+     - ✏️ Name Board
+     - 👀 Visibility (Private/Team/Public)
+     - 🖼️ Background Customization
+   - ⚙️ Settings
+     - ✏️ Rename
+     - 🛡️ Permissions
+     - 🗑️ Archive/Delete
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 👥 **5. Team Collaboration**
+   - ➕ Add Members
+     - 📧 Email Invite
+     - 🔗 Shareable Link
+   - 🎭 Roles
+     - 👑 Admin
+     - ✋ Normal Member
+     - 👀 Observer
+   - 🚫 Remove Members
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📝 **6. Task (Card) Management**
+   - 🆕 Create Card
+     - ✏️ Title
+     - 📝 Description (Markdown)
+   - 🏷️ Card Features
+     - 📅 Due Dates
+     - 👥 Assign Members
+     - ✅ Checklists
+     - 📎 Attachments
+   - 🔄 Actions
+     - ↔️ Move Across Lists
+     - 💬 Comments
+     - 🗄️ Archive/Delete
 
-## Learn More
+## 🔔 **7. Notifications**
+   - @ Mentions
+   - ⏰ Due Date Alerts
+   - 🔄 Activity Updates
 
-To learn more about Next.js, take a look at the following resources:
+## 🔍 **8. Search & Filtering**
+   - 🔎 Full-Text Search
+   - ⚙️ Filters
+     - 🏷️ Labels
+     - 👥 Members
+     - 📅 Due Dates
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📱 **9. Mobile Responsiveness**
+   - 📱 Touch-Friendly UI
+   - 🖥️ Cross-Device Sync
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## ⚙️ **10. Admin Panel**
+   - 👥 User Management
+   - 📊 Analytics
+   - 🚦 Feature Toggles
