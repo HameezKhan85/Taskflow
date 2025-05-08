@@ -1,0 +1,1095 @@
+CRITICAL - 2024-09-16 06:01:34 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 12.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-16 06:01:42 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 12.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-16 06:01:53 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 12.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-16 06:09:05 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 12.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-16 06:10:11 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 12.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-16 06:39:12 --> ParseError: syntax error, unexpected token ";"
+[Method: GET, Route: tech/add_custom_field]
+in APPPATH/Controllers/Home.php on line 119.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH/CodeIgniter.php(887): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 06:39:14 --> ParseError: syntax error, unexpected token ";"
+[Method: GET, Route: tech/add_custom_field]
+in APPPATH/Controllers/Home.php on line 119.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH/CodeIgniter.php(887): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 06:39:47 --> ParseError: syntax error, unexpected token ";"
+[Method: GET, Route: tech/add_custom_field]
+in APPPATH/Controllers/Home.php on line 119.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH/CodeIgniter.php(887): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 06:45:22 --> ParseError: syntax error, unexpected token ";"
+[Method: GET, Route: tech/add_custom_field]
+in APPPATH/Controllers/Home.php on line 119.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH/CodeIgniter.php(887): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 06:45:36 --> ParseError: syntax error, unexpected token ";"
+[Method: GET, Route: tech/add_custom_field]
+in APPPATH/Controllers/Home.php on line 120.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH/CodeIgniter.php(887): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 06:46:02 --> ParseError: syntax error, unexpected token ";"
+[Method: GET, Route: tech/add_custom_field]
+in APPPATH/Controllers/Home.php on line 120.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH/CodeIgniter.php(887): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 06:48:55 --> ParseError: syntax error, unexpected token ";"
+[Method: GET, Route: tech/add_custom_field]
+in APPPATH/Controllers/Home.php on line 120.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH/CodeIgniter.php(887): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 06:48:56 --> ParseError: syntax error, unexpected token ";"
+[Method: GET, Route: tech/add_custom_field]
+in APPPATH/Controllers/Home.php on line 120.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH/CodeIgniter.php(887): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 06:48:57 --> ParseError: syntax error, unexpected token ";"
+[Method: GET, Route: tech/add_custom_field]
+in APPPATH/Controllers/Home.php on line 120.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH/CodeIgniter.php(887): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 06:48:58 --> ParseError: syntax error, unexpected token ";"
+[Method: GET, Route: tech/add_custom_field]
+in APPPATH/Controllers/Home.php on line 120.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH/CodeIgniter.php(887): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 06:49:40 --> ParseError: syntax error, unexpected token ";"
+[Method: GET, Route: tech/add_custom_field]
+in APPPATH/Controllers/Home.php on line 120.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH/CodeIgniter.php(887): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 06:50:05 --> ParseError: syntax error, unexpected token "{"
+[Method: GET, Route: tech/add_custom_field]
+in APPPATH/Controllers/Home.php on line 119.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH/CodeIgniter.php(887): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 06:50:33 --> ParseError: syntax error, unexpected token "{"
+[Method: GET, Route: tech/add_custom_field]
+in APPPATH/Controllers/Home.php on line 119.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH/CodeIgniter.php(887): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 06:52:59 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-16 07:07:00 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: editseasons/18]
+in APPPATH/Views/season/editseasons.php on line 67.
+ 1 APPPATH/Views/season/editseasons.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/season/editseasons.php', 67)
+ 2 APPPATH/Views/page.php(4): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/season/editseasons.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 6 APPPATH/Controllers/Home.php(308): view('page', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->editseasons('18')
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 07:16:06 --> ErrorException: Array to string conversion
+[Method: GET, Route: update/edit_custom_field/18]
+in APPPATH/Views/custom_fields/edit_custom_field.php on line 6.
+ 1 APPPATH/Views/custom_fields/edit_custom_field.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/custom_fields/edit_custom_field.php', 6)
+ 2 APPPATH/Views/page.php(4): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/custom_fields/edit_custom_field.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 6 APPPATH/Controllers/Home.php(189): view('page', [...])
+ 7 APPPATH/Controllers/Home.php(73): App\Controllers\Home->edit_custom_field('18')
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->update('edit_custom_field', '18', '')
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 07:16:55 --> ErrorException: Undefined variable $custom_field
+[Method: GET, Route: update/edit_custom_field/18]
+in APPPATH/Views/custom_fields/edit_custom_field.php on line 7.
+ 1 APPPATH/Views/custom_fields/edit_custom_field.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $custom_field', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/custom_fields/edit_custom_field.php', 7)
+ 2 APPPATH/Views/page.php(4): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/custom_fields/edit_custom_field.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 6 APPPATH/Controllers/Home.php(189): view('page', [...])
+ 7 APPPATH/Controllers/Home.php(73): App\Controllers\Home->edit_custom_field('18')
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->update('edit_custom_field', '18', '')
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 07:35:34 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: update/edit_custom_field/18]
+in APPPATH/Views/custom_fields/edit_custom_field.php on line 24.
+ 1 APPPATH/Views/page.php(4): include()
+ 2 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 5 APPPATH/Controllers/Home.php(190): view('page', [...])
+ 6 APPPATH/Controllers/Home.php(73): App\Controllers\Home->edit_custom_field('18')
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->update('edit_custom_field', '18', '')
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 07:36:59 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: update/edit_custom_field/18]
+in APPPATH/Views/custom_fields/edit_custom_field.php on line 24.
+ 1 APPPATH/Views/page.php(4): include()
+ 2 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 5 APPPATH/Controllers/Home.php(190): view('page', [...])
+ 6 APPPATH/Controllers/Home.php(73): App\Controllers\Home->edit_custom_field('18')
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->update('edit_custom_field', '18', '')
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 07:37:13 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: update/edit_custom_field/18]
+in APPPATH/Views/custom_fields/edit_custom_field.php on line 24.
+ 1 APPPATH/Views/page.php(4): include()
+ 2 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 5 APPPATH/Controllers/Home.php(190): view('page', [...])
+ 6 APPPATH/Controllers/Home.php(73): App\Controllers\Home->edit_custom_field('18')
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->update('edit_custom_field', '18', '')
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 07:40:44 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: update/edit_custom_field/18]
+in APPPATH/Views/custom_fields/edit_custom_field.php on line 24.
+ 1 APPPATH/Views/page.php(4): include()
+ 2 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 5 APPPATH/Controllers/Home.php(190): view('page', [...])
+ 6 APPPATH/Controllers/Home.php(73): App\Controllers\Home->edit_custom_field('18')
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->update('edit_custom_field', '18', '')
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 07:46:29 --> ParseError: syntax error, unexpected token "public"
+[Method: GET, Route: update/edit_custom_field/18]
+in APPPATH/Controllers/Home.php on line 196.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH/CodeIgniter.php(887): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 07:46:31 --> ParseError: syntax error, unexpected token "public"
+[Method: GET, Route: update/edit_custom_field/18]
+in APPPATH/Controllers/Home.php on line 196.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH/CodeIgniter.php(887): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 07:46:39 --> ParseError: syntax error, unexpected token "public"
+[Method: GET, Route: update/edit_custom_field/18]
+in APPPATH/Controllers/Home.php on line 196.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH/CodeIgniter.php(887): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 07:47:50 --> ParseError: syntax error, unexpected token "public"
+[Method: GET, Route: custom_fields]
+in APPPATH/Controllers/Home.php on line 189.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH/CodeIgniter.php(887): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 07:47:52 --> ParseError: syntax error, unexpected token "public"
+[Method: GET, Route: custom_fields]
+in APPPATH/Controllers/Home.php on line 189.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH/CodeIgniter.php(887): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 07:55:37 --> ParseError: syntax error, unexpected token ";"
+[Method: GET, Route: update/edit_custom_field/18]
+in APPPATH/Controllers/Home.php on line 155.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH/CodeIgniter.php(887): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 07:56:02 --> ParseError: syntax error, unexpected token ";"
+[Method: GET, Route: update/edit_custom_field/18]
+in APPPATH/Controllers/Home.php on line 155.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH/CodeIgniter.php(887): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 07:56:12 --> ParseError: syntax error, unexpected token ";"
+[Method: GET, Route: update/edit_custom_field/18]
+in APPPATH/Controllers/Home.php on line 155.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH/CodeIgniter.php(887): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 07:56:14 --> ParseError: syntax error, unexpected token ";"
+[Method: GET, Route: update/edit_custom_field/18]
+in APPPATH/Controllers/Home.php on line 155.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH/CodeIgniter.php(887): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 09:19:42 --> ParseError: syntax error, unexpected token "public"
+[Method: GET, Route: update/edit_custom_field/18]
+in APPPATH/Controllers/Home.php on line 195.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH/CodeIgniter.php(887): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 09:19:44 --> ParseError: syntax error, unexpected token "public"
+[Method: GET, Route: custom_fields]
+in APPPATH/Controllers/Home.php on line 195.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH/CodeIgniter.php(887): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 09:58:37 --> ParseError: syntax error, unexpected token "}"
+[Method: GET, Route: update/edit_custom_field/18]
+in APPPATH/Controllers/Home.php on line 62.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH/CodeIgniter.php(887): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 09:58:39 --> ParseError: syntax error, unexpected token "}"
+[Method: GET, Route: update/edit_custom_field/18]
+in APPPATH/Controllers/Home.php on line 62.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH/CodeIgniter.php(887): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 10:00:02 --> ParseError: syntax error, unexpected token "}"
+[Method: GET, Route: update/edit_custom_field/18]
+in APPPATH/Controllers/Home.php on line 62.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH/CodeIgniter.php(887): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 10:00:29 --> ParseError: syntax error, unexpected token "}"
+[Method: GET, Route: custom_fields]
+in APPPATH/Controllers/Home.php on line 62.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH/CodeIgniter.php(887): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 10:00:31 --> ParseError: syntax error, unexpected token "}"
+[Method: GET, Route: custom_fields]
+in APPPATH/Controllers/Home.php on line 62.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH/CodeIgniter.php(887): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 10:00:32 --> ParseError: syntax error, unexpected token "}"
+[Method: GET, Route: custom_fields]
+in APPPATH/Controllers/Home.php on line 62.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH/CodeIgniter.php(887): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 10:03:30 --> Error: Cannot access protected property CodeIgniter\HTTP\IncomingRequest::$uri
+[Method: GET, Route: tech/edit_custom_field/18]
+in APPPATH/Controllers/Home.php on line 61.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('edit_custom_field', '18')
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 10:03:41 --> Error: Cannot access protected property CodeIgniter\HTTP\IncomingRequest::$uri
+[Method: GET, Route: tech/edit_custom_field/18]
+in APPPATH/Controllers/Home.php on line 62.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('edit_custom_field', '18')
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 10:12:50 --> Error: Cannot access protected property CodeIgniter\HTTP\IncomingRequest::$uri
+[Method: GET, Route: tech/edit_custom_field/18]
+in APPPATH/Controllers/Home.php on line 62.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('edit_custom_field', '18')
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 10:13:13 --> Error: Cannot access protected property CodeIgniter\HTTP\IncomingRequest::$uri
+[Method: GET, Route: tech/edit_custom_field/18]
+in APPPATH/Controllers/Home.php on line 65.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('edit_custom_field', '18')
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 10:26:27 --> ErrorException: Undefined variable $custom_field
+[Method: GET, Route: tech/edit_custom_field/18]
+in APPPATH/Views/custom_fields/edit_custom_field.php on line 7.
+ 1 APPPATH/Views/custom_fields/edit_custom_field.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $custom_field', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/custom_fields/edit_custom_field.php', 7)
+ 2 APPPATH/Views/page.php(3): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/custom_fields/edit_custom_field.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 6 APPPATH/Controllers/Home.php(163): view('page', [...])
+ 7 APPPATH/Controllers/Home.php(63): App\Controllers\Home->edit_custom_field()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('edit_custom_field', '18')
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-16 10:29:47 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php(308): mysqli->query('SELECT * FROM c...', 0)
+#1 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM c...')
+#2 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM c...')
+#3 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Models/HomeModel.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#4 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(130): App\Models\HomeModel->get_row('custom_fields', 'id', '')
+#5 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(63): App\Controllers\Home->edit_custom_field()
+#6 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(933): App\Controllers\Home->manangerouts('edit_custom_fie...')
+#7 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-09-16 10:29:47 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[Method: GET, Route: tech/edit_custom_field]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 APPPATH/Models/HomeModel.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * FROM custom_fields WHERE id = ')
+ 2 APPPATH/Controllers/Home.php(130): App\Models\HomeModel->get_row('custom_fields', 'id', '')
+ 3 APPPATH/Controllers/Home.php(63): App\Controllers\Home->edit_custom_field()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('edit_custom_field')
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 10:29:47 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM custom_fields WHERE id = ')
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM custom_fields WHERE id = ')
+ 3 APPPATH/Models/HomeModel.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * FROM custom_fields WHERE id = ')
+ 4 APPPATH/Controllers/Home.php(130): App\Models\HomeModel->get_row('custom_fields', 'id', '')
+ 5 APPPATH/Controllers/Home.php(63): App\Controllers\Home->edit_custom_field()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('edit_custom_field')
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 10:29:47 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query('SELECT * FROM custom_fields WHERE id = ', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM custom_fields WHERE id = ')
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM custom_fields WHERE id = ')
+ 4 APPPATH/Models/HomeModel.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * FROM custom_fields WHERE id = ')
+ 5 APPPATH/Controllers/Home.php(130): App\Models\HomeModel->get_row('custom_fields', 'id', '')
+ 6 APPPATH/Controllers/Home.php(63): App\Controllers\Home->edit_custom_field()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('edit_custom_field')
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-16 10:31:12 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php(308): mysqli->query('SELECT * FROM c...', 0)
+#1 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM c...')
+#2 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM c...')
+#3 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Models/HomeModel.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#4 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(130): App\Models\HomeModel->get_row('custom_fields', 'id', '')
+#5 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(63): App\Controllers\Home->edit_custom_field()
+#6 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(933): App\Controllers\Home->manangerouts('edit_custom_fie...')
+#7 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-09-16 10:31:12 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[Method: GET, Route: tech/edit_custom_field]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 APPPATH/Models/HomeModel.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * FROM custom_fields WHERE id = ')
+ 2 APPPATH/Controllers/Home.php(130): App\Models\HomeModel->get_row('custom_fields', 'id', '')
+ 3 APPPATH/Controllers/Home.php(63): App\Controllers\Home->edit_custom_field()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('edit_custom_field')
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 10:31:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM custom_fields WHERE id = ')
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM custom_fields WHERE id = ')
+ 3 APPPATH/Models/HomeModel.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * FROM custom_fields WHERE id = ')
+ 4 APPPATH/Controllers/Home.php(130): App\Models\HomeModel->get_row('custom_fields', 'id', '')
+ 5 APPPATH/Controllers/Home.php(63): App\Controllers\Home->edit_custom_field()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('edit_custom_field')
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 10:31:12 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query('SELECT * FROM custom_fields WHERE id = ', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM custom_fields WHERE id = ')
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM custom_fields WHERE id = ')
+ 4 APPPATH/Models/HomeModel.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * FROM custom_fields WHERE id = ')
+ 5 APPPATH/Controllers/Home.php(130): App\Models\HomeModel->get_row('custom_fields', 'id', '')
+ 6 APPPATH/Controllers/Home.php(63): App\Controllers\Home->edit_custom_field()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('edit_custom_field')
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-16 10:31:19 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php(308): mysqli->query('SELECT * FROM c...', 0)
+#1 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM c...')
+#2 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM c...')
+#3 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Models/HomeModel.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#4 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(130): App\Models\HomeModel->get_row('custom_fields', 'id', '')
+#5 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(63): App\Controllers\Home->edit_custom_field()
+#6 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(933): App\Controllers\Home->manangerouts('edit_custom_fie...')
+#7 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-09-16 10:31:19 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[Method: GET, Route: tech/edit_custom_field]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 APPPATH/Models/HomeModel.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * FROM custom_fields WHERE id = ')
+ 2 APPPATH/Controllers/Home.php(130): App\Models\HomeModel->get_row('custom_fields', 'id', '')
+ 3 APPPATH/Controllers/Home.php(63): App\Controllers\Home->edit_custom_field()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('edit_custom_field')
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 10:31:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM custom_fields WHERE id = ')
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM custom_fields WHERE id = ')
+ 3 APPPATH/Models/HomeModel.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * FROM custom_fields WHERE id = ')
+ 4 APPPATH/Controllers/Home.php(130): App\Models\HomeModel->get_row('custom_fields', 'id', '')
+ 5 APPPATH/Controllers/Home.php(63): App\Controllers\Home->edit_custom_field()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('edit_custom_field')
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 10:31:19 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query('SELECT * FROM custom_fields WHERE id = ', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM custom_fields WHERE id = ')
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM custom_fields WHERE id = ')
+ 4 APPPATH/Models/HomeModel.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * FROM custom_fields WHERE id = ')
+ 5 APPPATH/Controllers/Home.php(130): App\Models\HomeModel->get_row('custom_fields', 'id', '')
+ 6 APPPATH/Controllers/Home.php(63): App\Controllers\Home->edit_custom_field()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('edit_custom_field')
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-16 10:31:35 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php(308): mysqli->query('SELECT * FROM c...', 0)
+#1 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM c...')
+#2 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM c...')
+#3 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Models/HomeModel.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#4 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(130): App\Models\HomeModel->get_row('custom_fields', 'id', '')
+#5 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(63): App\Controllers\Home->edit_custom_field()
+#6 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(933): App\Controllers\Home->manangerouts('edit_custom_fie...')
+#7 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-09-16 10:31:35 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[Method: GET, Route: tech/edit_custom_field]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 APPPATH/Models/HomeModel.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * FROM custom_fields WHERE id = ')
+ 2 APPPATH/Controllers/Home.php(130): App\Models\HomeModel->get_row('custom_fields', 'id', '')
+ 3 APPPATH/Controllers/Home.php(63): App\Controllers\Home->edit_custom_field()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('edit_custom_field')
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 10:31:35 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM custom_fields WHERE id = ')
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM custom_fields WHERE id = ')
+ 3 APPPATH/Models/HomeModel.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * FROM custom_fields WHERE id = ')
+ 4 APPPATH/Controllers/Home.php(130): App\Models\HomeModel->get_row('custom_fields', 'id', '')
+ 5 APPPATH/Controllers/Home.php(63): App\Controllers\Home->edit_custom_field()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('edit_custom_field')
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 10:31:35 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query('SELECT * FROM custom_fields WHERE id = ', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM custom_fields WHERE id = ')
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM custom_fields WHERE id = ')
+ 4 APPPATH/Models/HomeModel.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * FROM custom_fields WHERE id = ')
+ 5 APPPATH/Controllers/Home.php(130): App\Models\HomeModel->get_row('custom_fields', 'id', '')
+ 6 APPPATH/Controllers/Home.php(63): App\Controllers\Home->edit_custom_field()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('edit_custom_field')
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-16 11:12:33 --> mysqli_sql_exception: Unknown column 'users.php' in 'where clause' in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php(308): mysqli->query('SELECT * FROM c...', 0)
+#1 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM c...')
+#2 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM c...')
+#3 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Models/HomeModel.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#4 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(111): App\Models\HomeModel->get_row('custom_fields', 'id', 'users.php')
+#5 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(58): App\Controllers\Home->edit_custom_field()
+#6 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(933): App\Controllers\Home->manangerouts('edit_custom_fie...', 'users.php')
+#7 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-09-16 11:12:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'users.php' in 'where clause'
+[Method: GET, Route: tech/edit_custom_field/users.php]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 APPPATH/Models/HomeModel.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * FROM custom_fields WHERE id = users.php')
+ 2 APPPATH/Controllers/Home.php(111): App\Models\HomeModel->get_row('custom_fields', 'id', 'users.php')
+ 3 APPPATH/Controllers/Home.php(58): App\Controllers\Home->edit_custom_field()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('edit_custom_field', 'users.php')
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 11:12:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'users.php' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM custom_fields WHERE id = users.php')
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM custom_fields WHERE id = users.php')
+ 3 APPPATH/Models/HomeModel.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * FROM custom_fields WHERE id = users.php')
+ 4 APPPATH/Controllers/Home.php(111): App\Models\HomeModel->get_row('custom_fields', 'id', 'users.php')
+ 5 APPPATH/Controllers/Home.php(58): App\Controllers\Home->edit_custom_field()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('edit_custom_field', 'users.php')
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 11:12:33 --> [Caused by] mysqli_sql_exception: Unknown column 'users.php' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query('SELECT * FROM custom_fields WHERE id = users.php', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM custom_fields WHERE id = users.php')
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM custom_fields WHERE id = users.php')
+ 4 APPPATH/Models/HomeModel.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * FROM custom_fields WHERE id = users.php')
+ 5 APPPATH/Controllers/Home.php(111): App\Models\HomeModel->get_row('custom_fields', 'id', 'users.php')
+ 6 APPPATH/Controllers/Home.php(58): App\Controllers\Home->edit_custom_field()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('edit_custom_field', 'users.php')
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-16 11:13:11 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php(308): mysqli->query('SELECT * FROM c...', 0)
+#1 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM c...')
+#2 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM c...')
+#3 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Models/HomeModel.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#4 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(111): App\Models\HomeModel->get_row('custom_fields', 'id', '')
+#5 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(58): App\Controllers\Home->edit_custom_field()
+#6 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(933): App\Controllers\Home->manangerouts('edit_custom_fie...')
+#7 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-09-16 11:13:11 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[Method: GET, Route: tech/edit_custom_field]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 APPPATH/Models/HomeModel.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * FROM custom_fields WHERE id = ')
+ 2 APPPATH/Controllers/Home.php(111): App\Models\HomeModel->get_row('custom_fields', 'id', '')
+ 3 APPPATH/Controllers/Home.php(58): App\Controllers\Home->edit_custom_field()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('edit_custom_field')
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 11:13:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM custom_fields WHERE id = ')
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM custom_fields WHERE id = ')
+ 3 APPPATH/Models/HomeModel.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * FROM custom_fields WHERE id = ')
+ 4 APPPATH/Controllers/Home.php(111): App\Models\HomeModel->get_row('custom_fields', 'id', '')
+ 5 APPPATH/Controllers/Home.php(58): App\Controllers\Home->edit_custom_field()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('edit_custom_field')
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 11:13:11 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query('SELECT * FROM custom_fields WHERE id = ', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM custom_fields WHERE id = ')
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM custom_fields WHERE id = ')
+ 4 APPPATH/Models/HomeModel.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * FROM custom_fields WHERE id = ')
+ 5 APPPATH/Controllers/Home.php(111): App\Models\HomeModel->get_row('custom_fields', 'id', '')
+ 6 APPPATH/Controllers/Home.php(58): App\Controllers\Home->edit_custom_field()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('edit_custom_field')
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 11:13:14 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 12.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-16 11:13:15 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 12.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-09-16 11:13:21 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php(308): mysqli->query('SELECT * FROM c...', 0)
+#1 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM c...')
+#2 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM c...')
+#3 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Models/HomeModel.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#4 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(111): App\Models\HomeModel->get_row('custom_fields', 'id', '')
+#5 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(58): App\Controllers\Home->edit_custom_field()
+#6 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(933): App\Controllers\Home->manangerouts('edit_custom_fie...')
+#7 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-09-16 11:13:21 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[Method: GET, Route: tech/edit_custom_field]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 APPPATH/Models/HomeModel.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * FROM custom_fields WHERE id = ')
+ 2 APPPATH/Controllers/Home.php(111): App\Models\HomeModel->get_row('custom_fields', 'id', '')
+ 3 APPPATH/Controllers/Home.php(58): App\Controllers\Home->edit_custom_field()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('edit_custom_field')
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 11:13:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM custom_fields WHERE id = ')
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM custom_fields WHERE id = ')
+ 3 APPPATH/Models/HomeModel.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * FROM custom_fields WHERE id = ')
+ 4 APPPATH/Controllers/Home.php(111): App\Models\HomeModel->get_row('custom_fields', 'id', '')
+ 5 APPPATH/Controllers/Home.php(58): App\Controllers\Home->edit_custom_field()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('edit_custom_field')
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 11:13:21 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query('SELECT * FROM custom_fields WHERE id = ', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM custom_fields WHERE id = ')
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM custom_fields WHERE id = ')
+ 4 APPPATH/Models/HomeModel.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * FROM custom_fields WHERE id = ')
+ 5 APPPATH/Controllers/Home.php(111): App\Models\HomeModel->get_row('custom_fields', 'id', '')
+ 6 APPPATH/Controllers/Home.php(58): App\Controllers\Home->edit_custom_field()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('edit_custom_field')
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 11:17:53 --> ErrorException: Undefined variable $session
+[Method: GET, Route: custom_fields]
+in APPPATH/Views/includes/header.php on line 102.
+ 1 APPPATH/Views/includes/header.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/includes/header.php', 102)
+ 2 APPPATH/Views/page.php(2): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/includes/header.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 6 APPPATH/Controllers/Home.php(46): view('page', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->custom_fields()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 11:27:56 --> ErrorException: include(header.php): Failed to open stream: No such file or directory
+[Method: GET, Route: custom_fields]
+in APPPATH/Views/custom_fields/custom_fields.php on line 1.
+ 1 APPPATH/Views/custom_fields/custom_fields.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(header.php): Failed to open stream: No such file or directory', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/custom_fields/custom_fields.php', 1)
+ 2 APPPATH/Views/custom_fields/custom_fields.php(1): include()
+ 3 APPPATH/Views/page.php(3): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/custom_fields/custom_fields.php')
+ 4 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 5 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 7 APPPATH/Controllers/Home.php(46): view('page', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->custom_fields()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 11:28:06 --> ErrorException: include(header.php): Failed to open stream: No such file or directory
+[Method: GET, Route: custom_fields]
+in APPPATH/Views/custom_fields/custom_fields.php on line 1.
+ 1 APPPATH/Views/custom_fields/custom_fields.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(header.php): Failed to open stream: No such file or directory', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/custom_fields/custom_fields.php', 1)
+ 2 APPPATH/Views/custom_fields/custom_fields.php(1): include()
+ 3 APPPATH/Views/page.php(3): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/custom_fields/custom_fields.php')
+ 4 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 5 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 7 APPPATH/Controllers/Home.php(46): view('page', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->custom_fields()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 11:28:22 --> ErrorException: include(header.php): Failed to open stream: No such file or directory
+[Method: GET, Route: custom_fields]
+in APPPATH/Views/custom_fields/custom_fields.php on line 1.
+ 1 APPPATH/Views/custom_fields/custom_fields.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(header.php): Failed to open stream: No such file or directory', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/custom_fields/custom_fields.php', 1)
+ 2 APPPATH/Views/custom_fields/custom_fields.php(1): include()
+ 3 APPPATH/Views/page.php(3): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/custom_fields/custom_fields.php')
+ 4 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 5 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 7 APPPATH/Controllers/Home.php(46): view('page', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->custom_fields()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 11:28:50 --> ErrorException: include(header.php): Failed to open stream: No such file or directory
+[Method: GET, Route: custom_fields]
+in APPPATH/Views/custom_fields/custom_fields.php on line 1.
+ 1 APPPATH/Views/custom_fields/custom_fields.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(header.php): Failed to open stream: No such file or directory', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/custom_fields/custom_fields.php', 1)
+ 2 APPPATH/Views/custom_fields/custom_fields.php(1): include()
+ 3 APPPATH/Views/page.php(3): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/custom_fields/custom_fields.php')
+ 4 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 5 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 7 APPPATH/Controllers/Home.php(46): view('page', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->custom_fields()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 11:28:52 --> ErrorException: include(header.php): Failed to open stream: No such file or directory
+[Method: GET, Route: custom_fields]
+in APPPATH/Views/custom_fields/custom_fields.php on line 1.
+ 1 APPPATH/Views/custom_fields/custom_fields.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(header.php): Failed to open stream: No such file or directory', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/custom_fields/custom_fields.php', 1)
+ 2 APPPATH/Views/custom_fields/custom_fields.php(1): include()
+ 3 APPPATH/Views/page.php(3): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/custom_fields/custom_fields.php')
+ 4 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 5 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 7 APPPATH/Controllers/Home.php(46): view('page', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->custom_fields()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 11:38:42 --> ErrorException: include(header.php): Failed to open stream: No such file or directory
+[Method: GET, Route: tech/add_custom_field]
+in APPPATH/Views/custom_fields/add_custom_field.php on line 1.
+ 1 APPPATH/Views/custom_fields/add_custom_field.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(header.php): Failed to open stream: No such file or directory', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/custom_fields/add_custom_field.php', 1)
+ 2 APPPATH/Views/custom_fields/add_custom_field.php(1): include()
+ 3 APPPATH/Views/page.php(3): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/custom_fields/add_custom_field.php')
+ 4 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 5 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 7 APPPATH/Controllers/Home.php(101): view('page', [...])
+ 8 APPPATH/Controllers/Home.php(55): App\Controllers\Home->add_custom_field()
+ 9 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('add_custom_field')
+10 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-16 12:26:32 --> mysqli_sql_exception: Column 'field_attribute' cannot be null in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php(308): mysqli->query('INSERT INTO `cu...', 0)
+#1 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cu...')
+#2 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cu...')
+#3 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cu...', Array, false)
+#4 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(92): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(55): App\Controllers\Home->add_custom_field()
+#6 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(933): App\Controllers\Home->manangerouts('add_custom_fiel...')
+#7 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-09-16 12:26:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'field_attribute' cannot be null
+[Method: POST, Route: tech/add_custom_field]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `custom_fields` (`display`, `field_type`, `field_name`, `field_slug`, `field_values`, `field_class`, `field_attribute`, `status`, `created_at`, `created_by`, `updated_at`) VALUES (:display:, :field_type:, :field_name:, :field_slug:, :field_values:, :field_class:, :field_attribute:, :status:, :created_at:, :created_by:, :updated_at:)', [...], false)
+ 2 APPPATH/Controllers/Home.php(92): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH/Controllers/Home.php(55): App\Controllers\Home->add_custom_field()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('add_custom_field')
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 12:26:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'field_attribute' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `custom_fields` (`display`, `field_type`, `field_name`, `field_slug`, `field_values`, `field_class`, `field_attribute`, `status`, `created_at`, `created_by`, `updated_at`) VALUES (\'category,starpage,custom_page\', \'textarea\', \'Content Test 2025\', \'content-test-2025\', \'col-12\', \'col-12\', NULL, 1, 1726489592, \'10\', 1726489592)')
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `custom_fields` (`display`, `field_type`, `field_name`, `field_slug`, `field_values`, `field_class`, `field_attribute`, `status`, `created_at`, `created_by`, `updated_at`) VALUES (\'category,starpage,custom_page\', \'textarea\', \'Content Test 2025\', \'content-test-2025\', \'col-12\', \'col-12\', NULL, 1, 1726489592, \'10\', 1726489592)')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `custom_fields` (`display`, `field_type`, `field_name`, `field_slug`, `field_values`, `field_class`, `field_attribute`, `status`, `created_at`, `created_by`, `updated_at`) VALUES (:display:, :field_type:, :field_name:, :field_slug:, :field_values:, :field_class:, :field_attribute:, :status:, :created_at:, :created_by:, :updated_at:)', [...], false)
+ 4 APPPATH/Controllers/Home.php(92): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH/Controllers/Home.php(55): App\Controllers\Home->add_custom_field()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('add_custom_field')
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 12:26:32 --> [Caused by] mysqli_sql_exception: Column 'field_attribute' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query('INSERT INTO `custom_fields` (`display`, `field_type`, `field_name`, `field_slug`, `field_values`, `field_class`, `field_attribute`, `status`, `created_at`, `created_by`, `updated_at`) VALUES (\'category,starpage,custom_page\', \'textarea\', \'Content Test 2025\', \'content-test-2025\', \'col-12\', \'col-12\', NULL, 1, 1726489592, \'10\', 1726489592)', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `custom_fields` (`display`, `field_type`, `field_name`, `field_slug`, `field_values`, `field_class`, `field_attribute`, `status`, `created_at`, `created_by`, `updated_at`) VALUES (\'category,starpage,custom_page\', \'textarea\', \'Content Test 2025\', \'content-test-2025\', \'col-12\', \'col-12\', NULL, 1, 1726489592, \'10\', 1726489592)')
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `custom_fields` (`display`, `field_type`, `field_name`, `field_slug`, `field_values`, `field_class`, `field_attribute`, `status`, `created_at`, `created_by`, `updated_at`) VALUES (\'category,starpage,custom_page\', \'textarea\', \'Content Test 2025\', \'content-test-2025\', \'col-12\', \'col-12\', NULL, 1, 1726489592, \'10\', 1726489592)')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `custom_fields` (`display`, `field_type`, `field_name`, `field_slug`, `field_values`, `field_class`, `field_attribute`, `status`, `created_at`, `created_by`, `updated_at`) VALUES (:display:, :field_type:, :field_name:, :field_slug:, :field_values:, :field_class:, :field_attribute:, :status:, :created_at:, :created_by:, :updated_at:)', [...], false)
+ 5 APPPATH/Controllers/Home.php(92): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH/Controllers/Home.php(55): App\Controllers\Home->add_custom_field()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('add_custom_field')
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

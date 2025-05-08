@@ -1,0 +1,693 @@
+ERROR - 2024-12-02 04:27:26 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3 in /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/MySQLi/Connection.php(308): mysqli->query()
+#1 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Controllers/Home.php(771): CodeIgniter\Database\BaseBuilder->update()
+#5 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+#6 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+#7 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#8 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/index.php(57): CodeIgniter\Boot::bootWeb()
+#12 {main}
+CRITICAL - 2024-12-02 04:27:26 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3
+[Method: POST, Route: tech/permalinks]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Home.php(771): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-02 04:27:26 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Home.php(771): CodeIgniter\Database\BaseBuilder->update()
+ 5 APPPATH/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-02 04:27:26 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Home.php(771): CodeIgniter\Database\BaseBuilder->update()
+ 6 APPPATH/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+ERROR - 2024-12-02 04:28:55 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3 in /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/MySQLi/Connection.php(308): mysqli->query()
+#1 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Controllers/Home.php(772): CodeIgniter\Database\BaseBuilder->update()
+#5 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+#6 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+#7 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#8 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/index.php(57): CodeIgniter\Boot::bootWeb()
+#12 {main}
+CRITICAL - 2024-12-02 04:28:55 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3
+[Method: POST, Route: tech/permalinks]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Home.php(772): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-02 04:28:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Home.php(772): CodeIgniter\Database\BaseBuilder->update()
+ 5 APPPATH/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-02 04:28:55 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Home.php(772): CodeIgniter\Database\BaseBuilder->update()
+ 6 APPPATH/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+ERROR - 2024-12-02 04:29:41 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3 in /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/MySQLi/Connection.php(308): mysqli->query()
+#1 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Controllers/Home.php(774): CodeIgniter\Database\BaseBuilder->update()
+#5 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+#6 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+#7 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#8 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/index.php(57): CodeIgniter\Boot::bootWeb()
+#12 {main}
+CRITICAL - 2024-12-02 04:29:41 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3
+[Method: POST, Route: tech/permalinks]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Home.php(774): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-02 04:29:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Home.php(774): CodeIgniter\Database\BaseBuilder->update()
+ 5 APPPATH/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-02 04:29:41 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Home.php(774): CodeIgniter\Database\BaseBuilder->update()
+ 6 APPPATH/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+ERROR - 2024-12-02 04:29:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3 in /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/MySQLi/Connection.php(308): mysqli->query()
+#1 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Controllers/Home.php(774): CodeIgniter\Database\BaseBuilder->update()
+#5 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+#6 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+#7 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#8 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/index.php(57): CodeIgniter\Boot::bootWeb()
+#12 {main}
+CRITICAL - 2024-12-02 04:29:42 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3
+[Method: POST, Route: tech/permalinks]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Home.php(774): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-02 04:29:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Home.php(774): CodeIgniter\Database\BaseBuilder->update()
+ 5 APPPATH/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-02 04:29:42 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Home.php(774): CodeIgniter\Database\BaseBuilder->update()
+ 6 APPPATH/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+ERROR - 2024-12-02 04:29:43 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3 in /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/MySQLi/Connection.php(308): mysqli->query()
+#1 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Controllers/Home.php(774): CodeIgniter\Database\BaseBuilder->update()
+#5 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+#6 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+#7 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#8 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/index.php(57): CodeIgniter\Boot::bootWeb()
+#12 {main}
+CRITICAL - 2024-12-02 04:29:43 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3
+[Method: POST, Route: tech/permalinks]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Home.php(774): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-02 04:29:43 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Home.php(774): CodeIgniter\Database\BaseBuilder->update()
+ 5 APPPATH/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-02 04:29:43 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Home.php(774): CodeIgniter\Database\BaseBuilder->update()
+ 6 APPPATH/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+ERROR - 2024-12-02 04:29:59 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3 in /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/MySQLi/Connection.php(308): mysqli->query()
+#1 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Controllers/Home.php(774): CodeIgniter\Database\BaseBuilder->update()
+#5 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+#6 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+#7 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#8 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/index.php(57): CodeIgniter\Boot::bootWeb()
+#12 {main}
+CRITICAL - 2024-12-02 04:29:59 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3
+[Method: POST, Route: tech/permalinks]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Home.php(774): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-02 04:29:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Home.php(774): CodeIgniter\Database\BaseBuilder->update()
+ 5 APPPATH/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-02 04:29:59 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Home.php(774): CodeIgniter\Database\BaseBuilder->update()
+ 6 APPPATH/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+ERROR - 2024-12-02 04:30:00 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3 in /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/MySQLi/Connection.php(308): mysqli->query()
+#1 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Controllers/Home.php(774): CodeIgniter\Database\BaseBuilder->update()
+#5 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+#6 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+#7 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#8 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/index.php(57): CodeIgniter\Boot::bootWeb()
+#12 {main}
+CRITICAL - 2024-12-02 04:30:00 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3
+[Method: POST, Route: tech/permalinks]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Home.php(774): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-02 04:30:00 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Home.php(774): CodeIgniter\Database\BaseBuilder->update()
+ 5 APPPATH/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-02 04:30:00 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Home.php(774): CodeIgniter\Database\BaseBuilder->update()
+ 6 APPPATH/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+ERROR - 2024-12-02 04:30:13 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3 in /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/MySQLi/Connection.php(308): mysqli->query()
+#1 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Controllers/Home.php(774): CodeIgniter\Database\BaseBuilder->update()
+#5 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+#6 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+#7 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#8 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/index.php(57): CodeIgniter\Boot::bootWeb()
+#12 {main}
+CRITICAL - 2024-12-02 04:30:13 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3
+[Method: POST, Route: tech/permalinks]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Home.php(774): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-02 04:30:13 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Home.php(774): CodeIgniter\Database\BaseBuilder->update()
+ 5 APPPATH/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-02 04:30:13 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Home.php(774): CodeIgniter\Database\BaseBuilder->update()
+ 6 APPPATH/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+ERROR - 2024-12-02 04:30:14 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3 in /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/MySQLi/Connection.php(308): mysqli->query()
+#1 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Controllers/Home.php(774): CodeIgniter\Database\BaseBuilder->update()
+#5 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+#6 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+#7 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#8 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/index.php(57): CodeIgniter\Boot::bootWeb()
+#12 {main}
+CRITICAL - 2024-12-02 04:30:14 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3
+[Method: POST, Route: tech/permalinks]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Home.php(774): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-02 04:30:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Home.php(774): CodeIgniter\Database\BaseBuilder->update()
+ 5 APPPATH/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-02 04:30:14 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Home.php(774): CodeIgniter\Database\BaseBuilder->update()
+ 6 APPPATH/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+ERROR - 2024-12-02 04:30:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3 in /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/MySQLi/Connection.php(308): mysqli->query()
+#1 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Controllers/Home.php(774): CodeIgniter\Database\BaseBuilder->update()
+#5 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+#6 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+#7 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#8 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/index.php(57): CodeIgniter\Boot::bootWeb()
+#12 {main}
+CRITICAL - 2024-12-02 04:30:15 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3
+[Method: POST, Route: tech/permalinks]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Home.php(774): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-02 04:30:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Home.php(774): CodeIgniter\Database\BaseBuilder->update()
+ 5 APPPATH/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-02 04:30:15 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Home.php(774): CodeIgniter\Database\BaseBuilder->update()
+ 6 APPPATH/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+ERROR - 2024-12-02 04:30:17 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3 in /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/MySQLi/Connection.php(308): mysqli->query()
+#1 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Controllers/Home.php(774): CodeIgniter\Database\BaseBuilder->update()
+#5 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+#6 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+#7 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#8 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/index.php(57): CodeIgniter\Boot::bootWeb()
+#12 {main}
+CRITICAL - 2024-12-02 04:30:17 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3
+[Method: POST, Route: tech/permalinks]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Home.php(774): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-02 04:30:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Home.php(774): CodeIgniter\Database\BaseBuilder->update()
+ 5 APPPATH/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-02 04:30:17 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Home.php(774): CodeIgniter\Database\BaseBuilder->update()
+ 6 APPPATH/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-02 04:40:19 --> ErrorException: Undefined variable $session
+[Method: POST, Route: tech/permalinks]
+in APPPATH/Controllers/Home.php on line 776.
+ 1 APPPATH/Controllers/Home.php(776): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-02 04:40:39 --> ErrorException: Undefined property: App\Controllers\Home::$session
+[Method: POST, Route: tech/permalinks]
+in APPPATH/Controllers/Home.php on line 776.
+ 1 APPPATH/Controllers/Home.php(776): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-02 04:40:41 --> ErrorException: Undefined property: App\Controllers\Home::$session
+[Method: POST, Route: tech/permalinks]
+in APPPATH/Controllers/Home.php on line 776.
+ 1 APPPATH/Controllers/Home.php(776): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-02 04:41:00 --> ErrorException: Undefined property: App\Controllers\Home::$session
+[Method: POST, Route: tech/permalinks]
+in APPPATH/Controllers/Home.php on line 776.
+ 1 APPPATH/Controllers/Home.php(776): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-02 04:43:01 --> ErrorException: Undefined property: App\Controllers\Home::$session
+[Method: POST, Route: tech/permalinks]
+in APPPATH/Controllers/Home.php on line 776.
+ 1 APPPATH/Controllers/Home.php(776): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-02 04:43:14 --> ErrorException: Undefined variable $session
+[Method: POST, Route: tech/permalinks]
+in APPPATH/Controllers/Home.php on line 774.
+ 1 APPPATH/Controllers/Home.php(774): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Home.php(112): App\Controllers\Home->permalinks()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-02 04:44:00 --> ErrorException: Undefined variable $session
+[Method: POST, Route: tech/permalinks]
+in APPPATH/Controllers/Home.php on line 775.
+ 1 APPPATH/Controllers/Home.php(775): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Home.php(113): App\Controllers\Home->permalinks()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-02 04:44:05 --> ErrorException: Undefined variable $session
+[Method: POST, Route: tech/permalinks]
+in APPPATH/Controllers/Home.php on line 775.
+ 1 APPPATH/Controllers/Home.php(775): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Home.php(113): App\Controllers\Home->permalinks()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-02 04:44:55 --> ErrorException: Undefined variable $session
+[Method: POST, Route: tech/permalinks]
+in APPPATH/Controllers/Home.php on line 775.
+ 1 APPPATH/Controllers/Home.php(775): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Home.php(113): App\Controllers\Home->permalinks()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()

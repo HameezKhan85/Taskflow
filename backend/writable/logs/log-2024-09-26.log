@@ -1,0 +1,42 @@
+CRITICAL - 2024-09-26 06:15:59 --> ParseError: syntax error, unexpected token "echo"
+[Method: GET, Route: tech/galleries]
+in APPPATH/Views/gallery/galleries.php on line 81.
+ 1 SYSTEMPATH/View/View.php(234): include()
+ 2 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 4 APPPATH/Controllers/Home.php(597): view('page', [...])
+ 5 APPPATH/Controllers/Home.php(101): App\Controllers\Home->galleries()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('galleries')
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-26 06:16:13 --> ParseError: syntax error, unexpected token "echo"
+[Method: GET, Route: tech/galleries]
+in APPPATH/Views/gallery/galleries.php on line 81.
+ 1 SYSTEMPATH/View/View.php(234): include()
+ 2 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 4 APPPATH/Controllers/Home.php(597): view('page', [...])
+ 5 APPPATH/Controllers/Home.php(101): App\Controllers\Home->galleries()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('galleries')
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-26 09:34:35 --> ParseError: Unclosed '{' on line 175
+[Method: GET, Route: tech/galleries]
+in APPPATH/Views/includes/header.php on line 193.
+ 1 SYSTEMPATH/View/View.php(234): include()
+ 2 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 4 APPPATH/Controllers/Home.php(597): view('page', [...])
+ 5 APPPATH/Controllers/Home.php(101): App\Controllers\Home->galleries()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('galleries')
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

@@ -1,0 +1,552 @@
+ERROR - 2024-08-12 07:02:38 --> mysqli_sql_exception: Column 'feature' cannot be null in C:\xampp\htdocs\server\podcast\ci-admin\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `ep...', 0)
+#1 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ep...')
+#2 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ep...')
+#3 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ep...', Array, false)
+#4 C:\xampp\htdocs\server\podcast\ci-admin\app\Controllers\Home.php(224): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(933): App\Controllers\Home->insertmanage('episode')
+#6 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\server\podcast\ci-admin\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\server\podcast\ci-admin\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\server\podcast\ci-admin\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-08-12 07:02:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'feature' cannot be null
+[Method: POST, Route: save/episode]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`) VALUES (:title:, :slug:, :feature:, :season:, :author:, :enum:, :details:, :meta_title:, :meta_description:, :keywords:, :status:, :added_on:, :update_on:, :banner:)', [...], false)
+ 2 APPPATH\Controllers\Home.php(224): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('episode')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 07:02:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'feature' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`) VALUES (\'Bottle Neckers – A Perfect Marketing Technique\', \'bottle-neckers-a-perfect-marketing-technique\', NULL, \'4\', \'1\', \'5\', \'<p><span style=\\"color: rgb(46, 46, 46); font-family: &quot;Source Sans Pro&quot;, sans-serif; font-size: 16px;\\">While looking for a cost-effective, appealing, and durable mode, to leave an unforgettable experience on the nerves of customers, Bottle Neckers are the perfect choice for you to make. These bottle Neckers will never disappoint you as bottle Neckers can promote your product and brand most distinctively. Let’s get to know more about it in detail with our experts. In this podcast, we are going to discuss the topics mentioned below:</span><br></p>\', \'Bottle Neckers – A Perfect Marketing Technique\', \'Bottle Neckers – A Perfect Marketing Technique\', \'123\', \'1\', 1723446158, 1723446158, \'1723446158_c4fe083c4f53b8a6950e.jpg\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`) VALUES (\'Bottle Neckers – A Perfect Marketing Technique\', \'bottle-neckers-a-perfect-marketing-technique\', NULL, \'4\', \'1\', \'5\', \'<p><span style=\\"color: rgb(46, 46, 46); font-family: &quot;Source Sans Pro&quot;, sans-serif; font-size: 16px;\\">While looking for a cost-effective, appealing, and durable mode, to leave an unforgettable experience on the nerves of customers, Bottle Neckers are the perfect choice for you to make. These bottle Neckers will never disappoint you as bottle Neckers can promote your product and brand most distinctively. Let’s get to know more about it in detail with our experts. In this podcast, we are going to discuss the topics mentioned below:</span><br></p>\', \'Bottle Neckers – A Perfect Marketing Technique\', \'Bottle Neckers – A Perfect Marketing Technique\', \'123\', \'1\', 1723446158, 1723446158, \'1723446158_c4fe083c4f53b8a6950e.jpg\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`) VALUES (:title:, :slug:, :feature:, :season:, :author:, :enum:, :details:, :meta_title:, :meta_description:, :keywords:, :status:, :added_on:, :update_on:, :banner:)', [...], false)
+ 4 APPPATH\Controllers\Home.php(224): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('episode')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 07:02:38 --> [Caused by] mysqli_sql_exception: Column 'feature' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`) VALUES (\'Bottle Neckers – A Perfect Marketing Technique\', \'bottle-neckers-a-perfect-marketing-technique\', NULL, \'4\', \'1\', \'5\', \'<p><span style=\\"color: rgb(46, 46, 46); font-family: &quot;Source Sans Pro&quot;, sans-serif; font-size: 16px;\\">While looking for a cost-effective, appealing, and durable mode, to leave an unforgettable experience on the nerves of customers, Bottle Neckers are the perfect choice for you to make. These bottle Neckers will never disappoint you as bottle Neckers can promote your product and brand most distinctively. Let’s get to know more about it in detail with our experts. In this podcast, we are going to discuss the topics mentioned below:</span><br></p>\', \'Bottle Neckers – A Perfect Marketing Technique\', \'Bottle Neckers – A Perfect Marketing Technique\', \'123\', \'1\', 1723446158, 1723446158, \'1723446158_c4fe083c4f53b8a6950e.jpg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`) VALUES (\'Bottle Neckers – A Perfect Marketing Technique\', \'bottle-neckers-a-perfect-marketing-technique\', NULL, \'4\', \'1\', \'5\', \'<p><span style=\\"color: rgb(46, 46, 46); font-family: &quot;Source Sans Pro&quot;, sans-serif; font-size: 16px;\\">While looking for a cost-effective, appealing, and durable mode, to leave an unforgettable experience on the nerves of customers, Bottle Neckers are the perfect choice for you to make. These bottle Neckers will never disappoint you as bottle Neckers can promote your product and brand most distinctively. Let’s get to know more about it in detail with our experts. In this podcast, we are going to discuss the topics mentioned below:</span><br></p>\', \'Bottle Neckers – A Perfect Marketing Technique\', \'Bottle Neckers – A Perfect Marketing Technique\', \'123\', \'1\', 1723446158, 1723446158, \'1723446158_c4fe083c4f53b8a6950e.jpg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`) VALUES (\'Bottle Neckers – A Perfect Marketing Technique\', \'bottle-neckers-a-perfect-marketing-technique\', NULL, \'4\', \'1\', \'5\', \'<p><span style=\\"color: rgb(46, 46, 46); font-family: &quot;Source Sans Pro&quot;, sans-serif; font-size: 16px;\\">While looking for a cost-effective, appealing, and durable mode, to leave an unforgettable experience on the nerves of customers, Bottle Neckers are the perfect choice for you to make. These bottle Neckers will never disappoint you as bottle Neckers can promote your product and brand most distinctively. Let’s get to know more about it in detail with our experts. In this podcast, we are going to discuss the topics mentioned below:</span><br></p>\', \'Bottle Neckers – A Perfect Marketing Technique\', \'Bottle Neckers – A Perfect Marketing Technique\', \'123\', \'1\', 1723446158, 1723446158, \'1723446158_c4fe083c4f53b8a6950e.jpg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`) VALUES (:title:, :slug:, :feature:, :season:, :author:, :enum:, :details:, :meta_title:, :meta_description:, :keywords:, :status:, :added_on:, :update_on:, :banner:)', [...], false)
+ 5 APPPATH\Controllers\Home.php(224): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('episode')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-12 07:03:49 --> mysqli_sql_exception: Column 'feature' cannot be null in C:\xampp\htdocs\server\podcast\ci-admin\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `ep...', 0)
+#1 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ep...')
+#2 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ep...')
+#3 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ep...', Array, false)
+#4 C:\xampp\htdocs\server\podcast\ci-admin\app\Controllers\Home.php(224): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(933): App\Controllers\Home->insertmanage('episode')
+#6 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\server\podcast\ci-admin\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\server\podcast\ci-admin\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\server\podcast\ci-admin\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-08-12 07:03:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'feature' cannot be null
+[Method: POST, Route: save/episode]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`) VALUES (:title:, :slug:, :feature:, :season:, :author:, :enum:, :details:, :meta_title:, :meta_description:, :keywords:, :status:, :added_on:, :update_on:, :banner:)', [...], false)
+ 2 APPPATH\Controllers\Home.php(224): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('episode')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 07:03:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'feature' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`) VALUES (\'Bottle Neckers – A Perfect Marketing Technique\', \'\', NULL, \'4\', \'1\', \'5\', \'<p><span style=\\"color: rgb(46, 46, 46); font-family: &quot;Source Sans Pro&quot;, sans-serif; font-size: 16px;\\">While looking for a cost-effective, appealing, and durable mode, to leave an unforgettable experience on the nerves of customers, Bottle Neckers are the perfect choice for you to make. These bottle Neckers will never disappoint you as bottle Neckers can promote your product and brand most distinctively. Let’s get to know more about it in detail with our experts. In this podcast, we are going to discuss the topics mentioned below:</span><br></p>\', \'Bottle Neckers – A Perfect Marketing Technique\', \'Bottle Neckers – A Perfect Marketing Technique\', \'123\', \'1\', 1723446229, 1723446229, \'1723446229_ce60357bed573436d6e9.jpg\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`) VALUES (\'Bottle Neckers – A Perfect Marketing Technique\', \'\', NULL, \'4\', \'1\', \'5\', \'<p><span style=\\"color: rgb(46, 46, 46); font-family: &quot;Source Sans Pro&quot;, sans-serif; font-size: 16px;\\">While looking for a cost-effective, appealing, and durable mode, to leave an unforgettable experience on the nerves of customers, Bottle Neckers are the perfect choice for you to make. These bottle Neckers will never disappoint you as bottle Neckers can promote your product and brand most distinctively. Let’s get to know more about it in detail with our experts. In this podcast, we are going to discuss the topics mentioned below:</span><br></p>\', \'Bottle Neckers – A Perfect Marketing Technique\', \'Bottle Neckers – A Perfect Marketing Technique\', \'123\', \'1\', 1723446229, 1723446229, \'1723446229_ce60357bed573436d6e9.jpg\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`) VALUES (:title:, :slug:, :feature:, :season:, :author:, :enum:, :details:, :meta_title:, :meta_description:, :keywords:, :status:, :added_on:, :update_on:, :banner:)', [...], false)
+ 4 APPPATH\Controllers\Home.php(224): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('episode')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 07:03:49 --> [Caused by] mysqli_sql_exception: Column 'feature' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`) VALUES (\'Bottle Neckers – A Perfect Marketing Technique\', \'\', NULL, \'4\', \'1\', \'5\', \'<p><span style=\\"color: rgb(46, 46, 46); font-family: &quot;Source Sans Pro&quot;, sans-serif; font-size: 16px;\\">While looking for a cost-effective, appealing, and durable mode, to leave an unforgettable experience on the nerves of customers, Bottle Neckers are the perfect choice for you to make. These bottle Neckers will never disappoint you as bottle Neckers can promote your product and brand most distinctively. Let’s get to know more about it in detail with our experts. In this podcast, we are going to discuss the topics mentioned below:</span><br></p>\', \'Bottle Neckers – A Perfect Marketing Technique\', \'Bottle Neckers – A Perfect Marketing Technique\', \'123\', \'1\', 1723446229, 1723446229, \'1723446229_ce60357bed573436d6e9.jpg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`) VALUES (\'Bottle Neckers – A Perfect Marketing Technique\', \'\', NULL, \'4\', \'1\', \'5\', \'<p><span style=\\"color: rgb(46, 46, 46); font-family: &quot;Source Sans Pro&quot;, sans-serif; font-size: 16px;\\">While looking for a cost-effective, appealing, and durable mode, to leave an unforgettable experience on the nerves of customers, Bottle Neckers are the perfect choice for you to make. These bottle Neckers will never disappoint you as bottle Neckers can promote your product and brand most distinctively. Let’s get to know more about it in detail with our experts. In this podcast, we are going to discuss the topics mentioned below:</span><br></p>\', \'Bottle Neckers – A Perfect Marketing Technique\', \'Bottle Neckers – A Perfect Marketing Technique\', \'123\', \'1\', 1723446229, 1723446229, \'1723446229_ce60357bed573436d6e9.jpg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`) VALUES (\'Bottle Neckers – A Perfect Marketing Technique\', \'\', NULL, \'4\', \'1\', \'5\', \'<p><span style=\\"color: rgb(46, 46, 46); font-family: &quot;Source Sans Pro&quot;, sans-serif; font-size: 16px;\\">While looking for a cost-effective, appealing, and durable mode, to leave an unforgettable experience on the nerves of customers, Bottle Neckers are the perfect choice for you to make. These bottle Neckers will never disappoint you as bottle Neckers can promote your product and brand most distinctively. Let’s get to know more about it in detail with our experts. In this podcast, we are going to discuss the topics mentioned below:</span><br></p>\', \'Bottle Neckers – A Perfect Marketing Technique\', \'Bottle Neckers – A Perfect Marketing Technique\', \'123\', \'1\', 1723446229, 1723446229, \'1723446229_ce60357bed573436d6e9.jpg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`) VALUES (:title:, :slug:, :feature:, :season:, :author:, :enum:, :details:, :meta_title:, :meta_description:, :keywords:, :status:, :added_on:, :update_on:, :banner:)', [...], false)
+ 5 APPPATH\Controllers\Home.php(224): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('episode')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-12 07:06:01 --> mysqli_sql_exception: Column 'status' cannot be null in C:\xampp\htdocs\server\podcast\ci-admin\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `ep...', 0)
+#1 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ep...')
+#2 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ep...')
+#3 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ep...', Array, false)
+#4 C:\xampp\htdocs\server\podcast\ci-admin\app\Controllers\Home.php(224): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(933): App\Controllers\Home->insertmanage('episode')
+#6 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\server\podcast\ci-admin\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\server\podcast\ci-admin\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\server\podcast\ci-admin\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-08-12 07:06:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'status' cannot be null
+[Method: POST, Route: save/episode]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`, `audio`) VALUES (:title:, :slug:, :feature:, :season:, :author:, :enum:, :details:, :meta_title:, :meta_description:, :keywords:, :status:, :added_on:, :update_on:, :banner:, :audio:)', [...], false)
+ 2 APPPATH\Controllers\Home.php(224): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('episode')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 07:06:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'status' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`, `audio`) VALUES (\'Custom Boxes 29 November 2022 Child Resistant Box Packaging – Key Components of CR Packaging & Regulations\', \'custom-boxes-29-november-2022-child-resistant-box-packaging-key-components-of-cr-packaging-regulations\', \'on\', \'4\', \'1\', \'10\', \'<p><span style=\\"color: rgb(46, 46, 46); font-family: &quot;Source Sans Pro&quot;, sans-serif; font-size: 16px;\\">A child-resistant box packaging is specially made to protect medicines and harmful chemicals from children. The packaging is made on the professional standards set by the health regulatory authorities which makes packaging very hard to open for kids. This way children are protected from the adverse effects of medicines through the packaging and the medicines can be used at home without any worries.</span><br style=\\"font-size: 16px; scroll-behavior: smooth; color: rgb(46, 46, 46); font-family: &quot;Source Sans Pro&quot;, sans-serif;\\"><span style=\\"color: rgb(46, 46, 46); font-family: &quot;Source Sans Pro&quot;, sans-serif; font-size: 16px;\\">The opening mechanism of child-resistant packaging is specially designed in a difficult format that is very hard and impossible for kids to open. The packaging involves different threshold pressures and cap movements that are hard for kids to open.</span><br style=\\"font-size: 16px; scroll-behavior: smooth; color: rgb(46, 46, 46); font-family: &quot;Source Sans Pro&quot;, sans-serif;\\"><span style=\\"font-size: 16px; font-weight: bolder; scroll-behavior: smooth; color: rgb(46, 46, 46); font-family: &quot;Source Sans Pro&quot;, sans-serif;\\">In this podcast, we will discuss child-resistant box packaging, its key components, and regulations.</span><br></p>\', \'\', \'\', \'\', NULL, 1723446361, 1723446361, \'1723446361_1703c1f46cc73f345336.jpg\', \'1723446361_465c41dfe70992ab9883.mp3\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`, `audio`) VALUES (\'Custom Boxes 29 November 2022 Child Resistant Box Packaging – Key Components of CR Packaging & Regulations\', \'custom-boxes-29-november-2022-child-resistant-box-packaging-key-components-of-cr-packaging-regulations\', \'on\', \'4\', \'1\', \'10\', \'<p><span style=\\"color: rgb(46, 46, 46); font-family: &quot;Source Sans Pro&quot;, sans-serif; font-size: 16px;\\">A child-resistant box packaging is specially made to protect medicines and harmful chemicals from children. The packaging is made on the professional standards set by the health regulatory authorities which makes packaging very hard to open for kids. This way children are protected from the adverse effects of medicines through the packaging and the medicines can be used at home without any worries.</span><br style=\\"font-size: 16px; scroll-behavior: smooth; color: rgb(46, 46, 46); font-family: &quot;Source Sans Pro&quot;, sans-serif;\\"><span style=\\"color: rgb(46, 46, 46); font-family: &quot;Source Sans Pro&quot;, sans-serif; font-size: 16px;\\">The opening mechanism of child-resistant packaging is specially designed in a difficult format that is very hard and impossible for kids to open. The packaging involves different threshold pressures and cap movements that are hard for kids to open.</span><br style=\\"font-size: 16px; scroll-behavior: smooth; color: rgb(46, 46, 46); font-family: &quot;Source Sans Pro&quot;, sans-serif;\\"><span style=\\"font-size: 16px; font-weight: bolder; scroll-behavior: smooth; color: rgb(46, 46, 46); font-family: &quot;Source Sans Pro&quot;, sans-serif;\\">In this podcast, we will discuss child-resistant box packaging, its key components, and regulations.</span><br></p>\', \'\', \'\', \'\', NULL, 1723446361, 1723446361, \'1723446361_1703c1f46cc73f345336.jpg\', \'1723446361_465c41dfe70992ab9883.mp3\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`, `audio`) VALUES (:title:, :slug:, :feature:, :season:, :author:, :enum:, :details:, :meta_title:, :meta_description:, :keywords:, :status:, :added_on:, :update_on:, :banner:, :audio:)', [...], false)
+ 4 APPPATH\Controllers\Home.php(224): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('episode')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 07:06:01 --> [Caused by] mysqli_sql_exception: Column 'status' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`, `audio`) VALUES (\'Custom Boxes 29 November 2022 Child Resistant Box Packaging – Key Components of CR Packaging & Regulations\', \'custom-boxes-29-november-2022-child-resistant-box-packaging-key-components-of-cr-packaging-regulations\', \'on\', \'4\', \'1\', \'10\', \'<p><span style=\\"color: rgb(46, 46, 46); font-family: &quot;Source Sans Pro&quot;, sans-serif; font-size: 16px;\\">A child-resistant box packaging is specially made to protect medicines and harmful chemicals from children. The packaging is made on the professional standards set by the health regulatory authorities which makes packaging very hard to open for kids. This way children are protected from the adverse effects of medicines through the packaging and the medicines can be used at home without any worries.</span><br style=\\"font-size: 16px; scroll-behavior: smooth; color: rgb(46, 46, 46); font-family: &quot;Source Sans Pro&quot;, sans-serif;\\"><span style=\\"color: rgb(46, 46, 46); font-family: &quot;Source Sans Pro&quot;, sans-serif; font-size: 16px;\\">The opening mechanism of child-resistant packaging is specially designed in a difficult format that is very hard and impossible for kids to open. The packaging involves different threshold pressures and cap movements that are hard for kids to open.</span><br style=\\"font-size: 16px; scroll-behavior: smooth; color: rgb(46, 46, 46); font-family: &quot;Source Sans Pro&quot;, sans-serif;\\"><span style=\\"font-size: 16px; font-weight: bolder; scroll-behavior: smooth; color: rgb(46, 46, 46); font-family: &quot;Source Sans Pro&quot;, sans-serif;\\">In this podcast, we will discuss child-resistant box packaging, its key components, and regulations.</span><br></p>\', \'\', \'\', \'\', NULL, 1723446361, 1723446361, \'1723446361_1703c1f46cc73f345336.jpg\', \'1723446361_465c41dfe70992ab9883.mp3\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`, `audio`) VALUES (\'Custom Boxes 29 November 2022 Child Resistant Box Packaging – Key Components of CR Packaging & Regulations\', \'custom-boxes-29-november-2022-child-resistant-box-packaging-key-components-of-cr-packaging-regulations\', \'on\', \'4\', \'1\', \'10\', \'<p><span style=\\"color: rgb(46, 46, 46); font-family: &quot;Source Sans Pro&quot;, sans-serif; font-size: 16px;\\">A child-resistant box packaging is specially made to protect medicines and harmful chemicals from children. The packaging is made on the professional standards set by the health regulatory authorities which makes packaging very hard to open for kids. This way children are protected from the adverse effects of medicines through the packaging and the medicines can be used at home without any worries.</span><br style=\\"font-size: 16px; scroll-behavior: smooth; color: rgb(46, 46, 46); font-family: &quot;Source Sans Pro&quot;, sans-serif;\\"><span style=\\"color: rgb(46, 46, 46); font-family: &quot;Source Sans Pro&quot;, sans-serif; font-size: 16px;\\">The opening mechanism of child-resistant packaging is specially designed in a difficult format that is very hard and impossible for kids to open. The packaging involves different threshold pressures and cap movements that are hard for kids to open.</span><br style=\\"font-size: 16px; scroll-behavior: smooth; color: rgb(46, 46, 46); font-family: &quot;Source Sans Pro&quot;, sans-serif;\\"><span style=\\"font-size: 16px; font-weight: bolder; scroll-behavior: smooth; color: rgb(46, 46, 46); font-family: &quot;Source Sans Pro&quot;, sans-serif;\\">In this podcast, we will discuss child-resistant box packaging, its key components, and regulations.</span><br></p>\', \'\', \'\', \'\', NULL, 1723446361, 1723446361, \'1723446361_1703c1f46cc73f345336.jpg\', \'1723446361_465c41dfe70992ab9883.mp3\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`, `audio`) VALUES (\'Custom Boxes 29 November 2022 Child Resistant Box Packaging – Key Components of CR Packaging & Regulations\', \'custom-boxes-29-november-2022-child-resistant-box-packaging-key-components-of-cr-packaging-regulations\', \'on\', \'4\', \'1\', \'10\', \'<p><span style=\\"color: rgb(46, 46, 46); font-family: &quot;Source Sans Pro&quot;, sans-serif; font-size: 16px;\\">A child-resistant box packaging is specially made to protect medicines and harmful chemicals from children. The packaging is made on the professional standards set by the health regulatory authorities which makes packaging very hard to open for kids. This way children are protected from the adverse effects of medicines through the packaging and the medicines can be used at home without any worries.</span><br style=\\"font-size: 16px; scroll-behavior: smooth; color: rgb(46, 46, 46); font-family: &quot;Source Sans Pro&quot;, sans-serif;\\"><span style=\\"color: rgb(46, 46, 46); font-family: &quot;Source Sans Pro&quot;, sans-serif; font-size: 16px;\\">The opening mechanism of child-resistant packaging is specially designed in a difficult format that is very hard and impossible for kids to open. The packaging involves different threshold pressures and cap movements that are hard for kids to open.</span><br style=\\"font-size: 16px; scroll-behavior: smooth; color: rgb(46, 46, 46); font-family: &quot;Source Sans Pro&quot;, sans-serif;\\"><span style=\\"font-size: 16px; font-weight: bolder; scroll-behavior: smooth; color: rgb(46, 46, 46); font-family: &quot;Source Sans Pro&quot;, sans-serif;\\">In this podcast, we will discuss child-resistant box packaging, its key components, and regulations.</span><br></p>\', \'\', \'\', \'\', NULL, 1723446361, 1723446361, \'1723446361_1703c1f46cc73f345336.jpg\', \'1723446361_465c41dfe70992ab9883.mp3\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`, `audio`) VALUES (:title:, :slug:, :feature:, :season:, :author:, :enum:, :details:, :meta_title:, :meta_description:, :keywords:, :status:, :added_on:, :update_on:, :banner:, :audio:)', [...], false)
+ 5 APPPATH\Controllers\Home.php(224): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('episode')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-12 07:08:39 --> mysqli_sql_exception: Column 'feature' cannot be null in C:\xampp\htdocs\server\podcast\ci-admin\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `ep...', 0)
+#1 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ep...')
+#2 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ep...')
+#3 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ep...', Array, false)
+#4 C:\xampp\htdocs\server\podcast\ci-admin\app\Controllers\Home.php(224): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(933): App\Controllers\Home->insertmanage('episode')
+#6 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\server\podcast\ci-admin\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\server\podcast\ci-admin\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\server\podcast\ci-admin\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-08-12 07:08:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'feature' cannot be null
+[Method: POST, Route: save/episode]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`, `audio`) VALUES (:title:, :slug:, :feature:, :season:, :author:, :enum:, :details:, :meta_title:, :meta_description:, :keywords:, :status:, :added_on:, :update_on:, :banner:, :audio:)', [...], false)
+ 2 APPPATH\Controllers\Home.php(224): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('episode')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 07:08:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'feature' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`, `audio`) VALUES (\'Why Window Box Packaging is The Best Way to Showcase The Product?\', \'why-window-box-packaging-is-the-best-way-to-showcase-the-product\', NULL, \'4\', \'1\', \'2\', \'\', \'\', \'\', \'\', \'1\', 1723446519, 1723446519, \'1723446519_8fd0a169a4bf6df745fe.png\', \'1723446519_4559c23384870f5e72ac.mp3\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`, `audio`) VALUES (\'Why Window Box Packaging is The Best Way to Showcase The Product?\', \'why-window-box-packaging-is-the-best-way-to-showcase-the-product\', NULL, \'4\', \'1\', \'2\', \'\', \'\', \'\', \'\', \'1\', 1723446519, 1723446519, \'1723446519_8fd0a169a4bf6df745fe.png\', \'1723446519_4559c23384870f5e72ac.mp3\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`, `audio`) VALUES (:title:, :slug:, :feature:, :season:, :author:, :enum:, :details:, :meta_title:, :meta_description:, :keywords:, :status:, :added_on:, :update_on:, :banner:, :audio:)', [...], false)
+ 4 APPPATH\Controllers\Home.php(224): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('episode')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 07:08:39 --> [Caused by] mysqli_sql_exception: Column 'feature' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`, `audio`) VALUES (\'Why Window Box Packaging is The Best Way to Showcase The Product?\', \'why-window-box-packaging-is-the-best-way-to-showcase-the-product\', NULL, \'4\', \'1\', \'2\', \'\', \'\', \'\', \'\', \'1\', 1723446519, 1723446519, \'1723446519_8fd0a169a4bf6df745fe.png\', \'1723446519_4559c23384870f5e72ac.mp3\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`, `audio`) VALUES (\'Why Window Box Packaging is The Best Way to Showcase The Product?\', \'why-window-box-packaging-is-the-best-way-to-showcase-the-product\', NULL, \'4\', \'1\', \'2\', \'\', \'\', \'\', \'\', \'1\', 1723446519, 1723446519, \'1723446519_8fd0a169a4bf6df745fe.png\', \'1723446519_4559c23384870f5e72ac.mp3\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`, `audio`) VALUES (\'Why Window Box Packaging is The Best Way to Showcase The Product?\', \'why-window-box-packaging-is-the-best-way-to-showcase-the-product\', NULL, \'4\', \'1\', \'2\', \'\', \'\', \'\', \'\', \'1\', 1723446519, 1723446519, \'1723446519_8fd0a169a4bf6df745fe.png\', \'1723446519_4559c23384870f5e72ac.mp3\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`, `audio`) VALUES (:title:, :slug:, :feature:, :season:, :author:, :enum:, :details:, :meta_title:, :meta_description:, :keywords:, :status:, :added_on:, :update_on:, :banner:, :audio:)', [...], false)
+ 5 APPPATH\Controllers\Home.php(224): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('episode')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 09:40:49 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+[Method: GET, Route: episodes/all]
+in APPPATH\Controllers\Home.php on line 160.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-12 09:40:49 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+[Method: GET, Route: editseasons/5]
+in APPPATH\Controllers\Home.php on line 160.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-12 09:40:53 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+[Method: GET, Route: season/all]
+in APPPATH\Controllers\Home.php on line 160.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-12 09:40:55 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 160.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-12 09:40:57 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 160.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-12 09:41:15 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+[Method: GET, Route: season/all]
+in APPPATH\Controllers\Home.php on line 162.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-12 09:41:18 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 162.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-12 09:41:20 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 162.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-12 09:44:01 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 162.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-12 09:52:03 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 162.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-12 09:55:48 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 162.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-12 10:01:03 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 162.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-12 10:05:38 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 162.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-12 10:26:46 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 162.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-12 10:26:49 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 162.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-12 10:37:53 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 162.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-12 10:45:01 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 162.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-12 11:02:07 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 162.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-12 11:04:15 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 161.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-12 11:04:37 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 161.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-08-12 11:46:16 --> mysqli_sql_exception: Column 'feature' cannot be null in C:\xampp\htdocs\server\podcast\ci-admin\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `ep...', 0)
+#1 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ep...')
+#2 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ep...')
+#3 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ep...', Array, false)
+#4 C:\xampp\htdocs\server\podcast\ci-admin\app\Controllers\Home.php(232): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(933): App\Controllers\Home->insertmanage('episode')
+#6 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\server\podcast\ci-admin\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\server\podcast\ci-admin\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\server\podcast\ci-admin\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-08-12 11:46:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'feature' cannot be null
+[Method: POST, Route: save/episode]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`, `thumbnail`, `audio`) VALUES (:title:, :slug:, :feature:, :season:, :author:, :enum:, :details:, :meta_title:, :meta_description:, :keywords:, :status:, :added_on:, :update_on:, :banner:, :thumbnail:, :audio:)', [...], false)
+ 2 APPPATH\Controllers\Home.php(232): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('episode')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 11:46:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'feature' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`, `thumbnail`, `audio`) VALUES (\'test\', \'test\', NULL, \'2\', \'2\', \'45\', \'\', \'\', \'\', \'\', NULL, 1723463176, 1723463176, \'1723463176_036a74cd6b99e5da92be.png\', \'1723463176_15066b08b9c0e1be2a2c.webp\', \'1723463176_4814a2b23ba57eec544e.mp3\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`, `thumbnail`, `audio`) VALUES (\'test\', \'test\', NULL, \'2\', \'2\', \'45\', \'\', \'\', \'\', \'\', NULL, 1723463176, 1723463176, \'1723463176_036a74cd6b99e5da92be.png\', \'1723463176_15066b08b9c0e1be2a2c.webp\', \'1723463176_4814a2b23ba57eec544e.mp3\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`, `thumbnail`, `audio`) VALUES (:title:, :slug:, :feature:, :season:, :author:, :enum:, :details:, :meta_title:, :meta_description:, :keywords:, :status:, :added_on:, :update_on:, :banner:, :thumbnail:, :audio:)', [...], false)
+ 4 APPPATH\Controllers\Home.php(232): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('episode')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 11:46:16 --> [Caused by] mysqli_sql_exception: Column 'feature' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`, `thumbnail`, `audio`) VALUES (\'test\', \'test\', NULL, \'2\', \'2\', \'45\', \'\', \'\', \'\', \'\', NULL, 1723463176, 1723463176, \'1723463176_036a74cd6b99e5da92be.png\', \'1723463176_15066b08b9c0e1be2a2c.webp\', \'1723463176_4814a2b23ba57eec544e.mp3\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`, `thumbnail`, `audio`) VALUES (\'test\', \'test\', NULL, \'2\', \'2\', \'45\', \'\', \'\', \'\', \'\', NULL, 1723463176, 1723463176, \'1723463176_036a74cd6b99e5da92be.png\', \'1723463176_15066b08b9c0e1be2a2c.webp\', \'1723463176_4814a2b23ba57eec544e.mp3\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`, `thumbnail`, `audio`) VALUES (\'test\', \'test\', NULL, \'2\', \'2\', \'45\', \'\', \'\', \'\', \'\', NULL, 1723463176, 1723463176, \'1723463176_036a74cd6b99e5da92be.png\', \'1723463176_15066b08b9c0e1be2a2c.webp\', \'1723463176_4814a2b23ba57eec544e.mp3\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`, `thumbnail`, `audio`) VALUES (:title:, :slug:, :feature:, :season:, :author:, :enum:, :details:, :meta_title:, :meta_description:, :keywords:, :status:, :added_on:, :update_on:, :banner:, :thumbnail:, :audio:)', [...], false)
+ 5 APPPATH\Controllers\Home.php(232): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('episode')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 11:48:18 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+[Method: POST, Route: save/episode]
+in APPPATH\Controllers\Home.php on line 192.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-12 11:48:21 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+[Method: GET, Route: save/episode]
+in APPPATH\Controllers\Home.php on line 192.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-12 11:48:31 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+[Method: GET, Route: editseasons/5]
+in APPPATH\Controllers\Home.php on line 192.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-12 11:48:33 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+[Method: GET, Route: editseasons/5]
+in APPPATH\Controllers\Home.php on line 192.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-12 11:48:35 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+[Method: GET, Route: season/all]
+in APPPATH\Controllers\Home.php on line 192.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-12 11:48:36 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+[Method: GET, Route: season/all]
+in APPPATH\Controllers\Home.php on line 192.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-12 11:48:44 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+[Method: GET, Route: season/all]
+in APPPATH\Controllers\Home.php on line 192.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-12 11:48:58 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+[Method: GET, Route: save/episode]
+in APPPATH\Controllers\Home.php on line 195.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-12 11:49:08 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+[Method: GET, Route: season/all]
+in APPPATH\Controllers\Home.php on line 195.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-12 11:49:10 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+[Method: GET, Route: season/all]
+in APPPATH\Controllers\Home.php on line 195.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-12 11:49:10 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+[Method: GET, Route: save/episode]
+in APPPATH\Controllers\Home.php on line 195.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-12 11:49:12 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+[Method: GET, Route: season/all]
+in APPPATH\Controllers\Home.php on line 195.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-12 11:49:16 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+[Method: GET, Route: save/episode]
+in APPPATH\Controllers\Home.php on line 195.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-08-12 11:49:26 --> mysqli_sql_exception: Column 'title' cannot be null in C:\xampp\htdocs\server\podcast\ci-admin\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `ep...', 0)
+#1 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ep...')
+#2 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ep...')
+#3 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ep...', Array, false)
+#4 C:\xampp\htdocs\server\podcast\ci-admin\app\Controllers\Home.php(237): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(933): App\Controllers\Home->insertmanage('episode')
+#6 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\server\podcast\ci-admin\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\server\podcast\ci-admin\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\server\podcast\ci-admin\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-08-12 11:49:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'title' cannot be null
+[Method: GET, Route: save/episode]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`) VALUES (:title:, :slug:, :feature:, :season:, :author:, :enum:, :details:, :meta_title:, :meta_description:, :keywords:, :status:, :added_on:, :update_on:)', [...], false)
+ 2 APPPATH\Controllers\Home.php(237): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('episode')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 11:49:26 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'title' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`) VALUES (NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1723463366, 1723463366)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`) VALUES (NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1723463366, 1723463366)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`) VALUES (:title:, :slug:, :feature:, :season:, :author:, :enum:, :details:, :meta_title:, :meta_description:, :keywords:, :status:, :added_on:, :update_on:)', [...], false)
+ 4 APPPATH\Controllers\Home.php(237): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('episode')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 11:49:26 --> [Caused by] mysqli_sql_exception: Column 'title' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`) VALUES (NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1723463366, 1723463366)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`) VALUES (NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1723463366, 1723463366)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`) VALUES (NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1723463366, 1723463366)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`) VALUES (:title:, :slug:, :feature:, :season:, :author:, :enum:, :details:, :meta_title:, :meta_description:, :keywords:, :status:, :added_on:, :update_on:)', [...], false)
+ 5 APPPATH\Controllers\Home.php(237): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('episode')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-12 11:50:31 --> mysqli_sql_exception: Column 'status' cannot be null in C:\xampp\htdocs\server\podcast\ci-admin\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `ep...', 0)
+#1 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ep...')
+#2 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ep...')
+#3 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ep...', Array, false)
+#4 C:\xampp\htdocs\server\podcast\ci-admin\app\Controllers\Home.php(237): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(933): App\Controllers\Home->insertmanage('episode')
+#6 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\server\podcast\ci-admin\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\server\podcast\ci-admin\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\server\podcast\ci-admin\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-08-12 11:50:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'status' cannot be null
+[Method: POST, Route: save/episode]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`, `thumbnail`, `audio`) VALUES (:title:, :slug:, :feature:, :season:, :author:, :enum:, :details:, :meta_title:, :meta_description:, :keywords:, :status:, :added_on:, :update_on:, :banner:, :thumbnail:, :audio:)', [...], false)
+ 2 APPPATH\Controllers\Home.php(237): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('episode')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 11:50:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'status' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`, `thumbnail`, `audio`) VALUES (\'test\', \'test\', 0, \'6\', \'2\', \'343\', \'<p>test</p>\', \'\', \'\', \'\', NULL, 1723463431, 1723463431, \'1723463431_ee4e1d7ee2ce0b8488ae.png\', \'1723463431_fe659eccbb2cc2d0554d.webp\', \'1723463431_b600c6a332a28a4978ae.mp3\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`, `thumbnail`, `audio`) VALUES (\'test\', \'test\', 0, \'6\', \'2\', \'343\', \'<p>test</p>\', \'\', \'\', \'\', NULL, 1723463431, 1723463431, \'1723463431_ee4e1d7ee2ce0b8488ae.png\', \'1723463431_fe659eccbb2cc2d0554d.webp\', \'1723463431_b600c6a332a28a4978ae.mp3\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`, `thumbnail`, `audio`) VALUES (:title:, :slug:, :feature:, :season:, :author:, :enum:, :details:, :meta_title:, :meta_description:, :keywords:, :status:, :added_on:, :update_on:, :banner:, :thumbnail:, :audio:)', [...], false)
+ 4 APPPATH\Controllers\Home.php(237): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('episode')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 11:50:31 --> [Caused by] mysqli_sql_exception: Column 'status' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`, `thumbnail`, `audio`) VALUES (\'test\', \'test\', 0, \'6\', \'2\', \'343\', \'<p>test</p>\', \'\', \'\', \'\', NULL, 1723463431, 1723463431, \'1723463431_ee4e1d7ee2ce0b8488ae.png\', \'1723463431_fe659eccbb2cc2d0554d.webp\', \'1723463431_b600c6a332a28a4978ae.mp3\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`, `thumbnail`, `audio`) VALUES (\'test\', \'test\', 0, \'6\', \'2\', \'343\', \'<p>test</p>\', \'\', \'\', \'\', NULL, 1723463431, 1723463431, \'1723463431_ee4e1d7ee2ce0b8488ae.png\', \'1723463431_fe659eccbb2cc2d0554d.webp\', \'1723463431_b600c6a332a28a4978ae.mp3\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`, `thumbnail`, `audio`) VALUES (\'test\', \'test\', 0, \'6\', \'2\', \'343\', \'<p>test</p>\', \'\', \'\', \'\', NULL, 1723463431, 1723463431, \'1723463431_ee4e1d7ee2ce0b8488ae.png\', \'1723463431_fe659eccbb2cc2d0554d.webp\', \'1723463431_b600c6a332a28a4978ae.mp3\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`, `thumbnail`, `audio`) VALUES (:title:, :slug:, :feature:, :season:, :author:, :enum:, :details:, :meta_title:, :meta_description:, :keywords:, :status:, :added_on:, :update_on:, :banner:, :thumbnail:, :audio:)', [...], false)
+ 5 APPPATH\Controllers\Home.php(237): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('episode')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 13:16:52 --> ErrorException: Undefined array key 3
+[Method: POST, Route: getajax]
+in APPPATH\Controllers\Home.php on line 450.
+ 1 APPPATH\Controllers\Home.php(450): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 3', 'C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Controllers\\Home.php', 450)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 13:17:23 --> ErrorException: Undefined array key 3
+[Method: POST, Route: getajax]
+in APPPATH\Controllers\Home.php on line 450.
+ 1 APPPATH\Controllers\Home.php(450): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 3', 'C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Controllers\\Home.php', 450)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 13:17:25 --> ErrorException: Undefined array key 3
+[Method: POST, Route: getajax]
+in APPPATH\Controllers\Home.php on line 450.
+ 1 APPPATH\Controllers\Home.php(450): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 3', 'C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Controllers\\Home.php', 450)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 13:17:41 --> ErrorException: Undefined array key 6
+[Method: POST, Route: getajax]
+in APPPATH\Controllers\Home.php on line 450.
+ 1 APPPATH\Controllers\Home.php(450): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 6', 'C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Controllers\\Home.php', 450)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 13:17:44 --> ErrorException: Undefined array key 5
+[Method: POST, Route: getajax]
+in APPPATH\Controllers\Home.php on line 450.
+ 1 APPPATH\Controllers\Home.php(450): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 5', 'C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Controllers\\Home.php', 450)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 13:17:46 --> ErrorException: Undefined array key 6
+[Method: POST, Route: getajax]
+in APPPATH\Controllers\Home.php on line 450.
+ 1 APPPATH\Controllers\Home.php(450): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 6', 'C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Controllers\\Home.php', 450)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 13:17:47 --> ErrorException: Undefined array key 7
+[Method: POST, Route: getajax]
+in APPPATH\Controllers\Home.php on line 450.
+ 1 APPPATH\Controllers\Home.php(450): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 7', 'C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Controllers\\Home.php', 450)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

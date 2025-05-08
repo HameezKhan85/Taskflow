@@ -1,0 +1,691 @@
+CRITICAL - 2024-09-19 04:48:19 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Result::row_array()
+[Method: POST, Route: tech/editproduct/5]
+in APPPATH/Controllers/Home.php on line 309.
+ 1 APPPATH/Controllers/Home.php(102): App\Controllers\Home->insert_custom_fields_values('5')
+ 2 APPPATH/Controllers/Home.php(60): App\Controllers\Home->editproduct()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editproduct', '5')
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-19 04:49:30 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::insert()
+[Method: POST, Route: tech/editproduct/5]
+in APPPATH/Controllers/Home.php on line 317.
+ 1 APPPATH/Controllers/Home.php(102): App\Controllers\Home->insert_custom_fields_values('5')
+ 2 APPPATH/Controllers/Home.php(60): App\Controllers\Home->editproduct()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editproduct', '5')
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-19 04:51:02 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+[Method: POST, Route: tech/editproduct/5]
+in APPPATH/Controllers/Home.php on line 384.
+ 1 APPPATH/Controllers/Home.php(100): App\Controllers\Home->update_custom_fields_values()
+ 2 APPPATH/Controllers/Home.php(60): App\Controllers\Home->editproduct()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editproduct', '5')
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-19 05:20:29 --> ErrorException: Undefined variable $item_id
+[Method: POST, Route: tech/addproduct]
+in APPPATH/Controllers/Home.php on line 141.
+ 1 APPPATH/Controllers/Home.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item_id', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 141)
+ 2 APPPATH/Controllers/Home.php(63): App\Controllers\Home->addproduct()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('addproduct')
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-19 05:49:20 --> ErrorException: Undefined variable $fileclass
+[Method: GET, Route: tech/editproduct/7]
+in APPPATH/Views/includes/edit_field_values.php on line 87.
+ 1 APPPATH/Views/includes/edit_field_values.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fileclass', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/includes/edit_field_values.php', 87)
+ 2 APPPATH/Views/products/editproduct.php(61): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/includes/edit_field_values.php')
+ 3 APPPATH/Views/page.php(3): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/products/editproduct.php')
+ 4 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 5 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 7 APPPATH/Controllers/Home.php(111): view('page', [...])
+ 8 APPPATH/Controllers/Home.php(60): App\Controllers\Home->editproduct()
+ 9 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editproduct', '7')
+10 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-19 05:56:21 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+[Method: POST, Route: tech/editproduct/8]
+in APPPATH/Controllers/Home.php on line 376.
+ 1 APPPATH/Controllers/Home.php(100): App\Controllers\Home->update_custom_fields_values()
+ 2 APPPATH/Controllers/Home.php(60): App\Controllers\Home->editproduct()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editproduct', '8')
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-19 06:00:45 --> ParseError: syntax error, unexpected token "}"
+[Method: POST, Route: tech/editproduct/8]
+in APPPATH/Controllers/Home.php on line 377.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH/CodeIgniter.php(887): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-19 06:00:46 --> ParseError: syntax error, unexpected token "}"
+[Method: GET, Route: tech/editproduct/8]
+in APPPATH/Controllers/Home.php on line 377.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH/CodeIgniter.php(887): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-19 06:00:52 --> ParseError: syntax error, unexpected token "}"
+[Method: GET, Route: tech/editproduct/7]
+in APPPATH/Controllers/Home.php on line 377.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH/CodeIgniter.php(887): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-19 06:07:32 --> mysqli_sql_exception: Subquery returns more than 1 row in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php(308): mysqli->query('SELECT id,displ...', 0)
+#1 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id,displ...')
+#2 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id,displ...')
+#3 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Models/HomeModel.php(74): CodeIgniter\Database\BaseConnection->query('SELECT id,displ...')
+#4 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(73): App\Models\HomeModel->get_custom_fields_values('product', '7')
+#5 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(60): App\Controllers\Home->editproduct()
+#6 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editproduct', '7')
+#7 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-09-19 06:07:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Subquery returns more than 1 row
+[Method: GET, Route: tech/editproduct/7]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 APPPATH/Models/HomeModel.php(74): CodeIgniter\Database\BaseConnection->query('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value_id FROM `custom_fields` where FIND_IN_SET(\'product\',display) and status = 1 ORDER BY position ASC')
+ 2 APPPATH/Controllers/Home.php(73): App\Models\HomeModel->get_custom_fields_values('product', '7')
+ 3 APPPATH/Controllers/Home.php(60): App\Controllers\Home->editproduct()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editproduct', '7')
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-19 06:07:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Subquery returns more than 1 row
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value_id FROM `custom_fields` where FIND_IN_SET(\'product\',display) and status = 1 ORDER BY position ASC')
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value_id FROM `custom_fields` where FIND_IN_SET(\'product\',display) and status = 1 ORDER BY position ASC')
+ 3 APPPATH/Models/HomeModel.php(74): CodeIgniter\Database\BaseConnection->query('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value_id FROM `custom_fields` where FIND_IN_SET(\'product\',display) and status = 1 ORDER BY position ASC')
+ 4 APPPATH/Controllers/Home.php(73): App\Models\HomeModel->get_custom_fields_values('product', '7')
+ 5 APPPATH/Controllers/Home.php(60): App\Controllers\Home->editproduct()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editproduct', '7')
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-19 06:07:32 --> [Caused by] mysqli_sql_exception: Subquery returns more than 1 row
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value_id FROM `custom_fields` where FIND_IN_SET(\'product\',display) and status = 1 ORDER BY position ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value_id FROM `custom_fields` where FIND_IN_SET(\'product\',display) and status = 1 ORDER BY position ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value_id FROM `custom_fields` where FIND_IN_SET(\'product\',display) and status = 1 ORDER BY position ASC')
+ 4 APPPATH/Models/HomeModel.php(74): CodeIgniter\Database\BaseConnection->query('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value_id FROM `custom_fields` where FIND_IN_SET(\'product\',display) and status = 1 ORDER BY position ASC')
+ 5 APPPATH/Controllers/Home.php(73): App\Models\HomeModel->get_custom_fields_values('product', '7')
+ 6 APPPATH/Controllers/Home.php(60): App\Controllers\Home->editproduct()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editproduct', '7')
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-19 06:07:41 --> mysqli_sql_exception: Subquery returns more than 1 row in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php(308): mysqli->query('SELECT id,displ...', 0)
+#1 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id,displ...')
+#2 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id,displ...')
+#3 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Models/HomeModel.php(74): CodeIgniter\Database\BaseConnection->query('SELECT id,displ...')
+#4 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(73): App\Models\HomeModel->get_custom_fields_values('product', '7')
+#5 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(60): App\Controllers\Home->editproduct()
+#6 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editproduct', '7')
+#7 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-09-19 06:07:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Subquery returns more than 1 row
+[Method: GET, Route: tech/editproduct/7]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 APPPATH/Models/HomeModel.php(74): CodeIgniter\Database\BaseConnection->query('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value_id FROM `custom_fields` where FIND_IN_SET(\'product\',display) and status = 1 ORDER BY position ASC')
+ 2 APPPATH/Controllers/Home.php(73): App\Models\HomeModel->get_custom_fields_values('product', '7')
+ 3 APPPATH/Controllers/Home.php(60): App\Controllers\Home->editproduct()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editproduct', '7')
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-19 06:07:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Subquery returns more than 1 row
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value_id FROM `custom_fields` where FIND_IN_SET(\'product\',display) and status = 1 ORDER BY position ASC')
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value_id FROM `custom_fields` where FIND_IN_SET(\'product\',display) and status = 1 ORDER BY position ASC')
+ 3 APPPATH/Models/HomeModel.php(74): CodeIgniter\Database\BaseConnection->query('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value_id FROM `custom_fields` where FIND_IN_SET(\'product\',display) and status = 1 ORDER BY position ASC')
+ 4 APPPATH/Controllers/Home.php(73): App\Models\HomeModel->get_custom_fields_values('product', '7')
+ 5 APPPATH/Controllers/Home.php(60): App\Controllers\Home->editproduct()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editproduct', '7')
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-19 06:07:41 --> [Caused by] mysqli_sql_exception: Subquery returns more than 1 row
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value_id FROM `custom_fields` where FIND_IN_SET(\'product\',display) and status = 1 ORDER BY position ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value_id FROM `custom_fields` where FIND_IN_SET(\'product\',display) and status = 1 ORDER BY position ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value_id FROM `custom_fields` where FIND_IN_SET(\'product\',display) and status = 1 ORDER BY position ASC')
+ 4 APPPATH/Models/HomeModel.php(74): CodeIgniter\Database\BaseConnection->query('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value_id FROM `custom_fields` where FIND_IN_SET(\'product\',display) and status = 1 ORDER BY position ASC')
+ 5 APPPATH/Controllers/Home.php(73): App\Models\HomeModel->get_custom_fields_values('product', '7')
+ 6 APPPATH/Controllers/Home.php(60): App\Controllers\Home->editproduct()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editproduct', '7')
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-19 06:07:46 --> mysqli_sql_exception: Subquery returns more than 1 row in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php(308): mysqli->query('SELECT id,displ...', 0)
+#1 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id,displ...')
+#2 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id,displ...')
+#3 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Models/HomeModel.php(74): CodeIgniter\Database\BaseConnection->query('SELECT id,displ...')
+#4 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(73): App\Models\HomeModel->get_custom_fields_values('product', '7')
+#5 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(60): App\Controllers\Home->editproduct()
+#6 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editproduct', '7')
+#7 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-09-19 06:07:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Subquery returns more than 1 row
+[Method: GET, Route: tech/editproduct/7]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 APPPATH/Models/HomeModel.php(74): CodeIgniter\Database\BaseConnection->query('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value_id FROM `custom_fields` where FIND_IN_SET(\'product\',display) and status = 1 ORDER BY position ASC')
+ 2 APPPATH/Controllers/Home.php(73): App\Models\HomeModel->get_custom_fields_values('product', '7')
+ 3 APPPATH/Controllers/Home.php(60): App\Controllers\Home->editproduct()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editproduct', '7')
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-19 06:07:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Subquery returns more than 1 row
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value_id FROM `custom_fields` where FIND_IN_SET(\'product\',display) and status = 1 ORDER BY position ASC')
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value_id FROM `custom_fields` where FIND_IN_SET(\'product\',display) and status = 1 ORDER BY position ASC')
+ 3 APPPATH/Models/HomeModel.php(74): CodeIgniter\Database\BaseConnection->query('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value_id FROM `custom_fields` where FIND_IN_SET(\'product\',display) and status = 1 ORDER BY position ASC')
+ 4 APPPATH/Controllers/Home.php(73): App\Models\HomeModel->get_custom_fields_values('product', '7')
+ 5 APPPATH/Controllers/Home.php(60): App\Controllers\Home->editproduct()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editproduct', '7')
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-19 06:07:46 --> [Caused by] mysqli_sql_exception: Subquery returns more than 1 row
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value_id FROM `custom_fields` where FIND_IN_SET(\'product\',display) and status = 1 ORDER BY position ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value_id FROM `custom_fields` where FIND_IN_SET(\'product\',display) and status = 1 ORDER BY position ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value_id FROM `custom_fields` where FIND_IN_SET(\'product\',display) and status = 1 ORDER BY position ASC')
+ 4 APPPATH/Models/HomeModel.php(74): CodeIgniter\Database\BaseConnection->query('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value_id FROM `custom_fields` where FIND_IN_SET(\'product\',display) and status = 1 ORDER BY position ASC')
+ 5 APPPATH/Controllers/Home.php(73): App\Models\HomeModel->get_custom_fields_values('product', '7')
+ 6 APPPATH/Controllers/Home.php(60): App\Controllers\Home->editproduct()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editproduct', '7')
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-19 06:08:11 --> mysqli_sql_exception: Subquery returns more than 1 row in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php(308): mysqli->query('SELECT id,displ...', 0)
+#1 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id,displ...')
+#2 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id,displ...')
+#3 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Models/HomeModel.php(74): CodeIgniter\Database\BaseConnection->query('SELECT id,displ...')
+#4 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(73): App\Models\HomeModel->get_custom_fields_values('product', '7')
+#5 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(60): App\Controllers\Home->editproduct()
+#6 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editproduct', '7')
+#7 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-09-19 06:08:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Subquery returns more than 1 row
+[Method: GET, Route: tech/editproduct/7]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 APPPATH/Models/HomeModel.php(74): CodeIgniter\Database\BaseConnection->query('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value_id FROM `custom_fields` where FIND_IN_SET(\'product\',display) and status = 1 ORDER BY position ASC')
+ 2 APPPATH/Controllers/Home.php(73): App\Models\HomeModel->get_custom_fields_values('product', '7')
+ 3 APPPATH/Controllers/Home.php(60): App\Controllers\Home->editproduct()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editproduct', '7')
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-19 06:08:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Subquery returns more than 1 row
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value_id FROM `custom_fields` where FIND_IN_SET(\'product\',display) and status = 1 ORDER BY position ASC')
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value_id FROM `custom_fields` where FIND_IN_SET(\'product\',display) and status = 1 ORDER BY position ASC')
+ 3 APPPATH/Models/HomeModel.php(74): CodeIgniter\Database\BaseConnection->query('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value_id FROM `custom_fields` where FIND_IN_SET(\'product\',display) and status = 1 ORDER BY position ASC')
+ 4 APPPATH/Controllers/Home.php(73): App\Models\HomeModel->get_custom_fields_values('product', '7')
+ 5 APPPATH/Controllers/Home.php(60): App\Controllers\Home->editproduct()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editproduct', '7')
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-19 06:08:11 --> [Caused by] mysqli_sql_exception: Subquery returns more than 1 row
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value_id FROM `custom_fields` where FIND_IN_SET(\'product\',display) and status = 1 ORDER BY position ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value_id FROM `custom_fields` where FIND_IN_SET(\'product\',display) and status = 1 ORDER BY position ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value_id FROM `custom_fields` where FIND_IN_SET(\'product\',display) and status = 1 ORDER BY position ASC')
+ 4 APPPATH/Models/HomeModel.php(74): CodeIgniter\Database\BaseConnection->query('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 7) as value_id FROM `custom_fields` where FIND_IN_SET(\'product\',display) and status = 1 ORDER BY position ASC')
+ 5 APPPATH/Controllers/Home.php(73): App\Models\HomeModel->get_custom_fields_values('product', '7')
+ 6 APPPATH/Controllers/Home.php(60): App\Controllers\Home->editproduct()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editproduct', '7')
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-19 09:42:45 --> ErrorException: Undefined variable $galleries
+[Method: GET, Route: tech/editproduct/4]
+in APPPATH/Views/gallery/galleries.php on line 17.
+ 1 APPPATH/Views/gallery/galleries.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $galleries', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/gallery/galleries.php', 17)
+ 2 APPPATH/Views/includes/edit_field_values.php(305): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/gallery/galleries.php')
+ 3 APPPATH/Views/products/editproduct.php(64): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/includes/edit_field_values.php')
+ 4 APPPATH/Views/page.php(3): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/products/editproduct.php')
+ 5 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 6 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 8 APPPATH/Controllers/Home.php(111): view('page', [...])
+ 9 APPPATH/Controllers/Home.php(60): App\Controllers\Home->editproduct()
+10 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editproduct', '4')
+11 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-19 09:43:46 --> ParseError: syntax error, unexpected token ","
+[Method: GET, Route: tech/editproduct/4]
+in APPPATH/Views/gallery/galleries.php on line 17.
+ 1 APPPATH/Views/products/editproduct.php(64): include()
+ 2 APPPATH/Views/page.php(3): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/products/editproduct.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 6 APPPATH/Controllers/Home.php(111): view('page', [...])
+ 7 APPPATH/Controllers/Home.php(60): App\Controllers\Home->editproduct()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editproduct', '4')
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-19 09:44:07 --> ErrorException: Undefined variable $totalPages
+[Method: GET, Route: tech/editproduct/4]
+in APPPATH/Views/gallery/galleries.php on line 29.
+ 1 APPPATH/Views/gallery/galleries.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalPages', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/gallery/galleries.php', 29)
+ 2 APPPATH/Views/includes/edit_field_values.php(305): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/gallery/galleries.php')
+ 3 APPPATH/Views/products/editproduct.php(64): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/includes/edit_field_values.php')
+ 4 APPPATH/Views/page.php(3): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/products/editproduct.php')
+ 5 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 6 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 8 APPPATH/Controllers/Home.php(111): view('page', [...])
+ 9 APPPATH/Controllers/Home.php(60): App\Controllers\Home->editproduct()
+10 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editproduct', '4')
+11 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-19 09:44:32 --> ErrorException: Undefined variable $currentPage
+[Method: GET, Route: tech/editproduct/4]
+in APPPATH/Views/gallery/galleries.php on line 30.
+ 1 APPPATH/Views/gallery/galleries.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $currentPage', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/gallery/galleries.php', 30)
+ 2 APPPATH/Views/includes/edit_field_values.php(305): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/gallery/galleries.php')
+ 3 APPPATH/Views/products/editproduct.php(64): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/includes/edit_field_values.php')
+ 4 APPPATH/Views/page.php(3): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/products/editproduct.php')
+ 5 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 6 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 8 APPPATH/Controllers/Home.php(111): view('page', [...])
+ 9 APPPATH/Controllers/Home.php(60): App\Controllers\Home->editproduct()
+10 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editproduct', '4')
+11 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-19 10:34:54 --> ErrorException: Undefined variable $galleries
+[Method: GET, Route: tech/editproduct/8]
+in APPPATH/Views/gallery/galleries.php on line 14.
+ 1 APPPATH/Views/gallery/galleries.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $galleries', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/gallery/galleries.php', 14)
+ 2 APPPATH/Views/includes/edit_field_values.php(305): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/gallery/galleries.php')
+ 3 APPPATH/Views/products/editproduct.php(64): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/includes/edit_field_values.php')
+ 4 APPPATH/Views/page.php(3): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/products/editproduct.php')
+ 5 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 6 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 8 APPPATH/Controllers/Home.php(111): view('page', [...])
+ 9 APPPATH/Controllers/Home.php(60): App\Controllers\Home->editproduct()
+10 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editproduct', '8')
+11 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-19 10:45:05 --> mysqli_sql_exception: Table 'cpfoodbo_KP_USA_Ci4.galleries' doesn't exist in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php(308): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Models/HomeModel.php(92): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(410): App\Models\HomeModel->get_galleries_total()
+#5 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(66): App\Controllers\Home->galleries()
+#6 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(933): App\Controllers\Home->manangerouts('galleries')
+#7 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-09-19 10:45:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'cpfoodbo_KP_USA_Ci4.galleries' doesn't exist
+[Method: GET, Route: tech/galleries]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 APPPATH/Models/HomeModel.php(92): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)
+ as total FROM galleries LIMIT 1')
+ 2 APPPATH/Controllers/Home.php(410): App\Models\HomeModel->get_galleries_total()
+ 3 APPPATH/Controllers/Home.php(66): App\Controllers\Home->galleries()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('galleries')
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-19 10:45:05 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'cpfoodbo_KP_USA_Ci4.galleries' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)
+ as total FROM galleries LIMIT 1')
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)
+ as total FROM galleries LIMIT 1')
+ 3 APPPATH/Models/HomeModel.php(92): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)
+ as total FROM galleries LIMIT 1')
+ 4 APPPATH/Controllers/Home.php(410): App\Models\HomeModel->get_galleries_total()
+ 5 APPPATH/Controllers/Home.php(66): App\Controllers\Home->galleries()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('galleries')
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-19 10:45:05 --> [Caused by] mysqli_sql_exception: Table 'cpfoodbo_KP_USA_Ci4.galleries' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query('SELECT COUNT(*)
+ as total FROM galleries LIMIT 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)
+ as total FROM galleries LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)
+ as total FROM galleries LIMIT 1')
+ 4 APPPATH/Models/HomeModel.php(92): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)
+ as total FROM galleries LIMIT 1')
+ 5 APPPATH/Controllers/Home.php(410): App\Models\HomeModel->get_galleries_total()
+ 6 APPPATH/Controllers/Home.php(66): App\Controllers\Home->galleries()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('galleries')
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-19 10:45:48 --> ErrorException: Undefined property: App\Controllers\Home::$load
+[Method: GET, Route: tech/galleries]
+in APPPATH/Controllers/Home.php on line 415.
+ 1 APPPATH/Controllers/Home.php(415): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 415)
+ 2 APPPATH/Controllers/Home.php(66): App\Controllers\Home->galleries()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('galleries')
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-19 11:27:55 --> ErrorException: Undefined property: App\Controllers\Home::$load
+[Method: GET, Route: tech/galleries]
+in APPPATH/Controllers/Home.php on line 415.
+ 1 APPPATH/Controllers/Home.php(415): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 415)
+ 2 APPPATH/Controllers/Home.php(66): App\Controllers\Home->galleries()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('galleries')
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-19 11:28:40 --> ErrorException: Undefined variable $page
+[Method: GET, Route: tech/galleries]
+in APPPATH/Views/page.php on line 3.
+ 1 APPPATH/Views/page.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $page', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php', 3)
+ 2 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 5 APPPATH/Controllers/Home.php(416): view('page', [...])
+ 6 APPPATH/Controllers/Home.php(66): App\Controllers\Home->galleries()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('galleries')
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-19 11:29:01 --> Error: Undefined constant "IMG_PATH"
+[Method: GET, Route: tech/galleries]
+in APPPATH/Views/gallery/galleries.php on line 17.
+ 1 APPPATH/Views/page.php(3): include()
+ 2 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 5 APPPATH/Controllers/Home.php(416): view('page', [...])
+ 6 APPPATH/Controllers/Home.php(66): App\Controllers\Home->galleries()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('galleries')
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-19 12:14:39 --> ErrorException: Undefined variable $field_name
+[Method: POST, Route: tech/store_gallery]
+in APPPATH/Controllers/Home.php on line 425.
+ 1 APPPATH/Controllers/Home.php(425): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $field_name', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 425)
+ 2 APPPATH/Controllers/Home.php(69): App\Controllers\Home->store_gallery()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('store_gallery')
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-19 12:20:15 --> ErrorException: Undefined array key "error"
+[Method: POST, Route: tech/store_gallery]
+in APPPATH/Controllers/Home.php on line 427.
+ 1 APPPATH/Controllers/Home.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "error"', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 427)
+ 2 APPPATH/Controllers/Home.php(69): App\Controllers\Home->store_gallery()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('store_gallery')
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-19 12:20:45 --> ErrorException: Undefined array key "error"
+[Method: POST, Route: tech/store_gallery]
+in APPPATH/Controllers/Home.php on line 427.
+ 1 APPPATH/Controllers/Home.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "error"', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 427)
+ 2 APPPATH/Controllers/Home.php(69): App\Controllers\Home->store_gallery()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('store_gallery')
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-19 12:20:45 --> ErrorException: Undefined array key "error"
+[Method: POST, Route: tech/store_gallery]
+in APPPATH/Controllers/Home.php on line 427.
+ 1 APPPATH/Controllers/Home.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "error"', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 427)
+ 2 APPPATH/Controllers/Home.php(69): App\Controllers\Home->store_gallery()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('store_gallery')
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-19 12:20:45 --> ErrorException: Undefined array key "error"
+[Method: POST, Route: tech/store_gallery]
+in APPPATH/Controllers/Home.php on line 427.
+ 1 APPPATH/Controllers/Home.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "error"', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 427)
+ 2 APPPATH/Controllers/Home.php(69): App\Controllers\Home->store_gallery()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('store_gallery')
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-19 12:20:46 --> ErrorException: Undefined array key "error"
+[Method: POST, Route: tech/store_gallery]
+in APPPATH/Controllers/Home.php on line 427.
+ 1 APPPATH/Controllers/Home.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "error"', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 427)
+ 2 APPPATH/Controllers/Home.php(69): App\Controllers\Home->store_gallery()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('store_gallery')
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-19 12:22:21 --> ErrorException: Undefined array key "error"
+[Method: POST, Route: tech/store_gallery]
+in APPPATH/Controllers/Home.php on line 427.
+ 1 APPPATH/Controllers/Home.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "error"', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 427)
+ 2 APPPATH/Controllers/Home.php(69): App\Controllers\Home->store_gallery()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('store_gallery')
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-19 12:22:21 --> ErrorException: Undefined array key "error"
+[Method: POST, Route: tech/store_gallery]
+in APPPATH/Controllers/Home.php on line 427.
+ 1 APPPATH/Controllers/Home.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "error"', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 427)
+ 2 APPPATH/Controllers/Home.php(69): App\Controllers\Home->store_gallery()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('store_gallery')
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-19 12:22:41 --> ErrorException: Undefined array key "error"
+[Method: POST, Route: tech/store_gallery]
+in APPPATH/Controllers/Home.php on line 427.
+ 1 APPPATH/Controllers/Home.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "error"', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 427)
+ 2 APPPATH/Controllers/Home.php(69): App\Controllers\Home->store_gallery()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('store_gallery')
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-19 12:23:16 --> ErrorException: Undefined array key "error"
+[Method: POST, Route: tech/store_gallery]
+in APPPATH/Controllers/Home.php on line 427.
+ 1 APPPATH/Controllers/Home.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "error"', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 427)
+ 2 APPPATH/Controllers/Home.php(69): App\Controllers\Home->store_gallery()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('store_gallery')
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-19 12:24:38 --> ErrorException: Undefined array key "error"
+[Method: POST, Route: tech/store_gallery]
+in APPPATH/Controllers/Home.php on line 427.
+ 1 APPPATH/Controllers/Home.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "error"', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 427)
+ 2 APPPATH/Controllers/Home.php(69): App\Controllers\Home->store_gallery()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('store_gallery')
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-19 12:24:44 --> ErrorException: Undefined array key "error"
+[Method: POST, Route: tech/store_gallery]
+in APPPATH/Controllers/Home.php on line 427.
+ 1 APPPATH/Controllers/Home.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "error"', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 427)
+ 2 APPPATH/Controllers/Home.php(69): App\Controllers\Home->store_gallery()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('store_gallery')
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-19 12:44:55 --> Error: Call to undefined method CodeIgniter\HTTP\Files\UploadedFile::originalName()
+[Method: POST, Route: tech/store_gallery]
+in APPPATH/Models/HomeModel.php on line 120.
+ 1 APPPATH/Controllers/Home.php(425): App\Models\HomeModel->generalUploadImages('images', 'gallery_images/')
+ 2 APPPATH/Controllers/Home.php(69): App\Controllers\Home->store_gallery()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('store_gallery')
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-19 12:45:34 --> Error: Cannot use object of type CodeIgniter\HTTP\Files\UploadedFile as array
+[Method: POST, Route: tech/store_gallery]
+in APPPATH/Models/HomeModel.php on line 120.
+ 1 APPPATH/Controllers/Home.php(425): App\Models\HomeModel->generalUploadImages('images', 'gallery_images/')
+ 2 APPPATH/Controllers/Home.php(69): App\Controllers\Home->store_gallery()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('store_gallery')
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-19 12:46:03 --> Error: Cannot use object of type CodeIgniter\HTTP\Files\UploadedFile as array
+[Method: POST, Route: tech/store_gallery]
+in APPPATH/Models/HomeModel.php on line 120.
+ 1 APPPATH/Controllers/Home.php(425): App\Models\HomeModel->generalUploadImages('images', 'gallery_images/')
+ 2 APPPATH/Controllers/Home.php(69): App\Controllers\Home->store_gallery()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('store_gallery')
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

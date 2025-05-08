@@ -1,0 +1,502 @@
+ERROR - 2024-10-04 05:10:47 --> mysqli_sql_exception: Column 'status' cannot be null in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php(308): mysqli->query('INSERT INTO `us...', 0)
+#1 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(637): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(933): App\Controllers\Home->manangeuser('adduser')
+#6 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-10-04 05:10:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'status' cannot be null
+[Method: POST, Route: user/adduser]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`firstname`, `usertype`, `username`, `password`, `status`, `update_on`) VALUES (:firstname:, :usertype:, :username:, :password:, :status:, :update_on:)', [...], false)
+ 2 APPPATH/Controllers/Home.php(637): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangeuser('adduser')
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-04 05:10:47 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'status' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`firstname`, `usertype`, `username`, `password`, `status`, `update_on`) VALUES (\'Umar\', \'User\', \'umar\', \'umar1212\', NULL, 1728018647)')
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`firstname`, `usertype`, `username`, `password`, `status`, `update_on`) VALUES (\'Umar\', \'User\', \'umar\', \'umar1212\', NULL, 1728018647)')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`firstname`, `usertype`, `username`, `password`, `status`, `update_on`) VALUES (:firstname:, :usertype:, :username:, :password:, :status:, :update_on:)', [...], false)
+ 4 APPPATH/Controllers/Home.php(637): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangeuser('adduser')
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-04 05:10:47 --> [Caused by] mysqli_sql_exception: Column 'status' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query('INSERT INTO `users` (`firstname`, `usertype`, `username`, `password`, `status`, `update_on`) VALUES (\'Umar\', \'User\', \'umar\', \'umar1212\', NULL, 1728018647)', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`firstname`, `usertype`, `username`, `password`, `status`, `update_on`) VALUES (\'Umar\', \'User\', \'umar\', \'umar1212\', NULL, 1728018647)')
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`firstname`, `usertype`, `username`, `password`, `status`, `update_on`) VALUES (\'Umar\', \'User\', \'umar\', \'umar1212\', NULL, 1728018647)')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`firstname`, `usertype`, `username`, `password`, `status`, `update_on`) VALUES (:firstname:, :usertype:, :username:, :password:, :status:, :update_on:)', [...], false)
+ 5 APPPATH/Controllers/Home.php(637): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangeuser('adduser')
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-04 07:48:15 --> ErrorException: Undefined variable $result
+[Method: GET, Route: tech/addpost]
+in APPPATH/Views/post/addpost.php on line 42.
+ 1 APPPATH/Views/post/addpost.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/post/addpost.php', 42)
+ 2 APPPATH/Views/page.php(3): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/post/addpost.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 6 APPPATH/Controllers/Home.php(234): view('page', [...])
+ 7 APPPATH/Controllers/Home.php(66): App\Controllers\Home->addpost()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('addpost')
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-04 07:48:38 --> ErrorException: Undefined variable $result
+[Method: GET, Route: tech/addpost]
+in APPPATH/Views/post/addpost.php on line 42.
+ 1 APPPATH/Views/post/addpost.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/post/addpost.php', 42)
+ 2 APPPATH/Views/page.php(3): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/post/addpost.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 6 APPPATH/Controllers/Home.php(234): view('page', [...])
+ 7 APPPATH/Controllers/Home.php(66): App\Controllers\Home->addpost()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('addpost')
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-04 09:33:57 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "<"
+[Method: GET, Route: tech/editproduct/%3C]
+in SYSTEMPATH/Router/Router.php on line 736.
+ 1 SYSTEMPATH/Router/Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('tech/editproduct/<')
+ 2 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle('tech/editproduct/<')
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-04 09:34:03 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "<"
+[Method: GET, Route: tech/editproduct/%3C]
+in SYSTEMPATH/Router/Router.php on line 736.
+ 1 SYSTEMPATH/Router/Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('tech/editproduct/<')
+ 2 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle('tech/editproduct/<')
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-04 09:35:14 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "<"
+[Method: GET, Route: tech/editproduct/%3C]
+in SYSTEMPATH/Router/Router.php on line 736.
+ 1 SYSTEMPATH/Router/Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('tech/editproduct/<')
+ 2 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle('tech/editproduct/<')
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-04 09:35:23 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "<"
+[Method: GET, Route: tech/editproduct/%3C]
+in SYSTEMPATH/Router/Router.php on line 736.
+ 1 SYSTEMPATH/Router/Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('tech/editproduct/<')
+ 2 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle('tech/editproduct/<')
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-04 09:38:00 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "<"
+[Method: GET, Route: tech/editproduct/%3C]
+in SYSTEMPATH/Router/Router.php on line 736.
+ 1 SYSTEMPATH/Router/Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('tech/editproduct/<')
+ 2 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle('tech/editproduct/<')
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-04 09:39:07 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "<"
+[Method: GET, Route: tech/editproduct/%3C]
+in SYSTEMPATH/Router/Router.php on line 736.
+ 1 SYSTEMPATH/Router/Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('tech/editproduct/<')
+ 2 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle('tech/editproduct/<')
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-04 09:39:47 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "<"
+[Method: GET, Route: tech/editproduct/%3C]
+in SYSTEMPATH/Router/Router.php on line 736.
+ 1 SYSTEMPATH/Router/Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('tech/editproduct/<')
+ 2 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle('tech/editproduct/<')
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-04 09:40:39 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "<"
+[Method: GET, Route: tech/editproduct/%3C]
+in SYSTEMPATH/Router/Router.php on line 736.
+ 1 SYSTEMPATH/Router/Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('tech/editproduct/<')
+ 2 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle('tech/editproduct/<')
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-04 09:41:01 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "<"
+[Method: GET, Route: tech/editproduct/%3C]
+in SYSTEMPATH/Router/Router.php on line 736.
+ 1 SYSTEMPATH/Router/Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('tech/editproduct/<')
+ 2 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle('tech/editproduct/<')
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-04 09:42:43 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "<"
+[Method: GET, Route: tech/editproduct/%3C]
+in SYSTEMPATH/Router/Router.php on line 736.
+ 1 SYSTEMPATH/Router/Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('tech/editproduct/<')
+ 2 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle('tech/editproduct/<')
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-04 09:45:20 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "<"
+[Method: GET, Route: tech/editproduct/%3C]
+in SYSTEMPATH/Router/Router.php on line 736.
+ 1 SYSTEMPATH/Router/Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('tech/editproduct/<')
+ 2 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle('tech/editproduct/<')
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-04 09:48:05 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "<"
+[Method: GET, Route: tech/editproduct/%3C]
+in SYSTEMPATH/Router/Router.php on line 736.
+ 1 SYSTEMPATH/Router/Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('tech/editproduct/<')
+ 2 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle('tech/editproduct/<')
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-04 09:50:07 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "<"
+[Method: GET, Route: tech/editproduct/%3C]
+in SYSTEMPATH/Router/Router.php on line 736.
+ 1 SYSTEMPATH/Router/Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('tech/editproduct/<')
+ 2 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle('tech/editproduct/<')
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-04 09:52:28 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "<"
+[Method: GET, Route: tech/editproduct/%3C]
+in SYSTEMPATH/Router/Router.php on line 736.
+ 1 SYSTEMPATH/Router/Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('tech/editproduct/<')
+ 2 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle('tech/editproduct/<')
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-04 09:52:43 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "<"
+[Method: GET, Route: tech/editproduct/%3C]
+in SYSTEMPATH/Router/Router.php on line 736.
+ 1 SYSTEMPATH/Router/Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('tech/editproduct/<')
+ 2 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle('tech/editproduct/<')
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-10-04 13:44:15 --> mysqli_sql_exception: Subquery returns more than 1 row in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php(308): mysqli->query('SELECT id,displ...', 0)
+#1 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id,displ...')
+#2 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id,displ...')
+#3 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Models/HomeModel.php(102): CodeIgniter\Database\BaseConnection->query('SELECT id,displ...')
+#4 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(329): App\Models\HomeModel->get_custom_fields_values_pages('custom_page', '14')
+#5 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(88): App\Controllers\Home->editpage()
+#6 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editpage', '14')
+#7 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-10-04 13:44:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Subquery returns more than 1 row
+[Method: POST, Route: tech/editpage/14]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 APPPATH/Models/HomeModel.php(102): CodeIgniter\Database\BaseConnection->query('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value_id FROM `custom_fields` where FIND_IN_SET(\'custom_page\',display) and page_id!=0 and page_id=14 and status = 1 ORDER BY position ASC')
+ 2 APPPATH/Controllers/Home.php(329): App\Models\HomeModel->get_custom_fields_values_pages('custom_page', '14')
+ 3 APPPATH/Controllers/Home.php(88): App\Controllers\Home->editpage()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editpage', '14')
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-04 13:44:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Subquery returns more than 1 row
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value_id FROM `custom_fields` where FIND_IN_SET(\'custom_page\',display) and page_id!=0 and page_id=14 and status = 1 ORDER BY position ASC')
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value_id FROM `custom_fields` where FIND_IN_SET(\'custom_page\',display) and page_id!=0 and page_id=14 and status = 1 ORDER BY position ASC')
+ 3 APPPATH/Models/HomeModel.php(102): CodeIgniter\Database\BaseConnection->query('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value_id FROM `custom_fields` where FIND_IN_SET(\'custom_page\',display) and page_id!=0 and page_id=14 and status = 1 ORDER BY position ASC')
+ 4 APPPATH/Controllers/Home.php(329): App\Models\HomeModel->get_custom_fields_values_pages('custom_page', '14')
+ 5 APPPATH/Controllers/Home.php(88): App\Controllers\Home->editpage()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editpage', '14')
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-04 13:44:15 --> [Caused by] mysqli_sql_exception: Subquery returns more than 1 row
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value_id FROM `custom_fields` where FIND_IN_SET(\'custom_page\',display) and page_id!=0 and page_id=14 and status = 1 ORDER BY position ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value_id FROM `custom_fields` where FIND_IN_SET(\'custom_page\',display) and page_id!=0 and page_id=14 and status = 1 ORDER BY position ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value_id FROM `custom_fields` where FIND_IN_SET(\'custom_page\',display) and page_id!=0 and page_id=14 and status = 1 ORDER BY position ASC')
+ 4 APPPATH/Models/HomeModel.php(102): CodeIgniter\Database\BaseConnection->query('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value_id FROM `custom_fields` where FIND_IN_SET(\'custom_page\',display) and page_id!=0 and page_id=14 and status = 1 ORDER BY position ASC')
+ 5 APPPATH/Controllers/Home.php(329): App\Models\HomeModel->get_custom_fields_values_pages('custom_page', '14')
+ 6 APPPATH/Controllers/Home.php(88): App\Controllers\Home->editpage()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editpage', '14')
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-10-04 13:44:20 --> mysqli_sql_exception: Subquery returns more than 1 row in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php(308): mysqli->query('SELECT id,displ...', 0)
+#1 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id,displ...')
+#2 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id,displ...')
+#3 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Models/HomeModel.php(102): CodeIgniter\Database\BaseConnection->query('SELECT id,displ...')
+#4 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(329): App\Models\HomeModel->get_custom_fields_values_pages('custom_page', '14')
+#5 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(88): App\Controllers\Home->editpage()
+#6 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editpage', '14')
+#7 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-10-04 13:44:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Subquery returns more than 1 row
+[Method: GET, Route: tech/editpage/14]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 APPPATH/Models/HomeModel.php(102): CodeIgniter\Database\BaseConnection->query('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value_id FROM `custom_fields` where FIND_IN_SET(\'custom_page\',display) and page_id!=0 and page_id=14 and status = 1 ORDER BY position ASC')
+ 2 APPPATH/Controllers/Home.php(329): App\Models\HomeModel->get_custom_fields_values_pages('custom_page', '14')
+ 3 APPPATH/Controllers/Home.php(88): App\Controllers\Home->editpage()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editpage', '14')
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-04 13:44:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Subquery returns more than 1 row
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value_id FROM `custom_fields` where FIND_IN_SET(\'custom_page\',display) and page_id!=0 and page_id=14 and status = 1 ORDER BY position ASC')
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value_id FROM `custom_fields` where FIND_IN_SET(\'custom_page\',display) and page_id!=0 and page_id=14 and status = 1 ORDER BY position ASC')
+ 3 APPPATH/Models/HomeModel.php(102): CodeIgniter\Database\BaseConnection->query('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value_id FROM `custom_fields` where FIND_IN_SET(\'custom_page\',display) and page_id!=0 and page_id=14 and status = 1 ORDER BY position ASC')
+ 4 APPPATH/Controllers/Home.php(329): App\Models\HomeModel->get_custom_fields_values_pages('custom_page', '14')
+ 5 APPPATH/Controllers/Home.php(88): App\Controllers\Home->editpage()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editpage', '14')
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-04 13:44:20 --> [Caused by] mysqli_sql_exception: Subquery returns more than 1 row
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value_id FROM `custom_fields` where FIND_IN_SET(\'custom_page\',display) and page_id!=0 and page_id=14 and status = 1 ORDER BY position ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value_id FROM `custom_fields` where FIND_IN_SET(\'custom_page\',display) and page_id!=0 and page_id=14 and status = 1 ORDER BY position ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value_id FROM `custom_fields` where FIND_IN_SET(\'custom_page\',display) and page_id!=0 and page_id=14 and status = 1 ORDER BY position ASC')
+ 4 APPPATH/Models/HomeModel.php(102): CodeIgniter\Database\BaseConnection->query('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value_id FROM `custom_fields` where FIND_IN_SET(\'custom_page\',display) and page_id!=0 and page_id=14 and status = 1 ORDER BY position ASC')
+ 5 APPPATH/Controllers/Home.php(329): App\Models\HomeModel->get_custom_fields_values_pages('custom_page', '14')
+ 6 APPPATH/Controllers/Home.php(88): App\Controllers\Home->editpage()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editpage', '14')
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-10-04 13:44:22 --> mysqli_sql_exception: Subquery returns more than 1 row in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php(308): mysqli->query('SELECT id,displ...', 0)
+#1 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id,displ...')
+#2 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id,displ...')
+#3 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Models/HomeModel.php(102): CodeIgniter\Database\BaseConnection->query('SELECT id,displ...')
+#4 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(329): App\Models\HomeModel->get_custom_fields_values_pages('custom_page', '14')
+#5 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(88): App\Controllers\Home->editpage()
+#6 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editpage', '14')
+#7 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-10-04 13:44:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Subquery returns more than 1 row
+[Method: GET, Route: tech/editpage/14]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 APPPATH/Models/HomeModel.php(102): CodeIgniter\Database\BaseConnection->query('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value_id FROM `custom_fields` where FIND_IN_SET(\'custom_page\',display) and page_id!=0 and page_id=14 and status = 1 ORDER BY position ASC')
+ 2 APPPATH/Controllers/Home.php(329): App\Models\HomeModel->get_custom_fields_values_pages('custom_page', '14')
+ 3 APPPATH/Controllers/Home.php(88): App\Controllers\Home->editpage()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editpage', '14')
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-04 13:44:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Subquery returns more than 1 row
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value_id FROM `custom_fields` where FIND_IN_SET(\'custom_page\',display) and page_id!=0 and page_id=14 and status = 1 ORDER BY position ASC')
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value_id FROM `custom_fields` where FIND_IN_SET(\'custom_page\',display) and page_id!=0 and page_id=14 and status = 1 ORDER BY position ASC')
+ 3 APPPATH/Models/HomeModel.php(102): CodeIgniter\Database\BaseConnection->query('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value_id FROM `custom_fields` where FIND_IN_SET(\'custom_page\',display) and page_id!=0 and page_id=14 and status = 1 ORDER BY position ASC')
+ 4 APPPATH/Controllers/Home.php(329): App\Models\HomeModel->get_custom_fields_values_pages('custom_page', '14')
+ 5 APPPATH/Controllers/Home.php(88): App\Controllers\Home->editpage()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editpage', '14')
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-04 13:44:22 --> [Caused by] mysqli_sql_exception: Subquery returns more than 1 row
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value_id FROM `custom_fields` where FIND_IN_SET(\'custom_page\',display) and page_id!=0 and page_id=14 and status = 1 ORDER BY position ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value_id FROM `custom_fields` where FIND_IN_SET(\'custom_page\',display) and page_id!=0 and page_id=14 and status = 1 ORDER BY position ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value_id FROM `custom_fields` where FIND_IN_SET(\'custom_page\',display) and page_id!=0 and page_id=14 and status = 1 ORDER BY position ASC')
+ 4 APPPATH/Models/HomeModel.php(102): CodeIgniter\Database\BaseConnection->query('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value_id FROM `custom_fields` where FIND_IN_SET(\'custom_page\',display) and page_id!=0 and page_id=14 and status = 1 ORDER BY position ASC')
+ 5 APPPATH/Controllers/Home.php(329): App\Models\HomeModel->get_custom_fields_values_pages('custom_page', '14')
+ 6 APPPATH/Controllers/Home.php(88): App\Controllers\Home->editpage()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editpage', '14')
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-10-04 13:44:41 --> mysqli_sql_exception: Subquery returns more than 1 row in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php(308): mysqli->query('SELECT id,displ...', 0)
+#1 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id,displ...')
+#2 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id,displ...')
+#3 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Models/HomeModel.php(102): CodeIgniter\Database\BaseConnection->query('SELECT id,displ...')
+#4 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(329): App\Models\HomeModel->get_custom_fields_values_pages('custom_page', '14')
+#5 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(88): App\Controllers\Home->editpage()
+#6 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editpage', '14')
+#7 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-10-04 13:44:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Subquery returns more than 1 row
+[Method: GET, Route: tech/editpage/14]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 APPPATH/Models/HomeModel.php(102): CodeIgniter\Database\BaseConnection->query('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value_id FROM `custom_fields` where FIND_IN_SET(\'custom_page\',display) and page_id!=0 and page_id=14 and status = 1 ORDER BY position ASC')
+ 2 APPPATH/Controllers/Home.php(329): App\Models\HomeModel->get_custom_fields_values_pages('custom_page', '14')
+ 3 APPPATH/Controllers/Home.php(88): App\Controllers\Home->editpage()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editpage', '14')
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-04 13:44:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Subquery returns more than 1 row
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value_id FROM `custom_fields` where FIND_IN_SET(\'custom_page\',display) and page_id!=0 and page_id=14 and status = 1 ORDER BY position ASC')
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value_id FROM `custom_fields` where FIND_IN_SET(\'custom_page\',display) and page_id!=0 and page_id=14 and status = 1 ORDER BY position ASC')
+ 3 APPPATH/Models/HomeModel.php(102): CodeIgniter\Database\BaseConnection->query('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value_id FROM `custom_fields` where FIND_IN_SET(\'custom_page\',display) and page_id!=0 and page_id=14 and status = 1 ORDER BY position ASC')
+ 4 APPPATH/Controllers/Home.php(329): App\Models\HomeModel->get_custom_fields_values_pages('custom_page', '14')
+ 5 APPPATH/Controllers/Home.php(88): App\Controllers\Home->editpage()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editpage', '14')
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-04 13:44:41 --> [Caused by] mysqli_sql_exception: Subquery returns more than 1 row
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value_id FROM `custom_fields` where FIND_IN_SET(\'custom_page\',display) and page_id!=0 and page_id=14 and status = 1 ORDER BY position ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value_id FROM `custom_fields` where FIND_IN_SET(\'custom_page\',display) and page_id!=0 and page_id=14 and status = 1 ORDER BY position ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value_id FROM `custom_fields` where FIND_IN_SET(\'custom_page\',display) and page_id!=0 and page_id=14 and status = 1 ORDER BY position ASC')
+ 4 APPPATH/Models/HomeModel.php(102): CodeIgniter\Database\BaseConnection->query('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value_id FROM `custom_fields` where FIND_IN_SET(\'custom_page\',display) and page_id!=0 and page_id=14 and status = 1 ORDER BY position ASC')
+ 5 APPPATH/Controllers/Home.php(329): App\Models\HomeModel->get_custom_fields_values_pages('custom_page', '14')
+ 6 APPPATH/Controllers/Home.php(88): App\Controllers\Home->editpage()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editpage', '14')
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-10-04 13:46:03 --> mysqli_sql_exception: Subquery returns more than 1 row in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php(308): mysqli->query('SELECT id,displ...', 0)
+#1 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id,displ...')
+#2 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id,displ...')
+#3 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Models/HomeModel.php(102): CodeIgniter\Database\BaseConnection->query('SELECT id,displ...')
+#4 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(329): App\Models\HomeModel->get_custom_fields_values_pages('custom_page', '14')
+#5 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(88): App\Controllers\Home->editpage()
+#6 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editpage', '14')
+#7 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-10-04 13:46:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Subquery returns more than 1 row
+[Method: GET, Route: tech/editpage/14]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 APPPATH/Models/HomeModel.php(102): CodeIgniter\Database\BaseConnection->query('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value_id FROM `custom_fields` where FIND_IN_SET(\'custom_page\',display) and page_id!=0 and page_id=14 and status = 1 ORDER BY position ASC')
+ 2 APPPATH/Controllers/Home.php(329): App\Models\HomeModel->get_custom_fields_values_pages('custom_page', '14')
+ 3 APPPATH/Controllers/Home.php(88): App\Controllers\Home->editpage()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editpage', '14')
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-04 13:46:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Subquery returns more than 1 row
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value_id FROM `custom_fields` where FIND_IN_SET(\'custom_page\',display) and page_id!=0 and page_id=14 and status = 1 ORDER BY position ASC')
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value_id FROM `custom_fields` where FIND_IN_SET(\'custom_page\',display) and page_id!=0 and page_id=14 and status = 1 ORDER BY position ASC')
+ 3 APPPATH/Models/HomeModel.php(102): CodeIgniter\Database\BaseConnection->query('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value_id FROM `custom_fields` where FIND_IN_SET(\'custom_page\',display) and page_id!=0 and page_id=14 and status = 1 ORDER BY position ASC')
+ 4 APPPATH/Controllers/Home.php(329): App\Models\HomeModel->get_custom_fields_values_pages('custom_page', '14')
+ 5 APPPATH/Controllers/Home.php(88): App\Controllers\Home->editpage()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editpage', '14')
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-04 13:46:03 --> [Caused by] mysqli_sql_exception: Subquery returns more than 1 row
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value_id FROM `custom_fields` where FIND_IN_SET(\'custom_page\',display) and page_id!=0 and page_id=14 and status = 1 ORDER BY position ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value_id FROM `custom_fields` where FIND_IN_SET(\'custom_page\',display) and page_id!=0 and page_id=14 and status = 1 ORDER BY position ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value_id FROM `custom_fields` where FIND_IN_SET(\'custom_page\',display) and page_id!=0 and page_id=14 and status = 1 ORDER BY position ASC')
+ 4 APPPATH/Models/HomeModel.php(102): CodeIgniter\Database\BaseConnection->query('SELECT id,display,field_type,field_name,field_values,field_class,field_attribute,page_id,field_slug, (select field_value from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value , (select id from field_values where custom_fields.id = field_values.custom_field_id and field_values.item_id = 14) as value_id FROM `custom_fields` where FIND_IN_SET(\'custom_page\',display) and page_id!=0 and page_id=14 and status = 1 ORDER BY position ASC')
+ 5 APPPATH/Controllers/Home.php(329): App\Models\HomeModel->get_custom_fields_values_pages('custom_page', '14')
+ 6 APPPATH/Controllers/Home.php(88): App\Controllers\Home->editpage()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editpage', '14')
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

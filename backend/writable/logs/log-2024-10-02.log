@@ -1,0 +1,54 @@
+ERROR - 2024-10-02 10:52:21 --> mysqli_sql_exception: Column 'created_by' cannot be null in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php(308): mysqli->query('INSERT INTO `ga...', 0)
+#1 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ga...')
+#2 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ga...')
+#3 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ga...', Array, false)
+#4 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(799): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(116): App\Controllers\Home->store_gallery()
+#6 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(933): App\Controllers\Home->manangerouts('store_gallery')
+#7 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-10-02 10:52:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'created_by' cannot be null
+[Method: POST, Route: tech/store_gallery]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `galleries` (`image`, `created_at`, `created_by`) VALUES (:image:, :created_at:, :created_by:)', [...], false)
+ 2 APPPATH/Controllers/Home.php(799): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH/Controllers/Home.php(116): App\Controllers\Home->store_gallery()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('store_gallery')
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-02 10:52:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'created_by' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `galleries` (`image`, `created_at`, `created_by`) VALUES (\'placeholder_1727866341.png\', \'2024-10-02 10:52:21\', NULL)')
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `galleries` (`image`, `created_at`, `created_by`) VALUES (\'placeholder_1727866341.png\', \'2024-10-02 10:52:21\', NULL)')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `galleries` (`image`, `created_at`, `created_by`) VALUES (:image:, :created_at:, :created_by:)', [...], false)
+ 4 APPPATH/Controllers/Home.php(799): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH/Controllers/Home.php(116): App\Controllers\Home->store_gallery()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('store_gallery')
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-02 10:52:21 --> [Caused by] mysqli_sql_exception: Column 'created_by' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query('INSERT INTO `galleries` (`image`, `created_at`, `created_by`) VALUES (\'placeholder_1727866341.png\', \'2024-10-02 10:52:21\', NULL)', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `galleries` (`image`, `created_at`, `created_by`) VALUES (\'placeholder_1727866341.png\', \'2024-10-02 10:52:21\', NULL)')
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `galleries` (`image`, `created_at`, `created_by`) VALUES (\'placeholder_1727866341.png\', \'2024-10-02 10:52:21\', NULL)')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `galleries` (`image`, `created_at`, `created_by`) VALUES (:image:, :created_at:, :created_by:)', [...], false)
+ 5 APPPATH/Controllers/Home.php(799): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH/Controllers/Home.php(116): App\Controllers\Home->store_gallery()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('store_gallery')
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

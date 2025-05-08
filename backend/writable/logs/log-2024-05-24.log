@@ -1,0 +1,130 @@
+CRITICAL - 2024-05-24 07:00:00 --> ErrorException: include(seasons.php): Failed to open stream: No such file or directory
+[Method: GET, Route: season/all]
+in APPPATH\Views\page.php on line 4.
+ 1 APPPATH\Views\page.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(seasons.php): Failed to open stream: No such file or directory', 'G:\\xampp\\htdocs\\podcast\\ci-admin\\app\\Views\\page.php', 4)
+ 2 APPPATH\Views\page.php(4): include()
+ 3 SYSTEMPATH\View\View.php(234): include('G:\\xampp\\htdocs\\podcast\\ci-admin\\app\\Views\\page.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 6 APPPATH\Controllers\Home.php(34): view('page', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->manangeseasons('all')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-24 08:19:38 --> ErrorException: include(seasons.php): Failed to open stream: No such file or directory
+[Method: GET, Route: season/all]
+in APPPATH\Views\page.php on line 4.
+ 1 APPPATH\Views\page.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(seasons.php): Failed to open stream: No such file or directory', 'G:\\xampp\\htdocs\\podcast\\ci-admin\\app\\Views\\page.php', 4)
+ 2 APPPATH\Views\page.php(4): include()
+ 3 SYSTEMPATH\View\View.php(234): include('G:\\xampp\\htdocs\\podcast\\ci-admin\\app\\Views\\page.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 6 APPPATH\Controllers\Home.php(34): view('page', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->manangeseasons('all')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-05-24 12:02:51 --> mysqli_sql_exception: Unknown column 'season' in 'field list' in G:\xampp\htdocs\podcast\ci-admin\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 G:\xampp\htdocs\podcast\ci-admin\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `ep...', 0)
+#1 G:\xampp\htdocs\podcast\ci-admin\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ep...')
+#2 G:\xampp\htdocs\podcast\ci-admin\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ep...')
+#3 G:\xampp\htdocs\podcast\ci-admin\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ep...', Array, false)
+#4 G:\xampp\htdocs\podcast\ci-admin\app\Controllers\Home.php(126): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 G:\xampp\htdocs\podcast\ci-admin\system\CodeIgniter.php(933): App\Controllers\Home->insertmanage('episode')
+#6 G:\xampp\htdocs\podcast\ci-admin\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 G:\xampp\htdocs\podcast\ci-admin\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 G:\xampp\htdocs\podcast\ci-admin\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 G:\xampp\htdocs\podcast\ci-admin\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 G:\xampp\htdocs\podcast\ci-admin\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-05-24 12:02:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'season' in 'field list'
+[Method: POST, Route: save/episode]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `added_on`, `banner`) VALUES (:title:, :slug:, :feature:, :season:, :author:, :enum:, :details:, :meta_title:, :meta_description:, :keywords:, :added_on:, :banner:)', [...], false)
+ 2 APPPATH\Controllers\Home.php(126): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('episode')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-24 12:02:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'season' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `added_on`, `banner`) VALUES (\'test\', \'test\', NULL, \'16\', \'16\', \'3\', \'<p>test</p>\', \'ert\', \'retre\', \'rtet\', 1716552170, \'1716552171_e649a4f9eea7738b30e2.webp\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `added_on`, `banner`) VALUES (\'test\', \'test\', NULL, \'16\', \'16\', \'3\', \'<p>test</p>\', \'ert\', \'retre\', \'rtet\', 1716552170, \'1716552171_e649a4f9eea7738b30e2.webp\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `added_on`, `banner`) VALUES (:title:, :slug:, :feature:, :season:, :author:, :enum:, :details:, :meta_title:, :meta_description:, :keywords:, :added_on:, :banner:)', [...], false)
+ 4 APPPATH\Controllers\Home.php(126): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('episode')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-24 12:02:51 --> [Caused by] mysqli_sql_exception: Unknown column 'season' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `added_on`, `banner`) VALUES (\'test\', \'test\', NULL, \'16\', \'16\', \'3\', \'<p>test</p>\', \'ert\', \'retre\', \'rtet\', 1716552170, \'1716552171_e649a4f9eea7738b30e2.webp\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `added_on`, `banner`) VALUES (\'test\', \'test\', NULL, \'16\', \'16\', \'3\', \'<p>test</p>\', \'ert\', \'retre\', \'rtet\', 1716552170, \'1716552171_e649a4f9eea7738b30e2.webp\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `added_on`, `banner`) VALUES (\'test\', \'test\', NULL, \'16\', \'16\', \'3\', \'<p>test</p>\', \'ert\', \'retre\', \'rtet\', 1716552170, \'1716552171_e649a4f9eea7738b30e2.webp\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `added_on`, `banner`) VALUES (:title:, :slug:, :feature:, :season:, :author:, :enum:, :details:, :meta_title:, :meta_description:, :keywords:, :added_on:, :banner:)', [...], false)
+ 5 APPPATH\Controllers\Home.php(126): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('episode')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-05-24 12:03:28 --> mysqli_sql_exception: Column 'feature' cannot be null in G:\xampp\htdocs\podcast\ci-admin\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 G:\xampp\htdocs\podcast\ci-admin\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `ep...', 0)
+#1 G:\xampp\htdocs\podcast\ci-admin\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ep...')
+#2 G:\xampp\htdocs\podcast\ci-admin\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ep...')
+#3 G:\xampp\htdocs\podcast\ci-admin\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ep...', Array, false)
+#4 G:\xampp\htdocs\podcast\ci-admin\app\Controllers\Home.php(126): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 G:\xampp\htdocs\podcast\ci-admin\system\CodeIgniter.php(933): App\Controllers\Home->insertmanage('episode')
+#6 G:\xampp\htdocs\podcast\ci-admin\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 G:\xampp\htdocs\podcast\ci-admin\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 G:\xampp\htdocs\podcast\ci-admin\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 G:\xampp\htdocs\podcast\ci-admin\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 G:\xampp\htdocs\podcast\ci-admin\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-05-24 12:03:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'feature' cannot be null
+[Method: POST, Route: save/episode]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `added_on`, `banner`) VALUES (:title:, :slug:, :feature:, :season:, :author:, :enum:, :details:, :meta_title:, :meta_description:, :keywords:, :added_on:, :banner:)', [...], false)
+ 2 APPPATH\Controllers\Home.php(126): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('episode')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-24 12:03:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'feature' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `added_on`, `banner`) VALUES (\'test\', \'test\', NULL, \'16\', \'16\', \'3\', \'<p>test</p>\', \'ert\', \'retre\', \'rtet\', 1716552208, \'1716552208_0130affd32fdde609146.webp\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `added_on`, `banner`) VALUES (\'test\', \'test\', NULL, \'16\', \'16\', \'3\', \'<p>test</p>\', \'ert\', \'retre\', \'rtet\', 1716552208, \'1716552208_0130affd32fdde609146.webp\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `added_on`, `banner`) VALUES (:title:, :slug:, :feature:, :season:, :author:, :enum:, :details:, :meta_title:, :meta_description:, :keywords:, :added_on:, :banner:)', [...], false)
+ 4 APPPATH\Controllers\Home.php(126): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('episode')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-24 12:03:28 --> [Caused by] mysqli_sql_exception: Column 'feature' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `added_on`, `banner`) VALUES (\'test\', \'test\', NULL, \'16\', \'16\', \'3\', \'<p>test</p>\', \'ert\', \'retre\', \'rtet\', 1716552208, \'1716552208_0130affd32fdde609146.webp\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `added_on`, `banner`) VALUES (\'test\', \'test\', NULL, \'16\', \'16\', \'3\', \'<p>test</p>\', \'ert\', \'retre\', \'rtet\', 1716552208, \'1716552208_0130affd32fdde609146.webp\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `added_on`, `banner`) VALUES (\'test\', \'test\', NULL, \'16\', \'16\', \'3\', \'<p>test</p>\', \'ert\', \'retre\', \'rtet\', 1716552208, \'1716552208_0130affd32fdde609146.webp\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `added_on`, `banner`) VALUES (:title:, :slug:, :feature:, :season:, :author:, :enum:, :details:, :meta_title:, :meta_description:, :keywords:, :added_on:, :banner:)', [...], false)
+ 5 APPPATH\Controllers\Home.php(126): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('episode')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

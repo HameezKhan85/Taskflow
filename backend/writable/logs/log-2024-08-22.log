@@ -1,0 +1,16 @@
+CRITICAL - 2024-08-22 05:20:11 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-22 05:25:00 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-22 05:25:10 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-22 06:31:32 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

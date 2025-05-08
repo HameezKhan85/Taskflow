@@ -1,0 +1,50 @@
+CRITICAL - 2024-08-19 05:47:50 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "<"
+[Method: GET, Route: editepisode/%3C]
+in SYSTEMPATH\Router\Router.php on line 736.
+ 1 SYSTEMPATH\Router\Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('editepisode/<')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('editepisode/<')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-19 06:08:36 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "Two-piece box packaging has multiple purposes when it comes to packing your product inside them. These boxes serve two purposes for a product at the same time, and these are protection and good appeal..."
+[Method: GET, Route: editepisode/Two-piece%20box%20packaging%20has%20multiple%20purposes%20when%20it%20comes%20to%20packing%20your%20product%20inside%20them.%20These%20boxes%20serve%20two%20purposes%20for%20a%20product%20at%20the%20same%20time,%20and%20these%20are%20protection%20and%20good%20appeal...]
+in SYSTEMPATH\Router\Router.php on line 736.
+ 1 SYSTEMPATH\Router\Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('editepisode/Two-piece box packaging has multiple purposes when it comes to packing your product inside them. These boxes serve two purposes for a product at the same time, and these are protection and good appeal...')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('editepisode/Two-piece box packaging has multiple purposes when it comes to packing your product inside them. These boxes serve two purposes for a product at the same time, and these are protection and good appeal...')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-19 07:22:50 --> ErrorException: Undefined variable $result
+[Method: GET, Route: episodes/addepisode]
+in APPPATH\Views\episode\addepisode.php on line 121.
+ 1 APPPATH\Views\episode\addepisode.php(121): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Views\\episode\\addepisode.php', 121)
+ 2 APPPATH\Views\page.php(4): include('C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Views\\episode\\addepisode.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Views\\page.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 6 APPPATH\Controllers\Home.php(76): view('page', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->manangeepisodes('addepisode')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-19 13:40:34 --> ErrorException: Undefined variable $result
+[Method: GET, Route: editseasons/8]
+in APPPATH\Views\season\editseasons.php on line 85.
+ 1 APPPATH\Views\season\editseasons.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Views\\season\\editseasons.php', 85)
+ 2 APPPATH\Views\page.php(4): include('C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Views\\season\\editseasons.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Views\\page.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 6 APPPATH\Controllers\Home.php(152): view('page', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->editseasons('8')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

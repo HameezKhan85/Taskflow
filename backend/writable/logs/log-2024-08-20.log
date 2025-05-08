@@ -1,0 +1,140 @@
+CRITICAL - 2024-08-20 05:16:37 --> ErrorException: Undefined variable $path
+[Method: GET, Route: editseasons/8]
+in APPPATH\Views\season\editseasons.php on line 138.
+ 1 APPPATH\Views\season\editseasons.php(138): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $path', 'C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Views\\season\\editseasons.php', 138)
+ 2 APPPATH\Views\page.php(4): include('C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Views\\season\\editseasons.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Views\\page.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 6 APPPATH\Controllers\Home.php(152): view('page', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->editseasons('8')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 05:39:08 --> ErrorException: Undefined variable $file_name
+[Method: GET, Route: episodes/all]
+in APPPATH\Views\includes\footer.php on line 210.
+ 1 APPPATH\Views\includes\footer.php(210): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $file_name', 'C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Views\\includes\\footer.php', 210)
+ 2 APPPATH\Views\page.php(5): include('C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Views\\includes\\footer.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Views\\page.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 6 APPPATH\Controllers\Home.php(71): view('page', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->manangeepisodes('all')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 05:39:22 --> ErrorException: Undefined variable $file_name
+[Method: GET, Route: episodes/all]
+in APPPATH\Views\includes\footer.php on line 210.
+ 1 APPPATH\Views\includes\footer.php(210): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $file_name', 'C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Views\\includes\\footer.php', 210)
+ 2 APPPATH\Views\page.php(5): include('C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Views\\includes\\footer.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Views\\page.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 6 APPPATH\Controllers\Home.php(71): view('page', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->manangeepisodes('all')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 05:39:56 --> ErrorException: Undefined variable $file_name
+[Method: GET, Route: episodes/all]
+in APPPATH\Views\includes\footer.php on line 212.
+ 1 APPPATH\Views\includes\footer.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $file_name', 'C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Views\\includes\\footer.php', 212)
+ 2 APPPATH\Views\page.php(5): include('C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Views\\includes\\footer.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Views\\page.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 6 APPPATH\Controllers\Home.php(71): view('page', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->manangeepisodes('all')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 05:39:59 --> ErrorException: Undefined variable $file_name
+[Method: GET, Route: episodes/all]
+in APPPATH\Views\includes\footer.php on line 211.
+ 1 APPPATH\Views\includes\footer.php(211): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $file_name', 'C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Views\\includes\\footer.php', 211)
+ 2 APPPATH\Views\page.php(5): include('C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Views\\includes\\footer.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Views\\page.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 6 APPPATH\Controllers\Home.php(71): view('page', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->manangeepisodes('all')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-20 06:09:35 --> mysqli_sql_exception: Column 'status' cannot be null in C:\xampp\htdocs\server\podcast\ci-admin\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `se...', 0)
+#1 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `se...')
+#2 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `se...')
+#3 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `se...', Array, false)
+#4 C:\xampp\htdocs\server\podcast\ci-admin\app\Controllers\Home.php(272): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(933): App\Controllers\Home->insertmanage('season')
+#6 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\server\podcast\ci-admin\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\server\podcast\ci-admin\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\server\podcast\ci-admin\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-08-20 06:09:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'status' cannot be null
+[Method: POST, Route: save/season]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `seasons` (`title`, `slug`, `snum`, `status`, `details`, `meta_title`, `meta_description`, `keywords`, `update_on`) VALUES (:title:, :slug :, :snum:, :status:, :details:, :meta_title:, :meta_description:, :keywords:, :update_on:)', [...], false)
+ 2 APPPATH\Controllers\Home.php(272): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('season')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 06:09:35 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'status' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `seasons` (`title`, `slug`, `snum`, `status`, `details`, `meta_title`, `meta_description`, `keywords`, `update_on`) VALUES (\'test\', \'test\', \'\', NULL, \'\', \'\', \'\', \'\', 1724134174)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `seasons` (`title`, `slug`, `snum`, `status`, `details`, `meta_title`, `meta_description`, `keywords`, `update_on`) VALUES (\'test\', \'test\', \'\', NULL, \'\', \'\', \'\', \'\', 1724134174)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `seasons` (`title`, `slug`, `snum`, `status`, `details`, `meta_title`, `meta_description`, `keywords`, `update_on`) VALUES (:title:, :slug :, :snum:, :status:, :details:, :meta_title:, :meta_description:, :keywords:, :update_on:)', [...], false)
+ 4 APPPATH\Controllers\Home.php(272): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('season')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 06:09:35 --> [Caused by] mysqli_sql_exception: Column 'status' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `seasons` (`title`, `slug`, `snum`, `status`, `details`, `meta_title`, `meta_description`, `keywords`, `update_on`) VALUES (\'test\', \'test\', \'\', NULL, \'\', \'\', \'\', \'\', 1724134174)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `seasons` (`title`, `slug`, `snum`, `status`, `details`, `meta_title`, `meta_description`, `keywords`, `update_on`) VALUES (\'test\', \'test\', \'\', NULL, \'\', \'\', \'\', \'\', 1724134174)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `seasons` (`title`, `slug`, `snum`, `status`, `details`, `meta_title`, `meta_description`, `keywords`, `update_on`) VALUES (\'test\', \'test\', \'\', NULL, \'\', \'\', \'\', \'\', 1724134174)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `seasons` (`title`, `slug`, `snum`, `status`, `details`, `meta_title`, `meta_description`, `keywords`, `update_on`) VALUES (:title:, :slug :, :snum:, :status:, :details:, :meta_title:, :meta_description:, :keywords:, :update_on:)', [...], false)
+ 5 APPPATH\Controllers\Home.php(272): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('season')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-20 08:04:59 --> ErrorException: Undefined array key "thumbnail"
+[Method: GET, Route: editseasons/8]
+in APPPATH\Views\season\editseasons.php on line 92.
+ 1 APPPATH\Views\season\editseasons.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "thumbnail"', 'C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Views\\season\\editseasons.php', 92)
+ 2 APPPATH\Views\page.php(4): include('C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Views\\season\\editseasons.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Views\\page.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 6 APPPATH\Controllers\Home.php(152): view('page', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->editseasons('8')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

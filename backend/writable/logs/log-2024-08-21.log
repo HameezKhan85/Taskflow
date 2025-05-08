@@ -1,0 +1,560 @@
+CRITICAL - 2024-08-21 09:32:03 --> ErrorException: Undefined array key 3
+[Method: POST, Route: getajax]
+in APPPATH\Controllers\Home.php on line 483.
+ 1 APPPATH\Controllers\Home.php(483): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 3', 'C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Controllers\\Home.php', 483)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-21 09:32:11 --> ErrorException: Undefined array key 4
+[Method: POST, Route: getajax]
+in APPPATH\Controllers\Home.php on line 483.
+ 1 APPPATH\Controllers\Home.php(483): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 4', 'C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Controllers\\Home.php', 483)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-21 09:32:12 --> ErrorException: Undefined array key 5
+[Method: POST, Route: getajax]
+in APPPATH\Controllers\Home.php on line 483.
+ 1 APPPATH\Controllers\Home.php(483): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 5', 'C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Controllers\\Home.php', 483)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-21 09:32:13 --> ErrorException: Undefined array key 6
+[Method: POST, Route: getajax]
+in APPPATH\Controllers\Home.php on line 483.
+ 1 APPPATH\Controllers\Home.php(483): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 6', 'C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Controllers\\Home.php', 483)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-21 10:31:11 --> mysqli_sql_exception: Table 'sd_podcast_kolaxo.user' doesn't exist in C:\xampp\htdocs\server\podcast\ci-admin\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\server\podcast\ci-admin\app\Controllers\Home.php(511): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(933): App\Controllers\Home->getData12()
+#6 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\server\podcast\ci-admin\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\server\podcast\ci-admin\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\server\podcast\ci-admin\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-08-21 10:31:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'sd_podcast_kolaxo.user' doesn't exist
+[Method: POST, Route: getajax]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user`', [], false)
+ 2 APPPATH\Controllers\Home.php(511): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-21 10:31:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'sd_podcast_kolaxo.user' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `user`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `user`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user`', [], false)
+ 4 APPPATH\Controllers\Home.php(511): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-21 10:31:11 --> [Caused by] mysqli_sql_exception: Table 'sd_podcast_kolaxo.user' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `user`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `user`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `user`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user`', [], false)
+ 5 APPPATH\Controllers\Home.php(511): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-21 10:37:32 --> mysqli_sql_exception: Unknown column 'name' in 'where clause' in C:\xampp\htdocs\server\podcast\ci-admin\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\server\podcast\ci-admin\app\Controllers\Home.php(511): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(933): App\Controllers\Home->getData12()
+#6 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\server\podcast\ci-admin\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\server\podcast\ci-admin\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\server\podcast\ci-admin\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-08-21 10:37:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'name' in 'where clause'
+[Method: POST, Route: getajax]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `users`
+WHERE   (
+`id` LIKE :id: ESCAPE \'!\'
+OR  `name` LIKE :name: ESCAPE \'!\'
+OR  `role` LIKE :role: ESCAPE \'!\'
+ )', [...], false)
+ 2 APPPATH\Controllers\Home.php(511): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-21 10:37:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `users`
+WHERE   (
+`id` LIKE \'%ah%\' ESCAPE \'!\'
+OR  `name` LIKE \'%ah%\' ESCAPE \'!\'
+OR  `role` LIKE \'%ah%\' ESCAPE \'!\'
+ )')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `users`
+WHERE   (
+`id` LIKE \'%ah%\' ESCAPE \'!\'
+OR  `name` LIKE \'%ah%\' ESCAPE \'!\'
+OR  `role` LIKE \'%ah%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `users`
+WHERE   (
+`id` LIKE :id: ESCAPE \'!\'
+OR  `name` LIKE :name: ESCAPE \'!\'
+OR  `role` LIKE :role: ESCAPE \'!\'
+ )', [...], false)
+ 4 APPPATH\Controllers\Home.php(511): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-21 10:37:32 --> [Caused by] mysqli_sql_exception: Unknown column 'name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `users`
+WHERE   (
+`id` LIKE \'%ah%\' ESCAPE \'!\'
+OR  `name` LIKE \'%ah%\' ESCAPE \'!\'
+OR  `role` LIKE \'%ah%\' ESCAPE \'!\'
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `users`
+WHERE   (
+`id` LIKE \'%ah%\' ESCAPE \'!\'
+OR  `name` LIKE \'%ah%\' ESCAPE \'!\'
+OR  `role` LIKE \'%ah%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `users`
+WHERE   (
+`id` LIKE \'%ah%\' ESCAPE \'!\'
+OR  `name` LIKE \'%ah%\' ESCAPE \'!\'
+OR  `role` LIKE \'%ah%\' ESCAPE \'!\'
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `users`
+WHERE   (
+`id` LIKE :id: ESCAPE \'!\'
+OR  `name` LIKE :name: ESCAPE \'!\'
+OR  `role` LIKE :role: ESCAPE \'!\'
+ )', [...], false)
+ 5 APPPATH\Controllers\Home.php(511): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-21 10:52:28 --> mysqli_sql_exception: Column 'status' cannot be null in C:\xampp\htdocs\server\podcast\ci-admin\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\server\podcast\ci-admin\app\Controllers\Home.php(328): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(933): App\Controllers\Home->insertmanage('user')
+#6 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\server\podcast\ci-admin\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\server\podcast\ci-admin\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\server\podcast\ci-admin\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-08-21 10:52:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'status' cannot be null
+[Method: POST, Route: save/user]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`firstname`, `usertype`, `username`, `password`, `status`, `update_on`) VALUES (:firstname:, :usertype :, :username:, :password:, :status:, :update_on:)', [...], false)
+ 2 APPPATH\Controllers\Home.php(328): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('user')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-21 10:52:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'status' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`firstname`, `usertype`, `username`, `password`, `status`, `update_on`) VALUES (\'test\', \'Admin\', \'ee\', \'123\', NULL, 1724237548)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`firstname`, `usertype`, `username`, `password`, `status`, `update_on`) VALUES (\'test\', \'Admin\', \'ee\', \'123\', NULL, 1724237548)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`firstname`, `usertype`, `username`, `password`, `status`, `update_on`) VALUES (:firstname:, :usertype :, :username:, :password:, :status:, :update_on:)', [...], false)
+ 4 APPPATH\Controllers\Home.php(328): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('user')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-21 10:52:28 --> [Caused by] mysqli_sql_exception: Column 'status' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `users` (`firstname`, `usertype`, `username`, `password`, `status`, `update_on`) VALUES (\'test\', \'Admin\', \'ee\', \'123\', NULL, 1724237548)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`firstname`, `usertype`, `username`, `password`, `status`, `update_on`) VALUES (\'test\', \'Admin\', \'ee\', \'123\', NULL, 1724237548)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`firstname`, `usertype`, `username`, `password`, `status`, `update_on`) VALUES (\'test\', \'Admin\', \'ee\', \'123\', NULL, 1724237548)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`firstname`, `usertype`, `username`, `password`, `status`, `update_on`) VALUES (:firstname:, :usertype :, :username:, :password:, :status:, :update_on:)', [...], false)
+ 5 APPPATH\Controllers\Home.php(328): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('user')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-21 10:53:30 --> ErrorException: Undefined variable $status
+[Method: POST, Route: save/user]
+in APPPATH\Controllers\Home.php on line 324.
+ 1 APPPATH\Controllers\Home.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $status', 'C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Controllers\\Home.php', 324)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('user')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-21 11:23:32 --> ErrorException: Undefined array key "name"
+[Method: GET, Route: edituser/2]
+in APPPATH\Views\user\edituser.php on line 55.
+ 1 APPPATH\Views\user\edituser.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Views\\user\\edituser.php', 55)
+ 2 APPPATH\Views\page.php(4): include('C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Views\\user\\edituser.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Views\\page.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 6 APPPATH\Controllers\Home.php(163): view('page', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->edituser('2')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-21 11:31:11 --> ErrorException: Undefined variable $status
+[Method: POST, Route: update/user]
+in APPPATH\Controllers\Home.php on line 502.
+ 1 APPPATH\Controllers\Home.php(502): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $status', 'C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Controllers\\Home.php', 502)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->update('user', '')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-21 11:40:48 --> ErrorException: Undefined variable $session
+[Method: GET, Route: user/all]
+in APPPATH\Controllers\Home.php on line 129.
+ 1 APPPATH\Controllers\Home.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Controllers\\Home.php', 129)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->manangeuser('all')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-21 11:42:59 --> ErrorException: Undefined variable $session
+[Method: GET, Route: user/all]
+in APPPATH\Controllers\Home.php on line 130.
+ 1 APPPATH\Controllers\Home.php(130): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Controllers\\Home.php', 130)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->manangeuser('all')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-21 11:43:08 --> ErrorException: Undefined variable $session
+[Method: GET, Route: user/all]
+in APPPATH\Controllers\Home.php on line 131.
+ 1 APPPATH\Controllers\Home.php(131): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Controllers\\Home.php', 131)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->manangeuser('all')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-21 11:43:09 --> ErrorException: Undefined variable $session
+[Method: GET, Route: user/all]
+in APPPATH\Controllers\Home.php on line 131.
+ 1 APPPATH\Controllers\Home.php(131): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Controllers\\Home.php', 131)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->manangeuser('all')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-21 11:43:10 --> ErrorException: Undefined variable $session
+[Method: GET, Route: user/all]
+in APPPATH\Controllers\Home.php on line 131.
+ 1 APPPATH\Controllers\Home.php(131): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Controllers\\Home.php', 131)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->manangeuser('all')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-21 11:43:10 --> ErrorException: Undefined variable $session
+[Method: GET, Route: user/all]
+in APPPATH\Controllers\Home.php on line 131.
+ 1 APPPATH\Controllers\Home.php(131): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Controllers\\Home.php', 131)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->manangeuser('all')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-21 12:53:05 --> ErrorException: Constant URL already defined
+[Method: GET, Route: /]
+in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/constant/config.php on line 2.
+ 1 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/constant/config.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Constant URL already defined', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/constant/config.php', 2)
+ 2 FCPATH/index.php(2): require('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/constant/config.php')
+ 3 APPPATH/Views/page.php(4): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/index.php')
+ 4 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/app/Views/page.php')
+ 5 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 7 APPPATH/Controllers/Home.php(27): view('page', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-21 12:54:00 --> ErrorException: Constant URL already defined
+[Method: GET, Route: /]
+in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/constant/config.php on line 2.
+ 1 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/constant/config.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Constant URL already defined', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/constant/config.php', 2)
+ 2 FCPATH/index.php(2): require('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/constant/config.php')
+ 3 APPPATH/Views/page.php(4): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/index.php')
+ 4 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/app/Views/page.php')
+ 5 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 7 APPPATH/Controllers/Home.php(27): view('page', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-21 12:54:01 --> ErrorException: Constant URL already defined
+[Method: GET, Route: /]
+in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/constant/config.php on line 2.
+ 1 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/constant/config.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Constant URL already defined', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/constant/config.php', 2)
+ 2 FCPATH/index.php(2): require('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/constant/config.php')
+ 3 APPPATH/Views/page.php(4): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/index.php')
+ 4 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/app/Views/page.php')
+ 5 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 7 APPPATH/Controllers/Home.php(27): view('page', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-21 12:54:06 --> ErrorException: Constant URL already defined
+[Method: GET, Route: /]
+in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/constant/config.php on line 2.
+ 1 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/constant/config.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Constant URL already defined', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/constant/config.php', 2)
+ 2 FCPATH/index.php(2): require('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/constant/config.php')
+ 3 APPPATH/Views/page.php(4): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/index.php')
+ 4 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/app/Views/page.php')
+ 5 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 7 APPPATH/Controllers/Home.php(27): view('page', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-21 12:54:07 --> ErrorException: Constant URL already defined
+[Method: GET, Route: /]
+in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/constant/config.php on line 2.
+ 1 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/constant/config.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Constant URL already defined', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/constant/config.php', 2)
+ 2 FCPATH/index.php(2): require('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/constant/config.php')
+ 3 APPPATH/Views/page.php(4): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/index.php')
+ 4 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/app/Views/page.php')
+ 5 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 7 APPPATH/Controllers/Home.php(27): view('page', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-21 12:56:00 --> ErrorException: Constant URL already defined
+[Method: GET, Route: /]
+in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/constant/config.php on line 2.
+ 1 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/constant/config.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Constant URL already defined', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/constant/config.php', 2)
+ 2 FCPATH/index.php(2): require('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/constant/config.php')
+ 3 APPPATH/Views/page.php(4): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/index.php')
+ 4 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/app/Views/page.php')
+ 5 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 7 APPPATH/Controllers/Home.php(29): view('page', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-21 12:57:25 --> ErrorException: Constant URL already defined
+[Method: GET, Route: /]
+in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/constant/config.php on line 2.
+ 1 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/constant/config.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Constant URL already defined', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/constant/config.php', 2)
+ 2 FCPATH/index.php(2): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/constant/config.php')
+ 3 APPPATH/Views/page.php(4): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/index.php')
+ 4 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/app/Views/page.php')
+ 5 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 7 APPPATH/Controllers/Home.php(29): view('page', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-21 12:58:29 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-21 12:58:43 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-21 12:59:20 --> ErrorException: Constant URL already defined
+[Method: GET, Route: /]
+in FCPATH/index.php on line 4.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Constant URL already defined', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/index.php', 4)
+ 2 FCPATH/index.php(4): define('URL', 'https://dev.kolaxopackaging.com/podcast/')
+ 3 APPPATH/Views/page.php(4): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/index.php')
+ 4 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/app/Views/page.php')
+ 5 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 7 APPPATH/Controllers/Home.php(29): view('page', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(65): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-21 12:59:45 --> ErrorException: Constant URL already defined
+[Method: GET, Route: /]
+in FCPATH/index.php on line 4.
+ 1 FCPATH/index.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Constant URL already defined', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/index.php', 4)
+ 2 APPPATH/Views/page.php(4): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/index.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/app/Views/page.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 6 APPPATH/Controllers/Home.php(29): view('page', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(65): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-21 12:59:52 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-21 13:00:07 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-21 13:01:05 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-21 13:01:07 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-21 13:01:45 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-21 13:01:47 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-21 13:01:49 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-21 13:02:08 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-21 13:02:25 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-21 13:03:26 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-21 13:03:53 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-21 13:03:55 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-21 13:04:37 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-21 13:04:48 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-21 13:05:18 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-21 13:06:19 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-21 13:06:31 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

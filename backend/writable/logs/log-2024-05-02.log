@@ -1,0 +1,536 @@
+CRITICAL - 2024-05-02 10:09:36 --> ParseError: syntax error, unexpected variable "$this"
+[Method: POST, Route: ajax]
+in APPPATH\Controllers\AjaxController.php on line 30.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('G:\\xampp\\htdocs\\hrm\\app\\Controllers\\AjaxController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AjaxController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AjaxController')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\AjaxController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-02 10:10:47 --> ParseError: syntax error, unexpected variable "$this"
+[Method: POST, Route: ajax]
+in APPPATH\Controllers\AjaxController.php on line 28.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('G:\\xampp\\htdocs\\hrm\\app\\Controllers\\AjaxController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AjaxController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AjaxController')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\AjaxController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-02 10:13:52 --> ParseError: syntax error, unexpected variable "$this"
+[Method: POST, Route: ajax]
+in APPPATH\Controllers\AjaxController.php on line 28.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('G:\\xampp\\htdocs\\hrm\\app\\Controllers\\AjaxController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AjaxController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AjaxController')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\AjaxController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-05-02 11:00:52 --> mysqli_sql_exception: Unknown column 'attendance' in 'where clause' in G:\xampp\htdocs\hrm\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 G:\xampp\htdocs\hrm\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT * FROM a...', 0)
+#1 G:\xampp\htdocs\hrm\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM a...')
+#2 G:\xampp\htdocs\hrm\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM a...')
+#3 G:\xampp\htdocs\hrm\app\Models\HomeModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM a...')
+#4 G:\xampp\htdocs\hrm\app\Controllers\AjaxController.php(30): App\Models\HomeModel->get_row('attendance', 'employee_id', 'attendance')
+#5 G:\xampp\htdocs\hrm\system\CodeIgniter.php(933): App\Controllers\AjaxController->index()
+#6 G:\xampp\htdocs\hrm\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+#7 G:\xampp\htdocs\hrm\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 G:\xampp\htdocs\hrm\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 G:\xampp\htdocs\hrm\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 G:\xampp\htdocs\hrm\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-05-02 11:00:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'attendance' in 'where clause'
+[Method: POST, Route: ajax]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Models\HomeModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM attendance WHERE employee_id = attendance')
+ 2 APPPATH\Controllers\AjaxController.php(30): App\Models\HomeModel->get_row('attendance', 'employee_id', 'attendance')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AjaxController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-02 11:00:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'attendance' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM attendance WHERE employee_id = attendance')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM attendance WHERE employee_id = attendance')
+ 3 APPPATH\Models\HomeModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM attendance WHERE employee_id = attendance')
+ 4 APPPATH\Controllers\AjaxController.php(30): App\Models\HomeModel->get_row('attendance', 'employee_id', 'attendance')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AjaxController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-02 11:00:52 --> [Caused by] mysqli_sql_exception: Unknown column 'attendance' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT * FROM attendance WHERE employee_id = attendance', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM attendance WHERE employee_id = attendance')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM attendance WHERE employee_id = attendance')
+ 4 APPPATH\Models\HomeModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM attendance WHERE employee_id = attendance')
+ 5 APPPATH\Controllers\AjaxController.php(30): App\Models\HomeModel->get_row('attendance', 'employee_id', 'attendance')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AjaxController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-05-02 11:00:55 --> mysqli_sql_exception: Unknown column 'attendance' in 'where clause' in G:\xampp\htdocs\hrm\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 G:\xampp\htdocs\hrm\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT * FROM a...', 0)
+#1 G:\xampp\htdocs\hrm\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM a...')
+#2 G:\xampp\htdocs\hrm\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM a...')
+#3 G:\xampp\htdocs\hrm\app\Models\HomeModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM a...')
+#4 G:\xampp\htdocs\hrm\app\Controllers\AjaxController.php(30): App\Models\HomeModel->get_row('attendance', 'employee_id', 'attendance')
+#5 G:\xampp\htdocs\hrm\system\CodeIgniter.php(933): App\Controllers\AjaxController->index()
+#6 G:\xampp\htdocs\hrm\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+#7 G:\xampp\htdocs\hrm\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 G:\xampp\htdocs\hrm\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 G:\xampp\htdocs\hrm\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 G:\xampp\htdocs\hrm\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-05-02 11:00:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'attendance' in 'where clause'
+[Method: POST, Route: ajax]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Models\HomeModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM attendance WHERE employee_id = attendance')
+ 2 APPPATH\Controllers\AjaxController.php(30): App\Models\HomeModel->get_row('attendance', 'employee_id', 'attendance')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AjaxController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-02 11:00:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'attendance' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM attendance WHERE employee_id = attendance')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM attendance WHERE employee_id = attendance')
+ 3 APPPATH\Models\HomeModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM attendance WHERE employee_id = attendance')
+ 4 APPPATH\Controllers\AjaxController.php(30): App\Models\HomeModel->get_row('attendance', 'employee_id', 'attendance')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AjaxController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-02 11:00:55 --> [Caused by] mysqli_sql_exception: Unknown column 'attendance' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT * FROM attendance WHERE employee_id = attendance', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM attendance WHERE employee_id = attendance')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM attendance WHERE employee_id = attendance')
+ 4 APPPATH\Models\HomeModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM attendance WHERE employee_id = attendance')
+ 5 APPPATH\Controllers\AjaxController.php(30): App\Models\HomeModel->get_row('attendance', 'employee_id', 'attendance')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AjaxController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-05-02 11:00:56 --> mysqli_sql_exception: Unknown column 'attendance' in 'where clause' in G:\xampp\htdocs\hrm\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 G:\xampp\htdocs\hrm\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT * FROM a...', 0)
+#1 G:\xampp\htdocs\hrm\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM a...')
+#2 G:\xampp\htdocs\hrm\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM a...')
+#3 G:\xampp\htdocs\hrm\app\Models\HomeModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM a...')
+#4 G:\xampp\htdocs\hrm\app\Controllers\AjaxController.php(30): App\Models\HomeModel->get_row('attendance', 'employee_id', 'attendance')
+#5 G:\xampp\htdocs\hrm\system\CodeIgniter.php(933): App\Controllers\AjaxController->index()
+#6 G:\xampp\htdocs\hrm\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+#7 G:\xampp\htdocs\hrm\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 G:\xampp\htdocs\hrm\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 G:\xampp\htdocs\hrm\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 G:\xampp\htdocs\hrm\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-05-02 11:00:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'attendance' in 'where clause'
+[Method: POST, Route: ajax]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Models\HomeModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM attendance WHERE employee_id = attendance')
+ 2 APPPATH\Controllers\AjaxController.php(30): App\Models\HomeModel->get_row('attendance', 'employee_id', 'attendance')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AjaxController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-02 11:00:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'attendance' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM attendance WHERE employee_id = attendance')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM attendance WHERE employee_id = attendance')
+ 3 APPPATH\Models\HomeModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM attendance WHERE employee_id = attendance')
+ 4 APPPATH\Controllers\AjaxController.php(30): App\Models\HomeModel->get_row('attendance', 'employee_id', 'attendance')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AjaxController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-02 11:00:56 --> [Caused by] mysqli_sql_exception: Unknown column 'attendance' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT * FROM attendance WHERE employee_id = attendance', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM attendance WHERE employee_id = attendance')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM attendance WHERE employee_id = attendance')
+ 4 APPPATH\Models\HomeModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM attendance WHERE employee_id = attendance')
+ 5 APPPATH\Controllers\AjaxController.php(30): App\Models\HomeModel->get_row('attendance', 'employee_id', 'attendance')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AjaxController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-05-02 11:01:05 --> mysqli_sql_exception: Unknown column 'attendance' in 'where clause' in G:\xampp\htdocs\hrm\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 G:\xampp\htdocs\hrm\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT * FROM a...', 0)
+#1 G:\xampp\htdocs\hrm\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM a...')
+#2 G:\xampp\htdocs\hrm\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM a...')
+#3 G:\xampp\htdocs\hrm\app\Models\HomeModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM a...')
+#4 G:\xampp\htdocs\hrm\app\Controllers\AjaxController.php(30): App\Models\HomeModel->get_row('attendance', 'employee_id', 'attendance')
+#5 G:\xampp\htdocs\hrm\system\CodeIgniter.php(933): App\Controllers\AjaxController->index()
+#6 G:\xampp\htdocs\hrm\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+#7 G:\xampp\htdocs\hrm\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 G:\xampp\htdocs\hrm\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 G:\xampp\htdocs\hrm\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 G:\xampp\htdocs\hrm\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-05-02 11:01:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'attendance' in 'where clause'
+[Method: POST, Route: ajax]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Models\HomeModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM attendance WHERE employee_id = attendance')
+ 2 APPPATH\Controllers\AjaxController.php(30): App\Models\HomeModel->get_row('attendance', 'employee_id', 'attendance')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AjaxController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-02 11:01:05 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'attendance' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM attendance WHERE employee_id = attendance')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM attendance WHERE employee_id = attendance')
+ 3 APPPATH\Models\HomeModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM attendance WHERE employee_id = attendance')
+ 4 APPPATH\Controllers\AjaxController.php(30): App\Models\HomeModel->get_row('attendance', 'employee_id', 'attendance')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AjaxController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-02 11:01:05 --> [Caused by] mysqli_sql_exception: Unknown column 'attendance' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT * FROM attendance WHERE employee_id = attendance', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM attendance WHERE employee_id = attendance')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM attendance WHERE employee_id = attendance')
+ 4 APPPATH\Models\HomeModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM attendance WHERE employee_id = attendance')
+ 5 APPPATH\Controllers\AjaxController.php(30): App\Models\HomeModel->get_row('attendance', 'employee_id', 'attendance')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AjaxController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-05-02 11:01:07 --> mysqli_sql_exception: Unknown column 'attendance' in 'where clause' in G:\xampp\htdocs\hrm\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 G:\xampp\htdocs\hrm\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT * FROM a...', 0)
+#1 G:\xampp\htdocs\hrm\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM a...')
+#2 G:\xampp\htdocs\hrm\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM a...')
+#3 G:\xampp\htdocs\hrm\app\Models\HomeModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM a...')
+#4 G:\xampp\htdocs\hrm\app\Controllers\AjaxController.php(30): App\Models\HomeModel->get_row('attendance', 'employee_id', 'attendance')
+#5 G:\xampp\htdocs\hrm\system\CodeIgniter.php(933): App\Controllers\AjaxController->index()
+#6 G:\xampp\htdocs\hrm\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+#7 G:\xampp\htdocs\hrm\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 G:\xampp\htdocs\hrm\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 G:\xampp\htdocs\hrm\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 G:\xampp\htdocs\hrm\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-05-02 11:01:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'attendance' in 'where clause'
+[Method: POST, Route: ajax]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Models\HomeModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM attendance WHERE employee_id = attendance')
+ 2 APPPATH\Controllers\AjaxController.php(30): App\Models\HomeModel->get_row('attendance', 'employee_id', 'attendance')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AjaxController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-02 11:01:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'attendance' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM attendance WHERE employee_id = attendance')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM attendance WHERE employee_id = attendance')
+ 3 APPPATH\Models\HomeModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM attendance WHERE employee_id = attendance')
+ 4 APPPATH\Controllers\AjaxController.php(30): App\Models\HomeModel->get_row('attendance', 'employee_id', 'attendance')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AjaxController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-02 11:01:07 --> [Caused by] mysqli_sql_exception: Unknown column 'attendance' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT * FROM attendance WHERE employee_id = attendance', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM attendance WHERE employee_id = attendance')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM attendance WHERE employee_id = attendance')
+ 4 APPPATH\Models\HomeModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM attendance WHERE employee_id = attendance')
+ 5 APPPATH\Controllers\AjaxController.php(30): App\Models\HomeModel->get_row('attendance', 'employee_id', 'attendance')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AjaxController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-05-02 11:01:19 --> mysqli_sql_exception: Unknown column 'attendance' in 'where clause' in G:\xampp\htdocs\hrm\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 G:\xampp\htdocs\hrm\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT * FROM a...', 0)
+#1 G:\xampp\htdocs\hrm\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM a...')
+#2 G:\xampp\htdocs\hrm\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM a...')
+#3 G:\xampp\htdocs\hrm\app\Models\HomeModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM a...')
+#4 G:\xampp\htdocs\hrm\app\Controllers\AjaxController.php(30): App\Models\HomeModel->get_row('attendance', 'employee_id', 'attendance')
+#5 G:\xampp\htdocs\hrm\system\CodeIgniter.php(933): App\Controllers\AjaxController->index()
+#6 G:\xampp\htdocs\hrm\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+#7 G:\xampp\htdocs\hrm\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 G:\xampp\htdocs\hrm\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 G:\xampp\htdocs\hrm\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 G:\xampp\htdocs\hrm\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-05-02 11:01:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'attendance' in 'where clause'
+[Method: POST, Route: ajax]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Models\HomeModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM attendance WHERE employee_id = attendance')
+ 2 APPPATH\Controllers\AjaxController.php(30): App\Models\HomeModel->get_row('attendance', 'employee_id', 'attendance')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AjaxController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-02 11:01:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'attendance' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM attendance WHERE employee_id = attendance')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM attendance WHERE employee_id = attendance')
+ 3 APPPATH\Models\HomeModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM attendance WHERE employee_id = attendance')
+ 4 APPPATH\Controllers\AjaxController.php(30): App\Models\HomeModel->get_row('attendance', 'employee_id', 'attendance')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AjaxController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-02 11:01:19 --> [Caused by] mysqli_sql_exception: Unknown column 'attendance' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT * FROM attendance WHERE employee_id = attendance', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM attendance WHERE employee_id = attendance')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM attendance WHERE employee_id = attendance')
+ 4 APPPATH\Models\HomeModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM attendance WHERE employee_id = attendance')
+ 5 APPPATH\Controllers\AjaxController.php(30): App\Models\HomeModel->get_row('attendance', 'employee_id', 'attendance')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AjaxController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-05-02 11:15:52 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in G:\xampp\htdocs\hrm\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 G:\xampp\htdocs\hrm\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT * FROM a...', 0)
+#1 G:\xampp\htdocs\hrm\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM a...')
+#2 G:\xampp\htdocs\hrm\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM a...')
+#3 G:\xampp\htdocs\hrm\app\Models\HomeModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM a...')
+#4 G:\xampp\htdocs\hrm\app\Controllers\AjaxController.php(29): App\Models\HomeModel->get_row('attendance', 'employee_id', NULL)
+#5 G:\xampp\htdocs\hrm\system\CodeIgniter.php(933): App\Controllers\AjaxController->index()
+#6 G:\xampp\htdocs\hrm\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+#7 G:\xampp\htdocs\hrm\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 G:\xampp\htdocs\hrm\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 G:\xampp\htdocs\hrm\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 G:\xampp\htdocs\hrm\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-05-02 11:15:52 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[Method: POST, Route: ajax]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Models\HomeModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM attendance WHERE employee_id = ')
+ 2 APPPATH\Controllers\AjaxController.php(29): App\Models\HomeModel->get_row('attendance', 'employee_id', null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AjaxController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-02 11:15:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM attendance WHERE employee_id = ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM attendance WHERE employee_id = ')
+ 3 APPPATH\Models\HomeModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM attendance WHERE employee_id = ')
+ 4 APPPATH\Controllers\AjaxController.php(29): App\Models\HomeModel->get_row('attendance', 'employee_id', null)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AjaxController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-02 11:15:52 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT * FROM attendance WHERE employee_id = ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM attendance WHERE employee_id = ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM attendance WHERE employee_id = ')
+ 4 APPPATH\Models\HomeModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM attendance WHERE employee_id = ')
+ 5 APPPATH\Controllers\AjaxController.php(29): App\Models\HomeModel->get_row('attendance', 'employee_id', null)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AjaxController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-05-02 11:15:54 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in G:\xampp\htdocs\hrm\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 G:\xampp\htdocs\hrm\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT * FROM a...', 0)
+#1 G:\xampp\htdocs\hrm\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM a...')
+#2 G:\xampp\htdocs\hrm\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM a...')
+#3 G:\xampp\htdocs\hrm\app\Models\HomeModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM a...')
+#4 G:\xampp\htdocs\hrm\app\Controllers\AjaxController.php(29): App\Models\HomeModel->get_row('attendance', 'employee_id', NULL)
+#5 G:\xampp\htdocs\hrm\system\CodeIgniter.php(933): App\Controllers\AjaxController->index()
+#6 G:\xampp\htdocs\hrm\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+#7 G:\xampp\htdocs\hrm\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 G:\xampp\htdocs\hrm\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 G:\xampp\htdocs\hrm\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 G:\xampp\htdocs\hrm\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-05-02 11:15:54 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[Method: POST, Route: ajax]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Models\HomeModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM attendance WHERE employee_id = ')
+ 2 APPPATH\Controllers\AjaxController.php(29): App\Models\HomeModel->get_row('attendance', 'employee_id', null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AjaxController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-02 11:15:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM attendance WHERE employee_id = ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM attendance WHERE employee_id = ')
+ 3 APPPATH\Models\HomeModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM attendance WHERE employee_id = ')
+ 4 APPPATH\Controllers\AjaxController.php(29): App\Models\HomeModel->get_row('attendance', 'employee_id', null)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AjaxController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-02 11:15:54 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT * FROM attendance WHERE employee_id = ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM attendance WHERE employee_id = ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM attendance WHERE employee_id = ')
+ 4 APPPATH\Models\HomeModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM attendance WHERE employee_id = ')
+ 5 APPPATH\Controllers\AjaxController.php(29): App\Models\HomeModel->get_row('attendance', 'employee_id', null)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AjaxController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-05-02 11:29:32 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in G:\xampp\htdocs\hrm\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 G:\xampp\htdocs\hrm\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT * FROM a...', 0)
+#1 G:\xampp\htdocs\hrm\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM a...')
+#2 G:\xampp\htdocs\hrm\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM a...')
+#3 G:\xampp\htdocs\hrm\app\Models\HomeModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM a...')
+#4 G:\xampp\htdocs\hrm\app\Controllers\AjaxController.php(29): App\Models\HomeModel->get_row('attendance', 'employee_id', NULL)
+#5 G:\xampp\htdocs\hrm\system\CodeIgniter.php(933): App\Controllers\AjaxController->index()
+#6 G:\xampp\htdocs\hrm\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+#7 G:\xampp\htdocs\hrm\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 G:\xampp\htdocs\hrm\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 G:\xampp\htdocs\hrm\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 G:\xampp\htdocs\hrm\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-05-02 11:29:32 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[Method: POST, Route: ajax]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Models\HomeModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM attendance WHERE employee_id = ')
+ 2 APPPATH\Controllers\AjaxController.php(29): App\Models\HomeModel->get_row('attendance', 'employee_id', null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AjaxController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-02 11:29:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM attendance WHERE employee_id = ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM attendance WHERE employee_id = ')
+ 3 APPPATH\Models\HomeModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM attendance WHERE employee_id = ')
+ 4 APPPATH\Controllers\AjaxController.php(29): App\Models\HomeModel->get_row('attendance', 'employee_id', null)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AjaxController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-02 11:29:32 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT * FROM attendance WHERE employee_id = ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM attendance WHERE employee_id = ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM attendance WHERE employee_id = ')
+ 4 APPPATH\Models\HomeModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM attendance WHERE employee_id = ')
+ 5 APPPATH\Controllers\AjaxController.php(29): App\Models\HomeModel->get_row('attendance', 'employee_id', null)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AjaxController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-05-02 11:30:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in G:\xampp\htdocs\hrm\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 G:\xampp\htdocs\hrm\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT * FROM a...', 0)
+#1 G:\xampp\htdocs\hrm\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM a...')
+#2 G:\xampp\htdocs\hrm\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM a...')
+#3 G:\xampp\htdocs\hrm\app\Models\HomeModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM a...')
+#4 G:\xampp\htdocs\hrm\app\Controllers\AjaxController.php(29): App\Models\HomeModel->get_row('attendance', 'employee_id', NULL)
+#5 G:\xampp\htdocs\hrm\system\CodeIgniter.php(933): App\Controllers\AjaxController->index()
+#6 G:\xampp\htdocs\hrm\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+#7 G:\xampp\htdocs\hrm\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 G:\xampp\htdocs\hrm\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 G:\xampp\htdocs\hrm\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 G:\xampp\htdocs\hrm\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-05-02 11:30:42 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[Method: POST, Route: ajax]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Models\HomeModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM attendance WHERE employee_id = ')
+ 2 APPPATH\Controllers\AjaxController.php(29): App\Models\HomeModel->get_row('attendance', 'employee_id', null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AjaxController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-02 11:30:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM attendance WHERE employee_id = ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM attendance WHERE employee_id = ')
+ 3 APPPATH\Models\HomeModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM attendance WHERE employee_id = ')
+ 4 APPPATH\Controllers\AjaxController.php(29): App\Models\HomeModel->get_row('attendance', 'employee_id', null)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AjaxController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-02 11:30:42 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT * FROM attendance WHERE employee_id = ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM attendance WHERE employee_id = ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM attendance WHERE employee_id = ')
+ 4 APPPATH\Models\HomeModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM attendance WHERE employee_id = ')
+ 5 APPPATH\Controllers\AjaxController.php(29): App\Models\HomeModel->get_row('attendance', 'employee_id', null)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AjaxController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

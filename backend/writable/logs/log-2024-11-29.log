@@ -1,0 +1,592 @@
+CRITICAL - 2024-11-29 05:10:15 --> ErrorException: Attempt to read property "id" on array
+[Method: POST, Route: tech/duplicate_item]
+in APPPATH/Controllers/Home.php on line 217.
+ 1 APPPATH/Controllers/Home.php(217): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Home.php(59): App\Controllers\Home->duplicate_item()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-29 05:15:22 --> TypeError: array_merge(): Argument #2 must be of type array, stdClass given
+[Method: POST, Route: tech/duplicate_item]
+in APPPATH/Controllers/Home.php on line 213.
+ 1 APPPATH/Controllers/Home.php(213): array_merge()
+ 2 APPPATH/Controllers/Home.php(59): App\Controllers\Home->duplicate_item()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-29 05:19:35 --> TypeError: Only arrays and Traversables can be unpacked
+[Method: POST, Route: tech/duplicate_item]
+in APPPATH/Controllers/Home.php on line 212.
+ 1 APPPATH/Controllers/Home.php(59): App\Controllers\Home->duplicate_item()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+ERROR - 2024-11-29 05:20:26 --> mysqli_sql_exception: Duplicate entry '236' for key 'PRIMARY' in /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/MySQLi/Connection.php(308): mysqli->query()
+#1 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Controllers/Home.php(214): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Controllers/Home.php(59): App\Controllers\Home->duplicate_item()
+#6 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+#7 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#8 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/index.php(57): CodeIgniter\Boot::bootWeb()
+#12 {main}
+CRITICAL - 2024-11-29 05:20:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '236' for key 'PRIMARY'
+[Method: POST, Route: tech/duplicate_item]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Home.php(214): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Home.php(59): App\Controllers\Home->duplicate_item()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-29 05:20:26 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '236' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Home.php(214): CodeIgniter\Database\BaseBuilder->insert()
+ 5 APPPATH/Controllers/Home.php(59): App\Controllers\Home->duplicate_item()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-29 05:20:26 --> [Caused by] mysqli_sql_exception: Duplicate entry '236' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Home.php(214): CodeIgniter\Database\BaseBuilder->insert()
+ 6 APPPATH/Controllers/Home.php(59): App\Controllers\Home->duplicate_item()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-29 05:22:21 --> ErrorException: Attempt to read property "status" on array
+[Method: POST, Route: tech/duplicate_item]
+in APPPATH/Controllers/Home.php on line 208.
+ 1 APPPATH/Controllers/Home.php(208): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Home.php(59): App\Controllers\Home->duplicate_item()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+ERROR - 2024-11-29 05:23:43 --> mysqli_sql_exception: Duplicate entry '236' for key 'PRIMARY' in /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/MySQLi/Connection.php(308): mysqli->query()
+#1 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Controllers/Home.php(214): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Controllers/Home.php(59): App\Controllers\Home->duplicate_item()
+#6 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+#7 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#8 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/index.php(57): CodeIgniter\Boot::bootWeb()
+#12 {main}
+CRITICAL - 2024-11-29 05:23:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '236' for key 'PRIMARY'
+[Method: POST, Route: tech/duplicate_item]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Home.php(214): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Home.php(59): App\Controllers\Home->duplicate_item()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-29 05:23:43 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '236' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Home.php(214): CodeIgniter\Database\BaseBuilder->insert()
+ 5 APPPATH/Controllers/Home.php(59): App\Controllers\Home->duplicate_item()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-29 05:23:43 --> [Caused by] mysqli_sql_exception: Duplicate entry '236' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Home.php(214): CodeIgniter\Database\BaseBuilder->insert()
+ 6 APPPATH/Controllers/Home.php(59): App\Controllers\Home->duplicate_item()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-29 05:24:17 --> ErrorException: Attempt to read property "id" on array
+[Method: POST, Route: tech/duplicate_item]
+in APPPATH/Controllers/Home.php on line 218.
+ 1 APPPATH/Controllers/Home.php(218): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Home.php(59): App\Controllers\Home->duplicate_item()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+ERROR - 2024-11-29 06:22:11 --> mysqli_sql_exception: Table 'u959318480_customdb.custom_fields' doesn't exist in /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/MySQLi/Connection.php(308): mysqli->query()
+#1 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Models/HomeModel.php(161): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Controllers/Home.php(477): App\Models\HomeModel->get_custom_fields_values_pages()
+#5 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Controllers/Home.php(91): App\Controllers\Home->editpage()
+#6 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+#7 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#8 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/index.php(57): CodeIgniter\Boot::bootWeb()
+#12 {main}
+CRITICAL - 2024-11-29 06:22:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'u959318480_customdb.custom_fields' doesn't exist
+[Method: GET, Route: tech/editpage/14]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 APPPATH/Models/HomeModel.php(161): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Home.php(477): App\Models\HomeModel->get_custom_fields_values_pages()
+ 3 APPPATH/Controllers/Home.php(91): App\Controllers\Home->editpage()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-29 06:22:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'u959318480_customdb.custom_fields' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Models/HomeModel.php(161): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Home.php(477): App\Models\HomeModel->get_custom_fields_values_pages()
+ 5 APPPATH/Controllers/Home.php(91): App\Controllers\Home->editpage()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-29 06:22:11 --> [Caused by] mysqli_sql_exception: Table 'u959318480_customdb.custom_fields' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/HomeModel.php(161): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Home.php(477): App\Models\HomeModel->get_custom_fields_values_pages()
+ 6 APPPATH/Controllers/Home.php(91): App\Controllers\Home->editpage()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+ERROR - 2024-11-29 06:24:40 --> mysqli_sql_exception: Table 'u959318480_customdb.custom_fields' doesn't exist in /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/MySQLi/Connection.php(308): mysqli->query()
+#1 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Models/HomeModel.php(161): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Controllers/Home.php(477): App\Models\HomeModel->get_custom_fields_values_pages()
+#5 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Controllers/Home.php(91): App\Controllers\Home->editpage()
+#6 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+#7 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#8 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/index.php(57): CodeIgniter\Boot::bootWeb()
+#12 {main}
+CRITICAL - 2024-11-29 06:24:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'u959318480_customdb.custom_fields' doesn't exist
+[Method: GET, Route: tech/editpage/14]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 APPPATH/Models/HomeModel.php(161): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Home.php(477): App\Models\HomeModel->get_custom_fields_values_pages()
+ 3 APPPATH/Controllers/Home.php(91): App\Controllers\Home->editpage()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-29 06:24:40 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'u959318480_customdb.custom_fields' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Models/HomeModel.php(161): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Home.php(477): App\Models\HomeModel->get_custom_fields_values_pages()
+ 5 APPPATH/Controllers/Home.php(91): App\Controllers\Home->editpage()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-29 06:24:40 --> [Caused by] mysqli_sql_exception: Table 'u959318480_customdb.custom_fields' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/HomeModel.php(161): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Home.php(477): App\Models\HomeModel->get_custom_fields_values_pages()
+ 6 APPPATH/Controllers/Home.php(91): App\Controllers\Home->editpage()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-29 07:02:24 --> ErrorException: Undefined variable $pages
+[Method: GET, Route: tech/menus]
+in APPPATH/Views/menus.php on line 7.
+ 1 APPPATH/Views/menus.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/page.php(3): include('/home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Views/menus.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Views/page.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/Home.php(128): view()
+ 7 APPPATH/Controllers/Home.php(96): App\Controllers\Home->menus()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-29 07:02:51 --> ErrorException: Undefined variable $pages
+[Method: GET, Route: tech/menus]
+in APPPATH/Views/menus.php on line 7.
+ 1 APPPATH/Views/menus.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/page.php(3): include('/home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Views/menus.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Views/page.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/Home.php(128): view()
+ 7 APPPATH/Controllers/Home.php(96): App\Controllers\Home->menus()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-29 07:03:24 --> ErrorException: Undefined variable $pages
+[Method: GET, Route: tech/menus]
+in APPPATH/Views/menus.php on line 7.
+ 1 APPPATH/Views/menus.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/page.php(3): include('/home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Views/menus.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Views/page.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/Home.php(128): view()
+ 7 APPPATH/Controllers/Home.php(96): App\Controllers\Home->menus()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-29 07:03:26 --> ErrorException: Undefined variable $pages
+[Method: GET, Route: tech/menus]
+in APPPATH/Views/menus.php on line 7.
+ 1 APPPATH/Views/menus.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/page.php(3): include('/home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Views/menus.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Views/page.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/Home.php(128): view()
+ 7 APPPATH/Controllers/Home.php(96): App\Controllers\Home->menus()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-29 07:13:05 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: GET, Route: tech/menus]
+in APPPATH/Views/menus.php on line 10.
+ 1 APPPATH/Views/menus.php(10): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/page.php(3): include('/home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Views/menus.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Views/page.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/Home.php(136): view()
+ 7 APPPATH/Controllers/Home.php(96): App\Controllers\Home->menus()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+ERROR - 2024-11-29 07:16:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where status = "1" AND deleted_by <= 0' at line 1 in /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/MySQLi/Connection.php(308): mysqli->query()
+#1 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Controllers/Home.php(121): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Controllers/Home.php(96): App\Controllers\Home->menus()
+#5 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+#6 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#7 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/index.php(57): CodeIgniter\Boot::bootWeb()
+#11 {main}
+CRITICAL - 2024-11-29 07:16:42 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where status = "1" AND deleted_by <= 0' at line 1
+[Method: GET, Route: tech/menus]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 APPPATH/Controllers/Home.php(121): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Home.php(96): App\Controllers\Home->menus()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-29 07:16:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where status = "1" AND deleted_by <= 0' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Controllers/Home.php(121): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Home.php(96): App\Controllers\Home->menus()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-29 07:16:42 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where status = "1" AND deleted_by <= 0' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Controllers/Home.php(121): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Home.php(96): App\Controllers\Home->menus()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+ERROR - 2024-11-29 07:17:17 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where status = "1" AND deleted_by <= "0"' at line 1 in /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/MySQLi/Connection.php(308): mysqli->query()
+#1 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Controllers/Home.php(121): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Controllers/Home.php(96): App\Controllers\Home->menus()
+#5 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+#6 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#7 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/index.php(57): CodeIgniter\Boot::bootWeb()
+#11 {main}
+CRITICAL - 2024-11-29 07:17:17 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where status = "1" AND deleted_by <= "0"' at line 1
+[Method: GET, Route: tech/menus]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 APPPATH/Controllers/Home.php(121): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Home.php(96): App\Controllers\Home->menus()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-29 07:17:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where status = "1" AND deleted_by <= "0"' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Controllers/Home.php(121): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Home.php(96): App\Controllers\Home->menus()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-29 07:17:17 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where status = "1" AND deleted_by <= "0"' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Controllers/Home.php(121): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Home.php(96): App\Controllers\Home->menus()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+ERROR - 2024-11-29 07:17:38 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where status = "1" AND deleted_by = "0"' at line 1 in /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/MySQLi/Connection.php(308): mysqli->query()
+#1 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Controllers/Home.php(121): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Controllers/Home.php(96): App\Controllers\Home->menus()
+#5 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+#6 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#7 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/index.php(57): CodeIgniter\Boot::bootWeb()
+#11 {main}
+CRITICAL - 2024-11-29 07:17:38 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where status = "1" AND deleted_by = "0"' at line 1
+[Method: GET, Route: tech/menus]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 APPPATH/Controllers/Home.php(121): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Home.php(96): App\Controllers\Home->menus()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-29 07:17:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where status = "1" AND deleted_by = "0"' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Controllers/Home.php(121): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Home.php(96): App\Controllers\Home->menus()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-29 07:17:38 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where status = "1" AND deleted_by = "0"' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Controllers/Home.php(121): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Home.php(96): App\Controllers\Home->menus()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-29 07:19:55 --> ErrorException: Undefined property: stdClass::$name
+[Method: GET, Route: tech/menus]
+in APPPATH/Views/menus.php on line 13.
+ 1 APPPATH/Views/menus.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/page.php(3): include('/home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Views/menus.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Views/page.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/Home.php(132): view()
+ 7 APPPATH/Controllers/Home.php(96): App\Controllers\Home->menus()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-29 07:32:59 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "<link rel="
+[Method: GET, Route: tech/%3Clink%20rel=]
+in SYSTEMPATH/Router/Router.php on line 736.
+ 1 SYSTEMPATH/Router/Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-29 07:33:01 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "<link rel="
+[Method: GET, Route: tech/%3Clink%20rel=]
+in SYSTEMPATH/Router/Router.php on line 736.
+ 1 SYSTEMPATH/Router/Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-29 12:54:32 --> Error: Call to undefined function App\Controllers\file_get_content()
+[Method: GET, Route: tech/menus]
+in APPPATH/Controllers/Home.php on line 138.
+ 1 APPPATH/Controllers/Home.php(96): App\Controllers\Home->menus()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-29 12:54:52 --> Error: Call to undefined function App\Controllers\file_get_content()
+[Method: GET, Route: tech/menus]
+in APPPATH/Controllers/Home.php on line 138.
+ 1 APPPATH/Controllers/Home.php(96): App\Controllers\Home->menus()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-29 12:55:04 --> ErrorException: file_get_contents(/home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/writable/menu/fileMenu.php): Failed to open stream: No such file or directory
+[Method: GET, Route: tech/menus]
+in APPPATH/Controllers/Home.php on line 138.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Home.php(138): file_get_contents()
+ 3 APPPATH/Controllers/Home.php(96): App\Controllers\Home->menus()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-29 12:55:42 --> ErrorException: file_get_contents(/home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/writable/menu/fileMenu.php): Failed to open stream: No such file or directory
+[Method: GET, Route: tech/menus]
+in APPPATH/Controllers/Home.php on line 138.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Home.php(138): file_get_contents()
+ 3 APPPATH/Controllers/Home.php(96): App\Controllers\Home->menus()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-29 12:57:05 --> ErrorException: file_get_contents(/home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/writable/menu/fileMenu.php): Failed to open stream: No such file or directory
+[Method: GET, Route: tech/menus]
+in APPPATH/Controllers/Home.php on line 138.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Home.php(138): file_get_contents()
+ 3 APPPATH/Controllers/Home.php(96): App\Controllers\Home->menus()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()

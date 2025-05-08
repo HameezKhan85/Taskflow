@@ -1,0 +1,200 @@
+ERROR - 2024-08-08 08:00:42 --> mysqli_sql_exception: Unknown column 'status' in 'field list' in C:\xampp\htdocs\server\podcast\ci-admin\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `se...', 0)
+#1 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `se...')
+#2 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `se...')
+#3 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `se...', Array, false)
+#4 C:\xampp\htdocs\server\podcast\ci-admin\app\Controllers\Home.php(251): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(933): App\Controllers\Home->insertmanage('season')
+#6 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\server\podcast\ci-admin\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\server\podcast\ci-admin\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\server\podcast\ci-admin\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-08-08 08:00:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status' in 'field list'
+[Method: POST, Route: save/season]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `seasons` (`title`, `slug`, `snum`, `status`, `details`, `meta_title`, `meta_description`, `keywords`, `update_on`, `banner`) VALUES (:title:, :slug :, :snum:, :status:, :details:, :meta_title:, :meta_description:, :keywords:, :update_on:, :banner:)', [...], false)
+ 2 APPPATH\Controllers\Home.php(251): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('season')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-08 08:00:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `seasons` (`title`, `slug`, `snum`, `status`, `details`, `meta_title`, `meta_description`, `keywords`, `update_on`, `banner`) VALUES (\'test name\', \'test-name\', \'10\', \'1\', \'<p>test</p>\', \'test\', \'test\', \'test\', 1723104042, \'1723104042_014d442da25cdb0a8180.png\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `seasons` (`title`, `slug`, `snum`, `status`, `details`, `meta_title`, `meta_description`, `keywords`, `update_on`, `banner`) VALUES (\'test name\', \'test-name\', \'10\', \'1\', \'<p>test</p>\', \'test\', \'test\', \'test\', 1723104042, \'1723104042_014d442da25cdb0a8180.png\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `seasons` (`title`, `slug`, `snum`, `status`, `details`, `meta_title`, `meta_description`, `keywords`, `update_on`, `banner`) VALUES (:title:, :slug :, :snum:, :status:, :details:, :meta_title:, :meta_description:, :keywords:, :update_on:, :banner:)', [...], false)
+ 4 APPPATH\Controllers\Home.php(251): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('season')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-08 08:00:42 --> [Caused by] mysqli_sql_exception: Unknown column 'status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `seasons` (`title`, `slug`, `snum`, `status`, `details`, `meta_title`, `meta_description`, `keywords`, `update_on`, `banner`) VALUES (\'test name\', \'test-name\', \'10\', \'1\', \'<p>test</p>\', \'test\', \'test\', \'test\', 1723104042, \'1723104042_014d442da25cdb0a8180.png\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `seasons` (`title`, `slug`, `snum`, `status`, `details`, `meta_title`, `meta_description`, `keywords`, `update_on`, `banner`) VALUES (\'test name\', \'test-name\', \'10\', \'1\', \'<p>test</p>\', \'test\', \'test\', \'test\', 1723104042, \'1723104042_014d442da25cdb0a8180.png\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `seasons` (`title`, `slug`, `snum`, `status`, `details`, `meta_title`, `meta_description`, `keywords`, `update_on`, `banner`) VALUES (\'test name\', \'test-name\', \'10\', \'1\', \'<p>test</p>\', \'test\', \'test\', \'test\', 1723104042, \'1723104042_014d442da25cdb0a8180.png\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `seasons` (`title`, `slug`, `snum`, `status`, `details`, `meta_title`, `meta_description`, `keywords`, `update_on`, `banner`) VALUES (:title:, :slug :, :snum:, :status:, :details:, :meta_title:, :meta_description:, :keywords:, :update_on:, :banner:)', [...], false)
+ 5 APPPATH\Controllers\Home.php(251): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('season')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-08 08:01:10 --> mysqli_sql_exception: Unknown column 'banner' in 'field list' in C:\xampp\htdocs\server\podcast\ci-admin\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `se...', 0)
+#1 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `se...')
+#2 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `se...')
+#3 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `se...', Array, false)
+#4 C:\xampp\htdocs\server\podcast\ci-admin\app\Controllers\Home.php(251): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(933): App\Controllers\Home->insertmanage('season')
+#6 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\server\podcast\ci-admin\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\server\podcast\ci-admin\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\server\podcast\ci-admin\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-08-08 08:01:10 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'banner' in 'field list'
+[Method: POST, Route: save/season]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `seasons` (`title`, `slug`, `snum`, `status`, `details`, `meta_title`, `meta_description`, `keywords`, `update_on`, `banner`) VALUES (:title:, :slug :, :snum:, :status:, :details:, :meta_title:, :meta_description:, :keywords:, :update_on:, :banner:)', [...], false)
+ 2 APPPATH\Controllers\Home.php(251): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('season')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-08 08:01:10 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'banner' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `seasons` (`title`, `slug`, `snum`, `status`, `details`, `meta_title`, `meta_description`, `keywords`, `update_on`, `banner`) VALUES (\'test name\', \'test-name\', \'10\', \'1\', \'<p>test</p>\', \'test\', \'test\', \'test\', 1723104070, \'1723104070_aef224934f5d26e3ac88.png\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `seasons` (`title`, `slug`, `snum`, `status`, `details`, `meta_title`, `meta_description`, `keywords`, `update_on`, `banner`) VALUES (\'test name\', \'test-name\', \'10\', \'1\', \'<p>test</p>\', \'test\', \'test\', \'test\', 1723104070, \'1723104070_aef224934f5d26e3ac88.png\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `seasons` (`title`, `slug`, `snum`, `status`, `details`, `meta_title`, `meta_description`, `keywords`, `update_on`, `banner`) VALUES (:title:, :slug :, :snum:, :status:, :details:, :meta_title:, :meta_description:, :keywords:, :update_on:, :banner:)', [...], false)
+ 4 APPPATH\Controllers\Home.php(251): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('season')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-08 08:01:10 --> [Caused by] mysqli_sql_exception: Unknown column 'banner' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `seasons` (`title`, `slug`, `snum`, `status`, `details`, `meta_title`, `meta_description`, `keywords`, `update_on`, `banner`) VALUES (\'test name\', \'test-name\', \'10\', \'1\', \'<p>test</p>\', \'test\', \'test\', \'test\', 1723104070, \'1723104070_aef224934f5d26e3ac88.png\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `seasons` (`title`, `slug`, `snum`, `status`, `details`, `meta_title`, `meta_description`, `keywords`, `update_on`, `banner`) VALUES (\'test name\', \'test-name\', \'10\', \'1\', \'<p>test</p>\', \'test\', \'test\', \'test\', 1723104070, \'1723104070_aef224934f5d26e3ac88.png\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `seasons` (`title`, `slug`, `snum`, `status`, `details`, `meta_title`, `meta_description`, `keywords`, `update_on`, `banner`) VALUES (\'test name\', \'test-name\', \'10\', \'1\', \'<p>test</p>\', \'test\', \'test\', \'test\', 1723104070, \'1723104070_aef224934f5d26e3ac88.png\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `seasons` (`title`, `slug`, `snum`, `status`, `details`, `meta_title`, `meta_description`, `keywords`, `update_on`, `banner`) VALUES (:title:, :slug :, :snum:, :status:, :details:, :meta_title:, :meta_description:, :keywords:, :update_on:, :banner:)', [...], false)
+ 5 APPPATH\Controllers\Home.php(251): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('season')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-08 08:06:20 --> mysqli_sql_exception: Unknown column 'img' in 'field list' in C:\xampp\htdocs\server\podcast\ci-admin\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `au...', 0)
+#1 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `au...')
+#2 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `au...')
+#3 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `au...', Array, false)
+#4 C:\xampp\htdocs\server\podcast\ci-admin\app\Controllers\Home.php(184): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(933): App\Controllers\Home->insertmanage('author')
+#6 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\server\podcast\ci-admin\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\server\podcast\ci-admin\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\server\podcast\ci-admin\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-08-08 08:06:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'img' in 'field list'
+[Method: POST, Route: save/author]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `author` (`name`, `role`, `facebook`, `instagram`, `twitter`, `linkedIn`, `pinterest`, `youtube`, `status`, `update_on`, `img`) VALUES (:name:, :role:, :facebook:, :instagram:, :twitter:, :linkedIn:, :pinterest:, :youtube:, :status:, :update_on:, :img:)', [...], false)
+ 2 APPPATH\Controllers\Home.php(184): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('author')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-08 08:06:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'img' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `author` (`name`, `role`, `facebook`, `instagram`, `twitter`, `linkedIn`, `pinterest`, `youtube`, `status`, `update_on`, `img`) VALUES (\'Hameez\', \'Content Writer\', \'#\', \'#\', \'#\', \'#`\', \'#\', \'#\', \'1\', 1723104380, \'1723104380_606a7a3ed52b38b44b70.png\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `author` (`name`, `role`, `facebook`, `instagram`, `twitter`, `linkedIn`, `pinterest`, `youtube`, `status`, `update_on`, `img`) VALUES (\'Hameez\', \'Content Writer\', \'#\', \'#\', \'#\', \'#`\', \'#\', \'#\', \'1\', 1723104380, \'1723104380_606a7a3ed52b38b44b70.png\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `author` (`name`, `role`, `facebook`, `instagram`, `twitter`, `linkedIn`, `pinterest`, `youtube`, `status`, `update_on`, `img`) VALUES (:name:, :role:, :facebook:, :instagram:, :twitter:, :linkedIn:, :pinterest:, :youtube:, :status:, :update_on:, :img:)', [...], false)
+ 4 APPPATH\Controllers\Home.php(184): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('author')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-08 08:06:20 --> [Caused by] mysqli_sql_exception: Unknown column 'img' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `author` (`name`, `role`, `facebook`, `instagram`, `twitter`, `linkedIn`, `pinterest`, `youtube`, `status`, `update_on`, `img`) VALUES (\'Hameez\', \'Content Writer\', \'#\', \'#\', \'#\', \'#`\', \'#\', \'#\', \'1\', 1723104380, \'1723104380_606a7a3ed52b38b44b70.png\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `author` (`name`, `role`, `facebook`, `instagram`, `twitter`, `linkedIn`, `pinterest`, `youtube`, `status`, `update_on`, `img`) VALUES (\'Hameez\', \'Content Writer\', \'#\', \'#\', \'#\', \'#`\', \'#\', \'#\', \'1\', 1723104380, \'1723104380_606a7a3ed52b38b44b70.png\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `author` (`name`, `role`, `facebook`, `instagram`, `twitter`, `linkedIn`, `pinterest`, `youtube`, `status`, `update_on`, `img`) VALUES (\'Hameez\', \'Content Writer\', \'#\', \'#\', \'#\', \'#`\', \'#\', \'#\', \'1\', 1723104380, \'1723104380_606a7a3ed52b38b44b70.png\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `author` (`name`, `role`, `facebook`, `instagram`, `twitter`, `linkedIn`, `pinterest`, `youtube`, `status`, `update_on`, `img`) VALUES (:name:, :role:, :facebook:, :instagram:, :twitter:, :linkedIn:, :pinterest:, :youtube:, :status:, :update_on:, :img:)', [...], false)
+ 5 APPPATH\Controllers\Home.php(184): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('author')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-08 08:07:20 --> mysqli_sql_exception: Unknown column 'audio' in 'field list' in C:\xampp\htdocs\server\podcast\ci-admin\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `ep...', 0)
+#1 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ep...')
+#2 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ep...')
+#3 C:\xampp\htdocs\server\podcast\ci-admin\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ep...', Array, false)
+#4 C:\xampp\htdocs\server\podcast\ci-admin\app\Controllers\Home.php(224): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(933): App\Controllers\Home->insertmanage('episode')
+#6 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\server\podcast\ci-admin\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\server\podcast\ci-admin\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\server\podcast\ci-admin\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\server\podcast\ci-admin\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-08-08 08:07:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'audio' in 'field list'
+[Method: POST, Route: save/episode]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`, `audio`) VALUES (:title:, :slug:, :feature:, :season:, :author:, :enum:, :details:, :meta_title:, :meta_description:, :keywords:, :status:, :added_on:, :update_on:, :banner:, :audio:)', [...], false)
+ 2 APPPATH\Controllers\Home.php(224): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('episode')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-08 08:07:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'audio' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`, `audio`) VALUES (\'New Episode\', \'new-episode\', \'on\', \'1\', \'1\', \'2\', \'<p>test</p>\', \'test\', \'test\', \'test\', \'1\', 1723104440, 1723104440, \'1723104440_f47fee96880eea527622.png\', \'1723104440_0515a43634c2da484d06.png\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`, `audio`) VALUES (\'New Episode\', \'new-episode\', \'on\', \'1\', \'1\', \'2\', \'<p>test</p>\', \'test\', \'test\', \'test\', \'1\', 1723104440, 1723104440, \'1723104440_f47fee96880eea527622.png\', \'1723104440_0515a43634c2da484d06.png\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`, `audio`) VALUES (:title:, :slug:, :feature:, :season:, :author:, :enum:, :details:, :meta_title:, :meta_description:, :keywords:, :status:, :added_on:, :update_on:, :banner:, :audio:)', [...], false)
+ 4 APPPATH\Controllers\Home.php(224): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('episode')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-08 08:07:20 --> [Caused by] mysqli_sql_exception: Unknown column 'audio' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`, `audio`) VALUES (\'New Episode\', \'new-episode\', \'on\', \'1\', \'1\', \'2\', \'<p>test</p>\', \'test\', \'test\', \'test\', \'1\', 1723104440, 1723104440, \'1723104440_f47fee96880eea527622.png\', \'1723104440_0515a43634c2da484d06.png\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`, `audio`) VALUES (\'New Episode\', \'new-episode\', \'on\', \'1\', \'1\', \'2\', \'<p>test</p>\', \'test\', \'test\', \'test\', \'1\', 1723104440, 1723104440, \'1723104440_f47fee96880eea527622.png\', \'1723104440_0515a43634c2da484d06.png\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`, `audio`) VALUES (\'New Episode\', \'new-episode\', \'on\', \'1\', \'1\', \'2\', \'<p>test</p>\', \'test\', \'test\', \'test\', \'1\', 1723104440, 1723104440, \'1723104440_f47fee96880eea527622.png\', \'1723104440_0515a43634c2da484d06.png\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `episodes` (`title`, `slug`, `feature`, `season`, `author`, `enum`, `details`, `meta_title`, `meta_description`, `keywords`, `status`, `added_on`, `update_on`, `banner`, `audio`) VALUES (:title:, :slug:, :feature:, :season:, :author:, :enum:, :details:, :meta_title:, :meta_description:, :keywords:, :status:, :added_on:, :update_on:, :banner:, :audio:)', [...], false)
+ 5 APPPATH\Controllers\Home.php(224): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->insertmanage('episode')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

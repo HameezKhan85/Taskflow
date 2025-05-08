@@ -1,0 +1,54 @@
+ERROR - 2024-05-16 07:43:56 --> mysqli_sql_exception: Table 'sd_podcast_kolaxo.attendance' doesn't exist in G:\xampp\htdocs\podcast\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 G:\xampp\htdocs\podcast\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT *, users...', 0)
+#1 G:\xampp\htdocs\podcast\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, users...')
+#2 G:\xampp\htdocs\podcast\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, users...')
+#3 G:\xampp\htdocs\podcast\app\Controllers\Home.php(35): CodeIgniter\Database\BaseConnection->query('SELECT *, users...')
+#4 G:\xampp\htdocs\podcast\system\CodeIgniter.php(933): App\Controllers\Home->attendance()
+#5 G:\xampp\htdocs\podcast\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 G:\xampp\htdocs\podcast\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 G:\xampp\htdocs\podcast\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#8 G:\xampp\htdocs\podcast\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 G:\xampp\htdocs\podcast\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2024-05-16 07:43:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'sd_podcast_kolaxo.attendance' doesn't exist
+[Method: GET, Route: attendance]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Controllers\Home.php(35): CodeIgniter\Database\BaseConnection->query('SELECT *, users.employee_id AS empid, users.firstname AS fname,users.lastname AS lname,  attendance.id AS attid FROM attendance LEFT JOIN users ON users.id=attendance.employee_id ORDER BY attendance.date DESC, attendance.time_in DESC;')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->attendance()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-16 07:43:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'sd_podcast_kolaxo.attendance' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, users.employee_id AS empid, users.firstname AS fname,users.lastname AS lname,  attendance.id AS attid FROM attendance LEFT JOIN users ON users.id=attendance.employee_id ORDER BY attendance.date DESC, attendance.time_in DESC;')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, users.employee_id AS empid, users.firstname AS fname,users.lastname AS lname,  attendance.id AS attid FROM attendance LEFT JOIN users ON users.id=attendance.employee_id ORDER BY attendance.date DESC, attendance.time_in DESC;')
+ 3 APPPATH\Controllers\Home.php(35): CodeIgniter\Database\BaseConnection->query('SELECT *, users.employee_id AS empid, users.firstname AS fname,users.lastname AS lname,  attendance.id AS attid FROM attendance LEFT JOIN users ON users.id=attendance.employee_id ORDER BY attendance.date DESC, attendance.time_in DESC;')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->attendance()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-16 07:43:56 --> [Caused by] mysqli_sql_exception: Table 'sd_podcast_kolaxo.attendance' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT *, users.employee_id AS empid, users.firstname AS fname,users.lastname AS lname,  attendance.id AS attid FROM attendance LEFT JOIN users ON users.id=attendance.employee_id ORDER BY attendance.date DESC, attendance.time_in DESC;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, users.employee_id AS empid, users.firstname AS fname,users.lastname AS lname,  attendance.id AS attid FROM attendance LEFT JOIN users ON users.id=attendance.employee_id ORDER BY attendance.date DESC, attendance.time_in DESC;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, users.employee_id AS empid, users.firstname AS fname,users.lastname AS lname,  attendance.id AS attid FROM attendance LEFT JOIN users ON users.id=attendance.employee_id ORDER BY attendance.date DESC, attendance.time_in DESC;')
+ 4 APPPATH\Controllers\Home.php(35): CodeIgniter\Database\BaseConnection->query('SELECT *, users.employee_id AS empid, users.firstname AS fname,users.lastname AS lname,  attendance.id AS attid FROM attendance LEFT JOIN users ON users.id=attendance.employee_id ORDER BY attendance.date DESC, attendance.time_in DESC;')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->attendance()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-16 07:48:29 --> ErrorException: Allowed memory size of 536870912 bytes exhausted (tried to allocate 249577472 bytes)
+[Method: GET, Route: get]
+in APPPATH\Views\includes\header.php on line 32.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-05-16 07:49:01 --> ErrorException: Allowed memory size of 536870912 bytes exhausted (tried to allocate 249577472 bytes)
+[Method: GET, Route: get]
+in APPPATH\Views\includes\header.php on line 32.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
