@@ -5,16 +5,18 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->match(['get', 'post'], 'blog', 'Home::blogpage');
-$routes->match(['get', 'post'], 'blog/page/(:num)', 'Home::blogpage/$1');
-$routes->match(['get', 'post'], 'custom-box-videos', 'Home::videopage');
-$routes->match(['get', 'post'], 'custom-box-videos/page/(:num)', 'Home::videopage/$1');  
-$routes->get('search', 'SearchController::index');
-$routes->match(['get', 'post'], 'saveForm', 'Home::submit_form');  
-$routes->match(['get', 'post'], 'submitQuoteForm/', 'EmailController::submitQuoteForm'); 
-// $routes->match(['get', 'post'], 'video/(:num)', 'Home::page/$1');
-$routes->match(['get', 'post'], '(:any)/page/(:num)', 'Home::category_product/$1/$2');    
- $routes->get('(:any)', 'Home::page/$1');
+//*************** Auth Routes  ************************* */
+$routes->match(['get', 'post'], 'api/login', 'Login::index');
+$routes->post('api/create_account','Login::create_account');
+$routes->post('api/logout','Login::logout');
+//*************** Workspace Routes  ************************* */
+$routes->get('api/workspaces', 'HomeController::view_workspaces');
+$routes->post('api/action', 'HomeController::action');
+$routes->post('api/invite/generate','HomeController::generateInviteLink');
+$routes->get('api/invite/accept/(:segment)','HomeController::acceptInvite/$1');
+$routes->post('api/disableLink','HomeController::disableInviteLink');
+$routes->get('api/workspaceUser','HomeController::getInviteUsers');
+$routes->get('api/updateWorkspaceUser','HomeController::updateInviteUsers');
 
 
 

@@ -1,0 +1,146 @@
+CRITICAL - 2024-11-26 04:33:09 --> ErrorException: Undefined array key "post_type"
+[Method: POST, Route: getajax]
+in APPPATH/Controllers/Home.php on line 690.
+ 1 APPPATH/Controllers/Home.php(690): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-26 04:34:26 --> ErrorException: Undefined array key "post_type"
+[Method: POST, Route: getajax]
+in APPPATH/Controllers/Home.php on line 690.
+ 1 APPPATH/Controllers/Home.php(690): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-26 04:34:56 --> ErrorException: Undefined array key "post_type"
+[Method: POST, Route: getajax]
+in APPPATH/Controllers/Home.php on line 690.
+ 1 APPPATH/Controllers/Home.php(690): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-26 04:35:20 --> ErrorException: Undefined array key "post_type"
+[Method: POST, Route: getajax]
+in APPPATH/Controllers/Home.php on line 690.
+ 1 APPPATH/Controllers/Home.php(690): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-26 04:35:42 --> ErrorException: Undefined array key "post_type"
+[Method: POST, Route: getajax]
+in APPPATH/Controllers/Home.php on line 690.
+ 1 APPPATH/Controllers/Home.php(690): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-26 04:35:45 --> ErrorException: Undefined array key "table"
+[Method: GET, Route: getajax]
+in APPPATH/Controllers/Home.php on line 684.
+ 1 APPPATH/Controllers/Home.php(684): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-26 04:36:19 --> ErrorException: Undefined array key "table"
+[Method: GET, Route: getajax]
+in APPPATH/Controllers/Home.php on line 684.
+ 1 APPPATH/Controllers/Home.php(684): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-26 04:36:20 --> ErrorException: Undefined array key "table"
+[Method: GET, Route: getajax]
+in APPPATH/Controllers/Home.php on line 684.
+ 1 APPPATH/Controllers/Home.php(684): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-26 04:36:20 --> ErrorException: Undefined array key "table"
+[Method: GET, Route: getajax]
+in APPPATH/Controllers/Home.php on line 684.
+ 1 APPPATH/Controllers/Home.php(684): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-26 04:36:21 --> ErrorException: Undefined array key "table"
+[Method: GET, Route: getajax]
+in APPPATH/Controllers/Home.php on line 684.
+ 1 APPPATH/Controllers/Home.php(684): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-26 04:50:17 --> ErrorException: Undefined array key "deleted_by"
+[Method: POST, Route: getajax]
+in APPPATH/Controllers/Home.php on line 691.
+ 1 APPPATH/Controllers/Home.php(691): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-26 10:02:48 --> Error: Call to undefined function AURL()
+[Method: GET, Route: tech/editpost/35]
+in APPPATH/Views/includes/edit_field_values.php on line 194.
+ 1 APPPATH/Views/post/editpost.php(77): include()
+ 2 APPPATH/Views/page.php(3): include('/home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Views/post/editpost.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/home/u959318480/domains/thebakeryboxes.com/public_html/dev/projects/ecall/ci-admin/app/Views/page.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/Home.php(410): view()
+ 7 APPPATH/Controllers/Home.php(69): App\Controllers\Home->editpost()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(57): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-26 10:18:31 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "'.$section->banner.'"
+[Method: GET, Route: theme/gallery_images/%27.$section-%3Ebanner.%27]
+in SYSTEMPATH/Router/Router.php on line 736.
+ 1 SYSTEMPATH/Router/Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(60): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-11-26 12:03:56 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "Live Agents, No Bots"
+[Method: GET, Route: theme/gallery_images/Live%20Agents,%20No%20Bots]
+in SYSTEMPATH/Router/Router.php on line 736.
+ 1 SYSTEMPATH/Router/Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(60): CodeIgniter\Boot::bootWeb()

@@ -10,22 +10,42 @@ DataTables\Editor\Upload,
 DataTables\Editor\Validate,
 DataTables\Editor\ValidateOptions;
 use Config\Services;
+use App\Libraries\LoginUser;
 class HomeModel extends Model
 {
 
-public function getdatabyslug($slug =''){
-    $builder = $this->db->table('ci_data');
-    $query = $builder->select('*')
-        ->where('slug', $slug)
-        ->where('status', 1)
-        ->where('deleted_by <=', 0)
-        ->get();
-
-    return $query->getRowArray();
-}
-public function getLogindetail($email = '', $password = ''){
-    $query = $this->db->table('users')->select('*')->where('email',$email)->where('password',$password)->get()->getRowArray();
-    return $query;
-}
+    public function insertData($table = false,$data = false){
+        $query = $this->db->table($table);
+        $query->insert($data);
+        return $this->db->insertID();
+        
+    }
+    public function updateData($table = false,$data = false,$where = false){
+        $query = $this->db->table($table)->where($where)->update($data);
+        return $query;
+    }
+    public function softDelete($table = false,$data = false,$where = false){
+        $query = $this->db->table($table)->where($where)->update($data);
+        return $query;
+    }
+    public function getData($table = false, $type = false, $where = '',$select = '*'){
+        if(empty($table)){
+            return false;
+        }
+        $query = $this->db->table($table);
+        if(!empty($where)){
+           $query->where($where);
+        }
+        if($type == 'row'){
+           return $query->select($select)->get()->getRowArray();
+        }
+        if($type == 'result'){
+            return $query->select($select)->get()->getResultArray();
+        }
+    }
+    public function getLogindetail($email = '', $password = ''){
+        $query = $this->db->table('users')->select('*')->where('email',$email)->where('password',$password)->get()->getRowArray();
+        return $query;
+    }
 
 }

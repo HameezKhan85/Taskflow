@@ -1,0 +1,32 @@
+CRITICAL - 2024-08-29 09:17:44 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 12.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-29 09:25:17 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-29 10:12:31 --> ErrorException: Undefined array key 4
+[Method: POST, Route: getajax]
+in APPPATH/Controllers/Home.php on line 583.
+ 1 APPPATH/Controllers/Home.php(583): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 4', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/app/Controllers/Home.php', 583)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-29 10:43:31 --> ErrorException: Undefined array key 3
+[Method: POST, Route: getajax]
+in APPPATH/Controllers/Home.php on line 583.
+ 1 APPPATH/Controllers/Home.php(583): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 3', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/app/Controllers/Home.php', 583)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-29 13:04:08 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

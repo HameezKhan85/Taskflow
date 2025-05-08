@@ -1,6 +1,6 @@
 <?php
 
-require 'remove_index.php'; 
+
 require 'constants/constants.php'; 
 
 /*

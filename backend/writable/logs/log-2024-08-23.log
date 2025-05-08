@@ -1,0 +1,170 @@
+CRITICAL - 2024-08-23 05:54:24 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-23 06:00:23 --> Error: Undefined constant "App\Models\PATH"
+[Method: POST, Route: save/season]
+in APPPATH/Models/HomeModel.php on line 73.
+ 1 APPPATH/Controllers/Home.php(319): App\Models\HomeModel->generalUploadImages('banner', 'season/')
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->insertmanage('season')
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(65): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-23 06:04:09 --> Error: Undefined constant "App\Models\PATH"
+[Method: POST, Route: save/season]
+in APPPATH/Models/HomeModel.php on line 73.
+ 1 APPPATH/Controllers/Home.php(319): App\Models\HomeModel->generalUploadImages('banner', 'season/')
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->insertmanage('season')
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(65): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-23 06:04:29 --> mysqli_sql_exception: Column 'status' cannot be null in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/system/Database/MySQLi/Connection.php(308): mysqli->query('INSERT INTO `se...', 0)
+#1 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `se...')
+#2 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `se...')
+#3 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/system/Database/BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `se...', Array, false)
+#4 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/app/Controllers/Home.php(333): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/system/CodeIgniter.php(933): App\Controllers\Home->insertmanage('season')
+#6 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/index.php(65): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-08-23 06:04:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'status' cannot be null
+[Method: POST, Route: save/season]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `seasons` (`title`, `slug`, `snum`, `status`, `details`, `meta_title`, `meta_description`, `keywords`, `update_on`) VALUES (:title:, :slug :, :snum:, :status:, :details:, :meta_title:, :meta_description:, :keywords:, :update_on:)', [...], false)
+ 2 APPPATH/Controllers/Home.php(333): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->insertmanage('season')
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(65): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-23 06:04:29 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'status' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `seasons` (`title`, `slug`, `snum`, `status`, `details`, `meta_title`, `meta_description`, `keywords`, `update_on`) VALUES (\'Koalxo\', \'koalxo\', \'1\', NULL, \'\', \'\', \'\', \'\', 1724393069)')
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `seasons` (`title`, `slug`, `snum`, `status`, `details`, `meta_title`, `meta_description`, `keywords`, `update_on`) VALUES (\'Koalxo\', \'koalxo\', \'1\', NULL, \'\', \'\', \'\', \'\', 1724393069)')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `seasons` (`title`, `slug`, `snum`, `status`, `details`, `meta_title`, `meta_description`, `keywords`, `update_on`) VALUES (:title:, :slug :, :snum:, :status:, :details:, :meta_title:, :meta_description:, :keywords:, :update_on:)', [...], false)
+ 4 APPPATH/Controllers/Home.php(333): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->insertmanage('season')
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(65): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-23 06:04:29 --> [Caused by] mysqli_sql_exception: Column 'status' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query('INSERT INTO `seasons` (`title`, `slug`, `snum`, `status`, `details`, `meta_title`, `meta_description`, `keywords`, `update_on`) VALUES (\'Koalxo\', \'koalxo\', \'1\', NULL, \'\', \'\', \'\', \'\', 1724393069)', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `seasons` (`title`, `slug`, `snum`, `status`, `details`, `meta_title`, `meta_description`, `keywords`, `update_on`) VALUES (\'Koalxo\', \'koalxo\', \'1\', NULL, \'\', \'\', \'\', \'\', 1724393069)')
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `seasons` (`title`, `slug`, `snum`, `status`, `details`, `meta_title`, `meta_description`, `keywords`, `update_on`) VALUES (\'Koalxo\', \'koalxo\', \'1\', NULL, \'\', \'\', \'\', \'\', 1724393069)')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `seasons` (`title`, `slug`, `snum`, `status`, `details`, `meta_title`, `meta_description`, `keywords`, `update_on`) VALUES (:title:, :slug :, :snum:, :status:, :details:, :meta_title:, :meta_description:, :keywords:, :update_on:)', [...], false)
+ 5 APPPATH/Controllers/Home.php(333): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->insertmanage('season')
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(65): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-23 06:08:49 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-23 06:08:53 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-23 06:11:23 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-23 06:11:52 --> Error: Undefined constant "App\Models\PATH"
+[Method: POST, Route: update/season/10]
+in APPPATH/Models/HomeModel.php on line 73.
+ 1 APPPATH/Controllers/Home.php(485): App\Models\HomeModel->generalUploadImages('banner', 'season/')
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->update('season', '10', '')
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(65): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-23 06:12:45 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-23 06:14:24 --> Error: Undefined constant "App\Models\PATH"
+[Method: POST, Route: update/season/10]
+in APPPATH/Models/HomeModel.php on line 73.
+ 1 APPPATH/Controllers/Home.php(485): App\Models\HomeModel->generalUploadImages('banner', 'season/')
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->update('season', '10', '')
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(65): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-23 06:14:39 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-23 06:14:44 --> Error: Undefined constant "App\Models\PATH"
+[Method: POST, Route: update/season/10]
+in APPPATH/Models/HomeModel.php on line 73.
+ 1 APPPATH/Controllers/Home.php(493): App\Models\HomeModel->generalUploadImages('thumbnail', 'season/')
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->update('season', '10', '')
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(65): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-23 06:15:39 --> Error: Undefined constant "App\Models\PATH"
+[Method: POST, Route: save/episode]
+in APPPATH/Models/HomeModel.php on line 73.
+ 1 APPPATH/Controllers/Home.php(270): App\Models\HomeModel->generalUploadImages('banner', 'episode/')
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->insertmanage('episode')
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(65): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-23 06:16:35 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-23 06:17:09 --> Error: Undefined constant "App\Models\PATH"
+[Method: POST, Route: save/episode]
+in APPPATH/Models/HomeModel.php on line 73.
+ 1 APPPATH/Controllers/Home.php(270): App\Models\HomeModel->generalUploadImages('banner', 'episode/')
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->insertmanage('episode')
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(65): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-23 06:18:59 --> Error: Undefined constant "App\Models\PATH"
+[Method: POST, Route: update/season/8]
+in APPPATH/Models/HomeModel.php on line 73.
+ 1 APPPATH/Controllers/Home.php(485): App\Models\HomeModel->generalUploadImages('banner', 'season/')
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->update('season', '8', '')
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(65): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-23 11:20:22 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-23 11:20:22 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-23 11:21:47 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/podcast/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

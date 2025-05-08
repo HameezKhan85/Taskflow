@@ -1,0 +1,730 @@
+CRITICAL - 2024-09-12 06:02:48 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-12 06:05:31 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-12 06:07:32 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-12 06:10:05 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/remove_index.php:3)
+[Method: GET, Route: custom_fields]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-12 06:10:23 --> ErrorException: include(custom_fields.php): Failed to open stream: No such file or directory
+[Method: GET, Route: custom_fields]
+in APPPATH/Views/page.php on line 4.
+ 1 APPPATH/Views/page.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(custom_fields.php): Failed to open stream: No such file or directory', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php', 4)
+ 2 APPPATH/Views/page.php(4): include()
+ 3 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 6 APPPATH/Controllers/Home.php(43): view('page', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->custom_fields()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-12 06:10:54 --> ErrorException: include(custom_fields.php): Failed to open stream: No such file or directory
+[Method: GET, Route: custom_fields]
+in APPPATH/Views/page.php on line 4.
+ 1 APPPATH/Views/page.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(custom_fields.php): Failed to open stream: No such file or directory', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php', 4)
+ 2 APPPATH/Views/page.php(4): include()
+ 3 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 6 APPPATH/Controllers/Home.php(43): view('page', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->custom_fields()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-12 06:10:56 --> ErrorException: include(custom_fields.php): Failed to open stream: No such file or directory
+[Method: GET, Route: custom_fields]
+in APPPATH/Views/page.php on line 4.
+ 1 APPPATH/Views/page.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(custom_fields.php): Failed to open stream: No such file or directory', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php', 4)
+ 2 APPPATH/Views/page.php(4): include()
+ 3 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 6 APPPATH/Controllers/Home.php(43): view('page', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->custom_fields()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-12 06:11:10 --> ErrorException: include(custom_fields.php): Failed to open stream: No such file or directory
+[Method: GET, Route: custom_fields]
+in APPPATH/Views/page.php on line 4.
+ 1 APPPATH/Views/page.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(custom_fields.php): Failed to open stream: No such file or directory', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php', 4)
+ 2 APPPATH/Views/page.php(4): include()
+ 3 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 6 APPPATH/Controllers/Home.php(43): view('page', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->custom_fields()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-12 06:11:18 --> ErrorException: include(custom_fields.php): Failed to open stream: No such file or directory
+[Method: GET, Route: custom_fields]
+in APPPATH/Views/page.php on line 4.
+ 1 APPPATH/Views/page.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(custom_fields.php): Failed to open stream: No such file or directory', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php', 4)
+ 2 APPPATH/Views/page.php(4): include()
+ 3 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 6 APPPATH/Controllers/Home.php(43): view('page', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->custom_fields()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-12 06:13:19 --> ErrorException: include(custom_fields.php): Failed to open stream: No such file or directory
+[Method: GET, Route: custom_fields]
+in APPPATH/Views/page.php on line 4.
+ 1 APPPATH/Views/page.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(custom_fields.php): Failed to open stream: No such file or directory', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php', 4)
+ 2 APPPATH/Views/page.php(4): include()
+ 3 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 6 APPPATH/Controllers/Home.php(46): view('page', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->custom_fields()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-12 06:27:53 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 12.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-12 07:33:48 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 12.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-12 07:38:59 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-12 07:39:11 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-12 07:43:58 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 12.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-12 07:44:04 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 12.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-12 07:44:43 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 12.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-12 07:45:12 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 12.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-12 07:45:34 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 12.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-12 07:46:28 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 12.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-12 07:55:35 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-09-12 09:51:31 --> mysqli_sql_exception: Table 'cpfoodbo_KP_USA_Ci4.custom_fields' doesn't exist in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php(308): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(597): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(933): App\Controllers\Home->getData12()
+#6 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-09-12 09:51:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'cpfoodbo_KP_USA_Ci4.custom_fields' doesn't exist
+[Method: POST, Route: getajax]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `custom_fields`', [], false)
+ 2 APPPATH/Controllers/Home.php(597): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-12 09:51:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'cpfoodbo_KP_USA_Ci4.custom_fields' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `custom_fields`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `custom_fields`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `custom_fields`', [], false)
+ 4 APPPATH/Controllers/Home.php(597): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-12 09:51:31 --> [Caused by] mysqli_sql_exception: Table 'cpfoodbo_KP_USA_Ci4.custom_fields' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `custom_fields`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `custom_fields`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `custom_fields`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `custom_fields`', [], false)
+ 5 APPPATH/Controllers/Home.php(597): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-12 09:53:02 --> mysqli_sql_exception: Table 'cpfoodbo_KP_USA_Ci4.custom_fields' doesn't exist in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php(308): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(597): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(933): App\Controllers\Home->getData12()
+#6 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-09-12 09:53:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'cpfoodbo_KP_USA_Ci4.custom_fields' doesn't exist
+[Method: POST, Route: getajax]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `custom_fields`', [], false)
+ 2 APPPATH/Controllers/Home.php(597): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-12 09:53:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'cpfoodbo_KP_USA_Ci4.custom_fields' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `custom_fields`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `custom_fields`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `custom_fields`', [], false)
+ 4 APPPATH/Controllers/Home.php(597): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-12 09:53:02 --> [Caused by] mysqli_sql_exception: Table 'cpfoodbo_KP_USA_Ci4.custom_fields' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `custom_fields`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `custom_fields`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `custom_fields`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `custom_fields`', [], false)
+ 5 APPPATH/Controllers/Home.php(597): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-12 09:55:36 --> mysqli_sql_exception: Table 'cpfoodbo_KP_USA_Ci4.custom_fields' doesn't exist in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php(308): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(597): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(933): App\Controllers\Home->getData12()
+#6 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-09-12 09:55:36 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'cpfoodbo_KP_USA_Ci4.custom_fields' doesn't exist
+[Method: POST, Route: getajax]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `custom_fields`', [], false)
+ 2 APPPATH/Controllers/Home.php(597): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-12 09:55:36 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'cpfoodbo_KP_USA_Ci4.custom_fields' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `custom_fields`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `custom_fields`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `custom_fields`', [], false)
+ 4 APPPATH/Controllers/Home.php(597): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-12 09:55:36 --> [Caused by] mysqli_sql_exception: Table 'cpfoodbo_KP_USA_Ci4.custom_fields' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `custom_fields`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `custom_fields`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `custom_fields`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `custom_fields`', [], false)
+ 5 APPPATH/Controllers/Home.php(597): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-12 09:57:02 --> mysqli_sql_exception: Table 'cpfoodbo_KP_USA_Ci4.custom_fields' doesn't exist in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php(308): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(597): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(933): App\Controllers\Home->getData12()
+#6 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-09-12 09:57:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'cpfoodbo_KP_USA_Ci4.custom_fields' doesn't exist
+[Method: POST, Route: getajax]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `custom_fields`', [], false)
+ 2 APPPATH/Controllers/Home.php(597): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-12 09:57:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'cpfoodbo_KP_USA_Ci4.custom_fields' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `custom_fields`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `custom_fields`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `custom_fields`', [], false)
+ 4 APPPATH/Controllers/Home.php(597): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-12 09:57:02 --> [Caused by] mysqli_sql_exception: Table 'cpfoodbo_KP_USA_Ci4.custom_fields' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `custom_fields`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `custom_fields`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `custom_fields`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `custom_fields`', [], false)
+ 5 APPPATH/Controllers/Home.php(597): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-12 09:58:05 --> ErrorException: Undefined array key "table"
+[Method: GET, Route: getajax]
+in APPPATH/Controllers/Home.php on line 583.
+ 1 APPPATH/Controllers/Home.php(583): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "table"', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 583)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-12 09:58:12 --> ErrorException: Undefined array key "table"
+[Method: GET, Route: getajax]
+in APPPATH/Controllers/Home.php on line 583.
+ 1 APPPATH/Controllers/Home.php(583): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "table"', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 583)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-12 09:58:27 --> ErrorException: Undefined array key "table"
+[Method: GET, Route: getajax]
+in APPPATH/Controllers/Home.php on line 583.
+ 1 APPPATH/Controllers/Home.php(583): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "table"', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 583)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-12 09:58:53 --> ErrorException: Undefined array key "table"
+[Method: GET, Route: getajax]
+in APPPATH/Controllers/Home.php on line 583.
+ 1 APPPATH/Controllers/Home.php(583): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "table"', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 583)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-12 09:59:14 --> ErrorException: Undefined array key "table"
+[Method: GET, Route: getajax]
+in APPPATH/Controllers/Home.php on line 583.
+ 1 APPPATH/Controllers/Home.php(583): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "table"', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 583)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-12 09:59:19 --> ErrorException: Undefined array key "table"
+[Method: GET, Route: getajax]
+in APPPATH/Controllers/Home.php on line 583.
+ 1 APPPATH/Controllers/Home.php(583): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "table"', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 583)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-12 09:59:37 --> mysqli_sql_exception: Table 'cpfoodbo_KP_USA_Ci4.custom_fields' doesn't exist in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/MySQLi/Connection.php(308): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Database/BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php(597): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(933): App\Controllers\Home->getData12()
+#6 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-09-12 09:59:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'cpfoodbo_KP_USA_Ci4.custom_fields' doesn't exist
+[Method: POST, Route: getajax]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `custom_fields`', [], false)
+ 2 APPPATH/Controllers/Home.php(597): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-12 09:59:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'cpfoodbo_KP_USA_Ci4.custom_fields' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `custom_fields`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `custom_fields`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `custom_fields`', [], false)
+ 4 APPPATH/Controllers/Home.php(597): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-12 09:59:37 --> [Caused by] mysqli_sql_exception: Table 'cpfoodbo_KP_USA_Ci4.custom_fields' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `custom_fields`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `custom_fields`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `custom_fields`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `custom_fields`', [], false)
+ 5 APPPATH/Controllers/Home.php(597): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-12 10:19:00 --> ErrorException: Undefined property: App\Controllers\Home::$input
+[Method: POST, Route: update_ordering/custom_fields]
+in APPPATH/Controllers/Home.php on line 574.
+ 1 APPPATH/Controllers/Home.php(574): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$input', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 574)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->update_ordering('custom_fields')
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-12 10:20:32 --> ErrorException: Undefined property: App\Controllers\Home::$Admin_Model
+[Method: POST, Route: update_ordering/custom_fields]
+in APPPATH/Controllers/Home.php on line 579.
+ 1 APPPATH/Controllers/Home.php(579): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$Admin_Model', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 579)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->update_ordering('custom_fields')
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-12 10:23:29 --> ParseError: syntax error, unexpected token "public"
+[Method: GET, Route: custom_fields]
+in APPPATH/Controllers/Home.php on line 598.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH/CodeIgniter.php(887): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-12 10:23:36 --> ParseError: syntax error, unexpected token "public"
+[Method: GET, Route: custom_fields]
+in APPPATH/Controllers/Home.php on line 598.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH/CodeIgniter.php(887): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-12 10:25:51 --> ErrorException: Undefined array key 8
+[Method: POST, Route: getajax]
+in APPPATH/Controllers/Home.php on line 622.
+ 1 APPPATH/Controllers/Home.php(622): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 8', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 622)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-12 10:25:54 --> ErrorException: Undefined array key 8
+[Method: POST, Route: getajax]
+in APPPATH/Controllers/Home.php on line 622.
+ 1 APPPATH/Controllers/Home.php(622): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 8', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 622)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-12 10:26:10 --> ErrorException: Undefined array key 8
+[Method: POST, Route: getajax]
+in APPPATH/Controllers/Home.php on line 622.
+ 1 APPPATH/Controllers/Home.php(622): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 8', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 622)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-12 10:26:17 --> ErrorException: Undefined array key 5
+[Method: POST, Route: getajax]
+in APPPATH/Controllers/Home.php on line 622.
+ 1 APPPATH/Controllers/Home.php(622): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 5', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 622)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-12 10:27:26 --> ErrorException: Undefined array key 8
+[Method: POST, Route: getajax]
+in APPPATH/Controllers/Home.php on line 622.
+ 1 APPPATH/Controllers/Home.php(622): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 8', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 622)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-12 10:27:31 --> ErrorException: Undefined array key 8
+[Method: POST, Route: getajax]
+in APPPATH/Controllers/Home.php on line 622.
+ 1 APPPATH/Controllers/Home.php(622): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 8', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 622)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-12 10:27:41 --> ErrorException: Undefined array key 7
+[Method: POST, Route: getajax]
+in APPPATH/Controllers/Home.php on line 622.
+ 1 APPPATH/Controllers/Home.php(622): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 7', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 622)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-12 10:28:46 --> ErrorException: Undefined array key 8
+[Method: POST, Route: getajax]
+in APPPATH/Controllers/Home.php on line 622.
+ 1 APPPATH/Controllers/Home.php(622): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 8', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 622)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-12 11:26:56 --> ErrorException: Undefined property: App\Controllers\Home::$load
+[Method: GET, Route: tech/add_custom_field]
+in APPPATH/Controllers/Home.php on line 95.
+ 1 APPPATH/Controllers/Home.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 95)
+ 2 APPPATH/Controllers/Home.php(56): App\Controllers\Home->add_custom_field()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('add_custom_field')
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-12 11:32:14 --> ErrorException: Undefined property: App\Controllers\Home::$load
+[Method: GET, Route: tech/add_custom_field]
+in APPPATH/Controllers/Home.php on line 95.
+ 1 APPPATH/Controllers/Home.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 95)
+ 2 APPPATH/Controllers/Home.php(56): App\Controllers\Home->add_custom_field()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('add_custom_field')
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-12 11:32:16 --> ErrorException: Undefined property: App\Controllers\Home::$load
+[Method: GET, Route: tech/add_custom_field]
+in APPPATH/Controllers/Home.php on line 95.
+ 1 APPPATH/Controllers/Home.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 95)
+ 2 APPPATH/Controllers/Home.php(56): App\Controllers\Home->add_custom_field()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('add_custom_field')
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-12 11:32:32 --> ErrorException: Undefined property: App\Controllers\Home::$load
+[Method: GET, Route: tech/add_custom_field]
+in APPPATH/Controllers/Home.php on line 97.
+ 1 APPPATH/Controllers/Home.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 97)
+ 2 APPPATH/Controllers/Home.php(56): App\Controllers\Home->add_custom_field()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('add_custom_field')
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-12 11:33:32 --> ErrorException: Array to string conversion
+[Method: GET, Route: tech/add_custom_field]
+in APPPATH/Views/custom_fields/add_custom_field.php on line 6.
+ 1 APPPATH/Views/custom_fields/add_custom_field.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/custom_fields/add_custom_field.php', 6)
+ 2 APPPATH/Views/page.php(4): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/custom_fields/add_custom_field.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 6 APPPATH/Controllers/Home.php(99): view('page', [...])
+ 7 APPPATH/Controllers/Home.php(56): App\Controllers\Home->add_custom_field()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('add_custom_field')
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-12 11:33:52 --> ErrorException: Undefined property: CodeIgniter\View\View::$session
+[Method: GET, Route: tech/add_custom_field]
+in APPPATH/Views/custom_fields/add_custom_field.php on line 7.
+ 1 APPPATH/Views/custom_fields/add_custom_field.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$session', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/custom_fields/add_custom_field.php', 7)
+ 2 APPPATH/Views/page.php(4): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/custom_fields/add_custom_field.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 6 APPPATH/Controllers/Home.php(99): view('page', [...])
+ 7 APPPATH/Controllers/Home.php(56): App\Controllers\Home->add_custom_field()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('add_custom_field')
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-12 11:34:18 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: tech/add_custom_field]
+in APPPATH/Views/custom_fields/add_custom_field.php on line 26.
+ 1 APPPATH/Views/page.php(4): include()
+ 2 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 5 APPPATH/Controllers/Home.php(99): view('page', [...])
+ 6 APPPATH/Controllers/Home.php(56): App\Controllers\Home->add_custom_field()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('add_custom_field')
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-12 11:35:12 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: tech/add_custom_field]
+in APPPATH/Views/custom_fields/add_custom_field.php on line 26.
+ 1 APPPATH/Views/page.php(4): include()
+ 2 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 5 APPPATH/Controllers/Home.php(99): view('page', [...])
+ 6 APPPATH/Controllers/Home.php(56): App\Controllers\Home->add_custom_field()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('add_custom_field')
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

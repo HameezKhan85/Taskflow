@@ -1,0 +1,152 @@
+CRITICAL - 2024-09-13 10:38:17 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 12.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-13 11:00:49 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 12.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-13 11:33:40 --> ErrorException: Undefined property: App\Controllers\Home::$input
+[Method: POST, Route: tech/add_custom_field]
+in APPPATH/Controllers/Home.php on line 72.
+ 1 APPPATH/Controllers/Home.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$input', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 72)
+ 2 APPPATH/Controllers/Home.php(56): App\Controllers\Home->add_custom_field()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('add_custom_field')
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-13 11:34:47 --> ErrorException: Undefined property: App\Controllers\Home::$input
+[Method: POST, Route: tech/add_custom_field]
+in APPPATH/Controllers/Home.php on line 72.
+ 1 APPPATH/Controllers/Home.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$input', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 72)
+ 2 APPPATH/Controllers/Home.php(56): App\Controllers\Home->add_custom_field()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('add_custom_field')
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-13 11:36:34 --> ErrorException: Undefined property: App\Controllers\Home::$form_validation
+[Method: POST, Route: tech/add_custom_field]
+in APPPATH/Controllers/Home.php on line 76.
+ 1 APPPATH/Controllers/Home.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$form_validation', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 76)
+ 2 APPPATH/Controllers/Home.php(56): App\Controllers\Home->add_custom_field()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('add_custom_field')
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-13 11:37:07 --> ErrorException: Undefined property: App\Controllers\Home::$session
+[Method: POST, Route: tech/add_custom_field]
+in APPPATH/Controllers/Home.php on line 86.
+ 1 APPPATH/Controllers/Home.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$session', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 86)
+ 2 APPPATH/Controllers/Home.php(56): App\Controllers\Home->add_custom_field()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('add_custom_field')
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-13 11:38:18 --> ErrorException: Undefined variable $userid
+[Method: POST, Route: tech/add_custom_field]
+in APPPATH/Controllers/Home.php on line 88.
+ 1 APPPATH/Controllers/Home.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userid', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 88)
+ 2 APPPATH/Controllers/Home.php(58): App\Controllers\Home->add_custom_field()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('add_custom_field')
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-13 11:38:43 --> ErrorException: Undefined variable $session
+[Method: POST, Route: tech/add_custom_field]
+in APPPATH/Controllers/Home.php on line 88.
+ 1 APPPATH/Controllers/Home.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 88)
+ 2 APPPATH/Controllers/Home.php(58): App\Controllers\Home->add_custom_field()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('add_custom_field')
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-13 11:39:11 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::insert()
+[Method: POST, Route: tech/add_custom_field]
+in APPPATH/Controllers/Home.php on line 92.
+ 1 APPPATH/Controllers/Home.php(58): App\Controllers\Home->add_custom_field()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('add_custom_field')
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-13 11:41:17 --> ErrorException: Undefined property: App\Controllers\Home::$session
+[Method: POST, Route: tech/add_custom_field]
+in APPPATH/Controllers/Home.php on line 96.
+ 1 APPPATH/Controllers/Home.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$session', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 96)
+ 2 APPPATH/Controllers/Home.php(58): App\Controllers\Home->add_custom_field()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('add_custom_field')
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-13 11:42:15 --> CodeIgniter\HTTP\Exceptions\HTTPException: The route for "admin/custom_fields/" cannot be found.
+[Method: POST, Route: tech/add_custom_field]
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 64.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(64): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('admin/custom_fields/')
+ 2 SYSTEMPATH/Common.php(853): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Home.php(98): redirect('admin/custom_fields/')
+ 4 APPPATH/Controllers/Home.php(58): App\Controllers\Home->add_custom_field()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('add_custom_field')
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-13 11:53:16 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: editseasons/8]
+in APPPATH/Views/season/editseasons.php on line 67.
+ 1 APPPATH/Views/season/editseasons.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/season/editseasons.php', 67)
+ 2 APPPATH/Views/page.php(4): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/season/editseasons.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 6 APPPATH/Controllers/Home.php(302): view('page', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->editseasons('8')
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-13 11:54:54 --> ErrorException: Cannot redeclare removeIndexPhpFromUrl() (previously declared in /home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/remove_index.php:3)
+[Method: GET, Route: /]
+in FCPATH/remove_index.php on line 12.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-09-13 11:57:13 --> ErrorException: Undefined array key 5
+[Method: POST, Route: getajax]
+in APPPATH/Controllers/Home.php on line 700.
+ 1 APPPATH/Controllers/Home.php(700): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 5', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Controllers/Home.php', 700)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getData12()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-13 12:47:48 --> ErrorException: Undefined array key "success_msg"
+[Method: GET, Route: custom_fields]
+in APPPATH/Views/custom_fields/custom_fields.php on line 12.
+ 1 APPPATH/Views/custom_fields/custom_fields.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "success_msg"', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/custom_fields/custom_fields.php', 12)
+ 2 APPPATH/Views/page.php(4): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/custom_fields/custom_fields.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 6 APPPATH/Controllers/Home.php(48): view('page', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->custom_fields()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

@@ -1,0 +1,158 @@
+CRITICAL - 2024-09-30 05:09:17 --> ErrorException: Undefined variable $category
+[Method: GET, Route: tech/editproduct/6]
+in APPPATH/Views/products/editproduct.php on line 50.
+ 1 APPPATH/Views/products/editproduct.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $category', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/products/editproduct.php', 50)
+ 2 APPPATH/Views/page.php(3): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/products/editproduct.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 6 APPPATH/Controllers/Home.php(443): view('page', [...])
+ 7 APPPATH/Controllers/Home.php(104): App\Controllers\Home->editproduct()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editproduct', '6')
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 05:10:26 --> ErrorException: Undefined variable $category
+[Method: GET, Route: tech/editproduct/6]
+in APPPATH/Views/products/editproduct.php on line 50.
+ 1 APPPATH/Views/products/editproduct.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $category', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/products/editproduct.php', 50)
+ 2 APPPATH/Views/page.php(3): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/products/editproduct.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 6 APPPATH/Controllers/Home.php(443): view('page', [...])
+ 7 APPPATH/Controllers/Home.php(104): App\Controllers\Home->editproduct()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editproduct', '6')
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 05:10:34 --> ErrorException: Attempt to read property "title" on array
+[Method: GET, Route: tech/editproduct/6]
+in APPPATH/Views/products/editproduct.php on line 51.
+ 1 APPPATH/Views/products/editproduct.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "title" on array', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/products/editproduct.php', 51)
+ 2 APPPATH/Views/page.php(3): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/products/editproduct.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 6 APPPATH/Controllers/Home.php(443): view('page', [...])
+ 7 APPPATH/Controllers/Home.php(104): App\Controllers\Home->editproduct()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editproduct', '6')
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 05:11:05 --> ErrorException: Attempt to read property "title" on array
+[Method: GET, Route: tech/editproduct/6]
+in APPPATH/Views/products/editproduct.php on line 51.
+ 1 APPPATH/Views/products/editproduct.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "title" on array', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/products/editproduct.php', 51)
+ 2 APPPATH/Views/page.php(3): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/products/editproduct.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 6 APPPATH/Controllers/Home.php(443): view('page', [...])
+ 7 APPPATH/Controllers/Home.php(104): App\Controllers\Home->editproduct()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editproduct', '6')
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 06:02:23 --> ParseError: syntax error, unexpected variable "$inputcalss", expecting ":"
+[Method: GET, Route: tech/editcategory/10]
+in APPPATH/Views/includes/edit_field_values.php on line 87.
+ 1 APPPATH/Views/page.php(3): include()
+ 2 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 5 APPPATH/Controllers/Home.php(528): view('page', [...])
+ 6 APPPATH/Controllers/Home.php(98): App\Controllers\Home->editcategory()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('editcategory', '10')
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 06:38:37 --> ErrorException: Undefined variable $result
+[Method: GET, Route: tech/addproduct]
+in APPPATH/Views/products/addproduct.php on line 31.
+ 1 APPPATH/Views/products/addproduct.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/products/addproduct.php', 31)
+ 2 APPPATH/Views/page.php(3): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/products/addproduct.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 6 APPPATH/Controllers/Home.php(402): view('page', [...])
+ 7 APPPATH/Controllers/Home.php(107): App\Controllers\Home->addproduct()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('addproduct')
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 10:18:15 --> ErrorException: Undefined variable $result
+[Method: GET, Route: tech/addreview]
+in APPPATH/Views/reviews/addreview.php on line 43.
+ 1 APPPATH/Views/reviews/addreview.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/reviews/addreview.php', 43)
+ 2 APPPATH/Views/page.php(3): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/reviews/addreview.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 6 APPPATH/Controllers/Home.php(154): view('page', [...])
+ 7 APPPATH/Controllers/Home.php(75): App\Controllers\Home->addreview()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('addreview')
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 12:42:43 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: /]
+in APPPATH/Views/includes/header.php on line 343.
+ 1 APPPATH/Views/includes/header.php(343): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/includes/header.php', 343)
+ 2 APPPATH/Views/page.php(2): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/includes/header.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 6 APPPATH/Controllers/Home.php(36): view('page', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->dashboard()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 12:42:45 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: tech/view_review]
+in APPPATH/Views/includes/header.php on line 343.
+ 1 APPPATH/Views/includes/header.php(343): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/includes/header.php', 343)
+ 2 APPPATH/Views/page.php(2): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/includes/header.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 6 APPPATH/Controllers/Home.php(126): view('page', [...])
+ 7 APPPATH/Controllers/Home.php(72): App\Controllers\Home->view_review()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('view_review')
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 12:42:46 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: tech/view_review]
+in APPPATH/Views/includes/header.php on line 343.
+ 1 APPPATH/Views/includes/header.php(343): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/includes/header.php', 343)
+ 2 APPPATH/Views/page.php(2): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/includes/header.php')
+ 3 SYSTEMPATH/View/View.php(234): include('/home2/cpfoodboxes/sites/dev.kolaxopackaging.com/ci4/ci-admin/app/Views/page.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 6 APPPATH/Controllers/Home.php(126): view('page', [...])
+ 7 APPPATH/Controllers/Home.php(72): App\Controllers\Home->view_review()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->manangerouts('view_review')
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(66): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

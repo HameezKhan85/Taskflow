@@ -1,0 +1,15 @@
+CRITICAL - 2024-08-13 05:33:07 --> ErrorException: Undefined array key "pbanner"
+[Method: GET, Route: editepisode/19]
+in APPPATH\Views\episode\editepisode.php on line 115.
+ 1 APPPATH\Views\episode\editepisode.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pbanner"', 'C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Views\\episode\\editepisode.php', 115)
+ 2 APPPATH\Views\page.php(4): include('C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Views\\episode\\editepisode.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\server\\podcast\\ci-admin\\app\\Views\\page.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('page', [], true)
+ 6 APPPATH\Controllers\Home.php(143): view('page', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->editepisode('19')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(58): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
